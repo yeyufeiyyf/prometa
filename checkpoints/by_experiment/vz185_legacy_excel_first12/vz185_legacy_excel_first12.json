@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "frozen_prediction_checkpoint",
+  "checkpoint_sha256": "c5a2f057ae1db52b641273cd09b69fc49915bd0ad449744c8121926a707dd190",
+  "experiment_id": "vz185_legacy_excel_first12",
+  "notes": "Frozen 12-row correctness audit; the historical sheet has no calibrated probabilities.",
+  "response_table": "VZ185",
+  "seed": "",
+  "source_checkpoint": "results/released/vz185_prometa_compound_audit.csv",
+  "source_sha256": "25b6442307f00706310abb31dfd46bf89e67362dfb7f6113ce6babccbc3f8610",
+  "variant": "ProMeta legacy Excel-order retrospective audit"
+}

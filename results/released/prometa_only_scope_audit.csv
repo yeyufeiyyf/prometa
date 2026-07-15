@@ -1,0 +1,22 @@
+file,methods,status
+results/released/four_family_main_checkpoint_compound_predictions.csv,ProMeta,PASS
+results/released/four_family_main_checkpoint_summary.csv,ProMeta,PASS
+results/released/s2_intersection_query_predictions.csv,ProMeta intersection-trained,PASS
+results/released/s2_intersection_summary.csv,ProMeta intersection-trained,PASS
+results/released/s3_bidirectional_query_predictions.csv,ProMeta,PASS
+results/released/s3_bidirectional_split_metrics.csv,ProMeta,PASS
+results/released/s3_bidirectional_summary.csv,ProMeta,PASS
+results/released/s4_s5_rare_e3_bootstrap_ci.csv,ProMeta,PASS
+results/released/s4_s5_rare_e3_common_query_predictions.csv,ProMeta,PASS
+results/released/s4_s5_rare_e3_metrics.csv,ProMeta,PASS
+results/released/s4_s5_rare_e3_reuse.csv,ProMeta,PASS
+results/released/s6_s7_prometa_variants_query_predictions.csv,ProMeta | ProMeta + linear head | ProMeta w/o episodic training,PASS
+results/released/s6_s7_prometa_variants_split_metrics.csv,ProMeta | ProMeta + linear head | ProMeta w/o episodic training,PASS
+results/released/s6_s7_prometa_variants_summary.csv,ProMeta | ProMeta + linear head | ProMeta w/o episodic training,PASS
+results/released/s7_compact_prometa_variants.csv,ProMeta | ProMeta + linear head | ProMeta w/o episodic training,PASS
+results/released/s8_rdkit_3d_query_predictions.csv,ProMeta + 3D descriptor fusion,PASS
+results/released/s8_rdkit_3d_summary.csv,ProMeta + 3D descriptor fusion | ProMeta current,PASS
+results/released/s9_kq_sensitivity_query_predictions.csv,ProMeta,PASS
+results/released/s9_kq_sensitivity_split_metrics.csv,ProMeta,PASS
+results/released/s9_kq_sensitivity_summary.csv,ProMeta,PASS
+results/released/vz185_prometa_summary.csv,ProMeta_legacy_excel_order,PASS

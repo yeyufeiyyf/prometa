@@ -1,0 +1,2020 @@
+{
+  "meta": {
+    "split": "crbn_train_vhl_test_strict_K1Q0_seed2025",
+    "direction": "CRBN->VHL",
+    "source": "CRBN",
+    "target": "VHL",
+    "k_shot": 1,
+    "q_query": 0,
+    "query_setting": "all_remaining",
+    "seed": 2025,
+    "source_examples": 842,
+    "target_tasks_total": 110,
+    "eligible_tasks": 24,
+    "query_rows_total": 210,
+    "context_col": "context_key_compound_e3_target",
+    "excluded_target_rows": 15,
+    "excluded_target_tasks": 2,
+    "exclude_target_task_regex": "^BCR-ABL(?:$| )"
+  },
+  "meta_test": {
+    "AKT1": [
+      {
+        "support": [
+          {
+            "Context ID": "5089||VHL||AKT1",
+            "Compound ID": "5089",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2577||VHL||AKT1",
+            "Compound ID": "2577",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2558||VHL||AKT1",
+            "Compound ID": "2558",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2169||VHL||AKT1",
+            "Compound ID": "2169",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "5075||VHL||AKT1",
+            "Compound ID": "5075",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "5070||VHL||AKT1",
+            "Compound ID": "5070",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2576||VHL||AKT1",
+            "Compound ID": "2576",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2165||VHL||AKT1",
+            "Compound ID": "2165",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2555||VHL||AKT1",
+            "Compound ID": "2555",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          },
+          {
+            "Context ID": "2583||VHL||AKT1",
+            "Compound ID": "2583",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "AKT1"
+          }
+        ]
+      }
+    ],
+    "ALK": [
+      {
+        "support": [
+          {
+            "Context ID": "521||VHL||ALK",
+            "Compound ID": "521",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "263||VHL||ALK",
+            "Compound ID": "263",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "522||VHL||ALK",
+            "Compound ID": "522",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "530||VHL||ALK",
+            "Compound ID": "530",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "529||VHL||ALK",
+            "Compound ID": "529",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "528||VHL||ALK",
+            "Compound ID": "528",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "523||VHL||ALK",
+            "Compound ID": "523",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "520||VHL||ALK",
+            "Compound ID": "520",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "514||VHL||ALK",
+            "Compound ID": "514",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          },
+          {
+            "Context ID": "260||VHL||ALK",
+            "Compound ID": "260",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ALK"
+          }
+        ]
+      }
+    ],
+    "BCL-xL": [
+      {
+        "support": [
+          {
+            "Context ID": "624||VHL||BCL-xL",
+            "Compound ID": "624",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "631||VHL||BCL-xL",
+            "Compound ID": "631",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "3221||VHL||BCL-xL",
+            "Compound ID": "3221",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "3214||VHL||BCL-xL",
+            "Compound ID": "3214",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "3218||VHL||BCL-xL",
+            "Compound ID": "3218",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "3216||VHL||BCL-xL",
+            "Compound ID": "3216",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "3215||VHL||BCL-xL",
+            "Compound ID": "3215",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "3217||VHL||BCL-xL",
+            "Compound ID": "3217",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "635||VHL||BCL-xL",
+            "Compound ID": "635",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "697||VHL||BCL-xL",
+            "Compound ID": "697",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "640||VHL||BCL-xL",
+            "Compound ID": "640",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "2381||VHL||BCL-xL",
+            "Compound ID": "2381",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "628||VHL||BCL-xL",
+            "Compound ID": "628",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "2388||VHL||BCL-xL",
+            "Compound ID": "2388",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BCL-xL"
+          }
+        ]
+      }
+    ],
+    "BRD2": [
+      {
+        "support": [
+          {
+            "Context ID": "1654||VHL||BRD2",
+            "Compound ID": "1654",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "328||VHL||BRD2",
+            "Compound ID": "328",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2343||VHL||BRD2",
+            "Compound ID": "2343",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "229||VHL||BRD2",
+            "Compound ID": "229",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "2341||VHL||BRD2",
+            "Compound ID": "2341",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "2342||VHL||BRD2",
+            "Compound ID": "2342",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "3645||VHL||BRD2",
+            "Compound ID": "3645",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          },
+          {
+            "Context ID": "1653||VHL||BRD2",
+            "Compound ID": "1653",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD2"
+          }
+        ]
+      }
+    ],
+    "BRD3": [
+      {
+        "support": [
+          {
+            "Context ID": "2343||VHL||BRD3",
+            "Compound ID": "2343",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          },
+          {
+            "Context ID": "335||VHL||BRD3",
+            "Compound ID": "335",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2341||VHL||BRD3",
+            "Compound ID": "2341",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          },
+          {
+            "Context ID": "229||VHL||BRD3",
+            "Compound ID": "229",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          },
+          {
+            "Context ID": "1652||VHL||BRD3",
+            "Compound ID": "1652",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          },
+          {
+            "Context ID": "3645||VHL||BRD3",
+            "Compound ID": "3645",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD3"
+          }
+        ]
+      }
+    ],
+    "BRD4": [
+      {
+        "support": [
+          {
+            "Context ID": "1786||VHL||BRD4",
+            "Compound ID": "1786",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "152||VHL||BRD4",
+            "Compound ID": "152",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4302||VHL||BRD4",
+            "Compound ID": "4302",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1797||VHL||BRD4",
+            "Compound ID": "1797",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4296||VHL||BRD4",
+            "Compound ID": "4296",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "2343||VHL||BRD4",
+            "Compound ID": "2343",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4303||VHL||BRD4",
+            "Compound ID": "4303",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "2342||VHL||BRD4",
+            "Compound ID": "2342",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "2340||VHL||BRD4",
+            "Compound ID": "2340",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "209||VHL||BRD4",
+            "Compound ID": "209",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "151||VHL||BRD4",
+            "Compound ID": "151",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4304||VHL||BRD4",
+            "Compound ID": "4304",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1788||VHL||BRD4",
+            "Compound ID": "1788",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4299||VHL||BRD4",
+            "Compound ID": "4299",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1791||VHL||BRD4",
+            "Compound ID": "1791",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "2341||VHL||BRD4",
+            "Compound ID": "2341",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1787||VHL||BRD4",
+            "Compound ID": "1787",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4298||VHL||BRD4",
+            "Compound ID": "4298",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1796||VHL||BRD4",
+            "Compound ID": "1796",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4294||VHL||BRD4",
+            "Compound ID": "4294",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1783||VHL||BRD4",
+            "Compound ID": "1783",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1795||VHL||BRD4",
+            "Compound ID": "1795",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1793||VHL||BRD4",
+            "Compound ID": "1793",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "1784||VHL||BRD4",
+            "Compound ID": "1784",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "310||VHL||BRD4",
+            "Compound ID": "310",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "BRD4"
+          }
+        ]
+      }
+    ],
+    "CARM1": [
+      {
+        "support": [
+          {
+            "Context ID": "3322||VHL||CARM1",
+            "Compound ID": "3322",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CARM1"
+          },
+          {
+            "Context ID": "3315||VHL||CARM1",
+            "Compound ID": "3315",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CARM1"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "3319||VHL||CARM1",
+            "Compound ID": "3319",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CARM1"
+          },
+          {
+            "Context ID": "3313||VHL||CARM1",
+            "Compound ID": "3313",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CARM1"
+          }
+        ]
+      }
+    ],
+    "CDK4": [
+      {
+        "support": [
+          {
+            "Context ID": "741||VHL||CDK4",
+            "Compound ID": "741",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "2149||VHL||CDK4",
+            "Compound ID": "2149",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2038||VHL||CDK4",
+            "Compound ID": "2038",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "740||VHL||CDK4",
+            "Compound ID": "740",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "2035||VHL||CDK4",
+            "Compound ID": "2035",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "2034||VHL||CDK4",
+            "Compound ID": "2034",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "2150||VHL||CDK4",
+            "Compound ID": "2150",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK4"
+          }
+        ]
+      }
+    ],
+    "CDK6": [
+      {
+        "support": [
+          {
+            "Context ID": "741||VHL||CDK6",
+            "Compound ID": "741",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "417||VHL||CDK6",
+            "Compound ID": "417",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2038||VHL||CDK6",
+            "Compound ID": "2038",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "740||VHL||CDK6",
+            "Compound ID": "740",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "2034||VHL||CDK6",
+            "Compound ID": "2034",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "2036||VHL||CDK6",
+            "Compound ID": "2036",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CDK6"
+          }
+        ]
+      }
+    ],
+    "CRBN": [
+      {
+        "support": [
+          {
+            "Context ID": "1011||VHL||CRBN",
+            "Compound ID": "1011",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          },
+          {
+            "Context ID": "969||VHL||CRBN",
+            "Compound ID": "969",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "176||VHL||CRBN",
+            "Compound ID": "176",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          },
+          {
+            "Context ID": "1014||VHL||CRBN",
+            "Compound ID": "1014",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          },
+          {
+            "Context ID": "1012||VHL||CRBN",
+            "Compound ID": "1012",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          },
+          {
+            "Context ID": "964||VHL||CRBN",
+            "Compound ID": "964",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          },
+          {
+            "Context ID": "967||VHL||CRBN",
+            "Compound ID": "967",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "CRBN"
+          }
+        ]
+      }
+    ],
+    "EGFR": [
+      {
+        "support": [
+          {
+            "Context ID": "577||VHL||EGFR",
+            "Compound ID": "577",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          },
+          {
+            "Context ID": "576||VHL||EGFR",
+            "Compound ID": "576",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "567||VHL||EGFR",
+            "Compound ID": "567",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          },
+          {
+            "Context ID": "2418||VHL||EGFR",
+            "Compound ID": "2418",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          },
+          {
+            "Context ID": "1995||VHL||EGFR",
+            "Compound ID": "1995",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          },
+          {
+            "Context ID": "4281||VHL||EGFR",
+            "Compound ID": "4281",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          },
+          {
+            "Context ID": "275||VHL||EGFR",
+            "Compound ID": "275",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR"
+          }
+        ]
+      }
+    ],
+    "EGFR L858R/T790M": [
+      {
+        "support": [
+          {
+            "Context ID": "2625||VHL||EGFR L858R/T790M",
+            "Compound ID": "2625",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          },
+          {
+            "Context ID": "2626||VHL||EGFR L858R/T790M",
+            "Compound ID": "2626",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "577||VHL||EGFR L858R/T790M",
+            "Compound ID": "577",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          },
+          {
+            "Context ID": "581||VHL||EGFR L858R/T790M",
+            "Compound ID": "581",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          },
+          {
+            "Context ID": "586||VHL||EGFR L858R/T790M",
+            "Compound ID": "586",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          },
+          {
+            "Context ID": "2615||VHL||EGFR L858R/T790M",
+            "Compound ID": "2615",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          },
+          {
+            "Context ID": "2623||VHL||EGFR L858R/T790M",
+            "Compound ID": "2623",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR L858R/T790M"
+          }
+        ]
+      }
+    ],
+    "EGFR e19d": [
+      {
+        "support": [
+          {
+            "Context ID": "1995||VHL||EGFR e19d",
+            "Compound ID": "1995",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "5486||VHL||EGFR e19d",
+            "Compound ID": "5486",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "593||VHL||EGFR e19d",
+            "Compound ID": "593",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2411||VHL||EGFR e19d",
+            "Compound ID": "2411",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2414||VHL||EGFR e19d",
+            "Compound ID": "2414",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2625||VHL||EGFR e19d",
+            "Compound ID": "2625",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "5478||VHL||EGFR e19d",
+            "Compound ID": "5478",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2410||VHL||EGFR e19d",
+            "Compound ID": "2410",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2617||VHL||EGFR e19d",
+            "Compound ID": "2617",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2613||VHL||EGFR e19d",
+            "Compound ID": "2613",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "5491||VHL||EGFR e19d",
+            "Compound ID": "5491",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2608||VHL||EGFR e19d",
+            "Compound ID": "2608",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "5498||VHL||EGFR e19d",
+            "Compound ID": "5498",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          },
+          {
+            "Context ID": "2616||VHL||EGFR e19d",
+            "Compound ID": "2616",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EGFR e19d"
+          }
+        ]
+      }
+    ],
+    "ER": [
+      {
+        "support": [
+          {
+            "Context ID": "1471||VHL||ER",
+            "Compound ID": "1471",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "894||VHL||ER",
+            "Compound ID": "894",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "1469||VHL||ER",
+            "Compound ID": "1469",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1470||VHL||ER",
+            "Compound ID": "1470",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1467||VHL||ER",
+            "Compound ID": "1467",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "920||VHL||ER",
+            "Compound ID": "920",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1468||VHL||ER",
+            "Compound ID": "1468",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1472||VHL||ER",
+            "Compound ID": "1472",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "913||VHL||ER",
+            "Compound ID": "913",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "895||VHL||ER",
+            "Compound ID": "895",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "916||VHL||ER",
+            "Compound ID": "916",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "917||VHL||ER",
+            "Compound ID": "917",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "869||VHL||ER",
+            "Compound ID": "869",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "863||VHL||ER",
+            "Compound ID": "863",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "87||VHL||ER",
+            "Compound ID": "87",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "881||VHL||ER",
+            "Compound ID": "881",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "852||VHL||ER",
+            "Compound ID": "852",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "866||VHL||ER",
+            "Compound ID": "866",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "902||VHL||ER",
+            "Compound ID": "902",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "63||VHL||ER",
+            "Compound ID": "63",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "90||VHL||ER",
+            "Compound ID": "90",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "903||VHL||ER",
+            "Compound ID": "903",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "909||VHL||ER",
+            "Compound ID": "909",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "888||VHL||ER",
+            "Compound ID": "888",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "834||VHL||ER",
+            "Compound ID": "834",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "892||VHL||ER",
+            "Compound ID": "892",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "910||VHL||ER",
+            "Compound ID": "910",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          }
+        ]
+      }
+    ],
+    "ERalpha": [
+      {
+        "support": [
+          {
+            "Context ID": "5117||VHL||ERalpha",
+            "Compound ID": "5117",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ERalpha"
+          },
+          {
+            "Context ID": "5862||VHL||ERalpha",
+            "Compound ID": "5862",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ERalpha"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "5116||VHL||ERalpha",
+            "Compound ID": "5116",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ERalpha"
+          },
+          {
+            "Context ID": "5119||VHL||ERalpha",
+            "Compound ID": "5119",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ERalpha"
+          }
+        ]
+      }
+    ],
+    "EZH2": [
+      {
+        "support": [
+          {
+            "Context ID": "937||VHL||EZH2",
+            "Compound ID": "937",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "5305||VHL||EZH2",
+            "Compound ID": "5305",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4267||VHL||EZH2",
+            "Compound ID": "4267",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "936||VHL||EZH2",
+            "Compound ID": "936",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "941||VHL||EZH2",
+            "Compound ID": "941",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "2453||VHL||EZH2",
+            "Compound ID": "2453",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "5307||VHL||EZH2",
+            "Compound ID": "5307",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "4261||VHL||EZH2",
+            "Compound ID": "4261",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "6032||VHL||EZH2",
+            "Compound ID": "6032",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "2449||VHL||EZH2",
+            "Compound ID": "2449",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          },
+          {
+            "Context ID": "5300||VHL||EZH2",
+            "Compound ID": "5300",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "EZH2"
+          }
+        ]
+      }
+    ],
+    "HDAC3": [
+      {
+        "support": [
+          {
+            "Context ID": "2017||VHL||HDAC3",
+            "Compound ID": "2017",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2435||VHL||HDAC3",
+            "Compound ID": "2435",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "3417||VHL||HDAC3",
+            "Compound ID": "3417",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "3457||VHL||HDAC3",
+            "Compound ID": "3457",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "4558||VHL||HDAC3",
+            "Compound ID": "4558",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2431||VHL||HDAC3",
+            "Compound ID": "2431",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2421||VHL||HDAC3",
+            "Compound ID": "2421",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2420||VHL||HDAC3",
+            "Compound ID": "2420",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2422||VHL||HDAC3",
+            "Compound ID": "2422",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          },
+          {
+            "Context ID": "2432||VHL||HDAC3",
+            "Compound ID": "2432",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "HDAC3"
+          }
+        ]
+      }
+    ],
+    "KRAS G12C": [
+      {
+        "support": [
+          {
+            "Context ID": "1659||VHL||KRAS G12C",
+            "Compound ID": "1659",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "KRAS G12C"
+          },
+          {
+            "Context ID": "5718||VHL||KRAS G12C",
+            "Compound ID": "5718",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "KRAS G12C"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "1660||VHL||KRAS G12C",
+            "Compound ID": "1660",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "KRAS G12C"
+          },
+          {
+            "Context ID": "5724||VHL||KRAS G12C",
+            "Compound ID": "5724",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "KRAS G12C"
+          }
+        ]
+      }
+    ],
+    "LRRK2": [
+      {
+        "support": [
+          {
+            "Context ID": "5216||VHL||LRRK2",
+            "Compound ID": "5216",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "LRRK2"
+          },
+          {
+            "Context ID": "5212||VHL||LRRK2",
+            "Compound ID": "5212",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "LRRK2"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "5215||VHL||LRRK2",
+            "Compound ID": "5215",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "LRRK2"
+          },
+          {
+            "Context ID": "5196||VHL||LRRK2",
+            "Compound ID": "5196",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "LRRK2"
+          }
+        ]
+      }
+    ],
+    "NAMPT": [
+      {
+        "support": [
+          {
+            "Context ID": "4510||VHL||NAMPT",
+            "Compound ID": "4510",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4693||VHL||NAMPT",
+            "Compound ID": "4693",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4518||VHL||NAMPT",
+            "Compound ID": "4518",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4521||VHL||NAMPT",
+            "Compound ID": "4521",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "3725||VHL||NAMPT",
+            "Compound ID": "3725",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4512||VHL||NAMPT",
+            "Compound ID": "4512",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4519||VHL||NAMPT",
+            "Compound ID": "4519",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4687||VHL||NAMPT",
+            "Compound ID": "4687",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4517||VHL||NAMPT",
+            "Compound ID": "4517",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4515||VHL||NAMPT",
+            "Compound ID": "4515",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4516||VHL||NAMPT",
+            "Compound ID": "4516",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4520||VHL||NAMPT",
+            "Compound ID": "4520",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "3726||VHL||NAMPT",
+            "Compound ID": "3726",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "3727||VHL||NAMPT",
+            "Compound ID": "3727",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4509||VHL||NAMPT",
+            "Compound ID": "4509",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4508||VHL||NAMPT",
+            "Compound ID": "4508",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4513||VHL||NAMPT",
+            "Compound ID": "4513",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5414||VHL||NAMPT",
+            "Compound ID": "5414",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4692||VHL||NAMPT",
+            "Compound ID": "4692",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5424||VHL||NAMPT",
+            "Compound ID": "5424",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5409||VHL||NAMPT",
+            "Compound ID": "5409",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5418||VHL||NAMPT",
+            "Compound ID": "5418",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          }
+        ]
+      }
+    ],
+    "PTPN2": [
+      {
+        "support": [
+          {
+            "Context ID": "4171||VHL||PTPN2",
+            "Compound ID": "4171",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          },
+          {
+            "Context ID": "5793||VHL||PTPN2",
+            "Compound ID": "5793",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "5796||VHL||PTPN2",
+            "Compound ID": "5796",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          },
+          {
+            "Context ID": "5795||VHL||PTPN2",
+            "Compound ID": "5795",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          },
+          {
+            "Context ID": "4168||VHL||PTPN2",
+            "Compound ID": "4168",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          },
+          {
+            "Context ID": "4164||VHL||PTPN2",
+            "Compound ID": "4164",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "PTPN2"
+          }
+        ]
+      }
+    ],
+    "SMARCA4": [
+      {
+        "support": [
+          {
+            "Context ID": "3523||VHL||SMARCA4",
+            "Compound ID": "3523",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "5027||VHL||SMARCA4",
+            "Compound ID": "5027",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "3531||VHL||SMARCA4",
+            "Compound ID": "3531",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6024||VHL||SMARCA4",
+            "Compound ID": "6024",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "2133||VHL||SMARCA4",
+            "Compound ID": "2133",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3527||VHL||SMARCA4",
+            "Compound ID": "3527",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6014||VHL||SMARCA4",
+            "Compound ID": "6014",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6015||VHL||SMARCA4",
+            "Compound ID": "6015",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6021||VHL||SMARCA4",
+            "Compound ID": "6021",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6023||VHL||SMARCA4",
+            "Compound ID": "6023",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3529||VHL||SMARCA4",
+            "Compound ID": "3529",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6022||VHL||SMARCA4",
+            "Compound ID": "6022",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6018||VHL||SMARCA4",
+            "Compound ID": "6018",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3528||VHL||SMARCA4",
+            "Compound ID": "3528",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3525||VHL||SMARCA4",
+            "Compound ID": "3525",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3524||VHL||SMARCA4",
+            "Compound ID": "3524",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3530||VHL||SMARCA4",
+            "Compound ID": "3530",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6016||VHL||SMARCA4",
+            "Compound ID": "6016",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "2132||VHL||SMARCA4",
+            "Compound ID": "2132",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "798||VHL||SMARCA4",
+            "Compound ID": "798",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "4837||VHL||SMARCA4",
+            "Compound ID": "4837",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "2134||VHL||SMARCA4",
+            "Compound ID": "2134",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3522||VHL||SMARCA4",
+            "Compound ID": "3522",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3521||VHL||SMARCA4",
+            "Compound ID": "3521",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6019||VHL||SMARCA4",
+            "Compound ID": "6019",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6017||VHL||SMARCA4",
+            "Compound ID": "6017",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6025||VHL||SMARCA4",
+            "Compound ID": "6025",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "6020||VHL||SMARCA4",
+            "Compound ID": "6020",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "2131||VHL||SMARCA4",
+            "Compound ID": "2131",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          },
+          {
+            "Context ID": "3535||VHL||SMARCA4",
+            "Compound ID": "3535",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SMARCA4"
+          }
+        ]
+      }
+    ],
+    "SOS1": [
+      {
+        "support": [
+          {
+            "Context ID": "4242||VHL||SOS1",
+            "Compound ID": "4242",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "2642||VHL||SOS1",
+            "Compound ID": "2642",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4247||VHL||SOS1",
+            "Compound ID": "4247",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "2633||VHL||SOS1",
+            "Compound ID": "2633",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "4243||VHL||SOS1",
+            "Compound ID": "4243",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "4255||VHL||SOS1",
+            "Compound ID": "4255",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "2634||VHL||SOS1",
+            "Compound ID": "2634",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          },
+          {
+            "Context ID": "4667||VHL||SOS1",
+            "Compound ID": "4667",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "SOS1"
+          }
+        ]
+      }
+    ],
+    "p38alpha": [
+      {
+        "support": [
+          {
+            "Context ID": "182||VHL||p38alpha",
+            "Compound ID": "182",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          },
+          {
+            "Context ID": "2149||VHL||p38alpha",
+            "Compound ID": "2149",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "181||VHL||p38alpha",
+            "Compound ID": "181",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          },
+          {
+            "Context ID": "185||VHL||p38alpha",
+            "Compound ID": "185",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          },
+          {
+            "Context ID": "184||VHL||p38alpha",
+            "Compound ID": "184",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          },
+          {
+            "Context ID": "4284||VHL||p38alpha",
+            "Compound ID": "4284",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          },
+          {
+            "Context ID": "2152||VHL||p38alpha",
+            "Compound ID": "2152",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "p38alpha"
+          }
+        ]
+      }
+    ]
+  }
+}

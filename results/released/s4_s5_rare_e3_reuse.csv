@@ -1,0 +1,7 @@
+ligase,method,all_query_rows,all_query_unique_cids,common_query_rows_label_agree,common_query_unique_cids_label_agree,episodes,support_rows,support_unique_cids,query_rows_in_split,query_unique_cids_in_split,support_reuse_x,query_reuse_x
+Overall,ProMeta,100,41,90,37,15,30,21,100,41,1.4285714285714286,2.4390243902439024
+FEM1B,ProMeta,6,4,5,3,3,6,4,6,4,1.5,1.5
+IAP,ProMeta,36,14,36,14,3,6,5,36,14,1.2,2.571428571428572
+MDM2,ProMeta,6,4,6,4,3,6,4,6,4,1.5,1.5
+XIAP,ProMeta,12,6,12,6,3,6,4,12,6,1.5,2.0
+cIAP1,ProMeta,40,14,31,11,3,6,5,40,14,1.2,2.857142857142857

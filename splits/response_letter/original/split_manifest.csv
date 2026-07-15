@@ -1,0 +1,13 @@
+path,split,direction,source,target,k_shot,q_query,query_setting,seed,source_examples,target_tasks_total,eligible_tasks,query_rows_total,context_col,excluded_target_rows,excluded_target_tasks,exclude_target_task_regex
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q3_seed42.json,crbn_train_vhl_test_strict_K2Q3_seed42,CRBN->VHL,CRBN,VHL,2,3,Q3,42,842,112,5,30,context_key_compound_e3_target,0,0,
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q3_seed2025.json,crbn_train_vhl_test_strict_K2Q3_seed2025,CRBN->VHL,CRBN,VHL,2,3,Q3,2025,842,112,5,30,context_key_compound_e3_target,0,0,
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q3_seed3407.json,crbn_train_vhl_test_strict_K2Q3_seed3407,CRBN->VHL,CRBN,VHL,2,3,Q3,3407,842,112,5,30,context_key_compound_e3_target,0,0,
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q5_seed42.json,crbn_train_vhl_test_strict_K2Q5_seed42,CRBN->VHL,CRBN,VHL,2,5,Q5,42,842,112,2,20,context_key_compound_e3_target,0,0,
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q5_seed2025.json,crbn_train_vhl_test_strict_K2Q5_seed2025,CRBN->VHL,CRBN,VHL,2,5,Q5,2025,842,112,2,20,context_key_compound_e3_target,0,0,
+splits/response_letter/original/crbn_train_vhl_test_strict_K2Q5_seed3407.json,crbn_train_vhl_test_strict_K2Q5_seed3407,CRBN->VHL,CRBN,VHL,2,5,Q5,3407,842,112,2,20,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q3_seed42.json,vhl_train_crbn_test_strict_K2Q3_seed42,VHL->CRBN,VHL,CRBN,2,3,Q3,42,544,190,9,54,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q3_seed2025.json,vhl_train_crbn_test_strict_K2Q3_seed2025,VHL->CRBN,VHL,CRBN,2,3,Q3,2025,544,190,9,54,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q3_seed3407.json,vhl_train_crbn_test_strict_K2Q3_seed3407,VHL->CRBN,VHL,CRBN,2,3,Q3,3407,544,190,9,54,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q5_seed42.json,vhl_train_crbn_test_strict_K2Q5_seed42,VHL->CRBN,VHL,CRBN,2,5,Q5,42,544,190,6,60,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q5_seed2025.json,vhl_train_crbn_test_strict_K2Q5_seed2025,VHL->CRBN,VHL,CRBN,2,5,Q5,2025,544,190,6,60,context_key_compound_e3_target,0,0,
+splits/response_letter/original/vhl_train_crbn_test_strict_K2Q5_seed3407.json,vhl_train_crbn_test_strict_K2Q5_seed3407,VHL->CRBN,VHL,CRBN,2,5,Q5,3407,544,190,6,60,context_key_compound_e3_target,0,0,

@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "encoder_state_dict",
+  "checkpoint_sha256": "e1871d2efd39713828f24775cd605fee5f4d1690176070a43e9b068fde7d0a4f",
+  "experiment_id": "s4_s5_rare_e3",
+  "notes": "Per-ligase common-query metrics are rebuilt from released predictions",
+  "response_table": "S4-S5",
+  "seed": 3407,
+  "source_checkpoint": "checkpoints/prometa_global/protonet_encoder_seed3407.pt",
+  "source_sha256": "e1871d2efd39713828f24775cd605fee5f4d1690176070a43e9b068fde7d0a4f",
+  "variant": "ProMeta"
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "encoder_state_dict",
+  "checkpoint_sha256": "1f3e6b4e092e7540814693e5a802deee2e054b525408b7c5cbc9e0b6d90b0efd",
+  "experiment_id": "s9_vhl_crbn_k2all",
+  "notes": "Rebuilt BCR-ABL-excluded all-remaining split with the corresponding K/Q checkpoint",
+  "response_table": "S9",
+  "seed": 2025,
+  "source_checkpoint": "checkpoints/prometa/VHL_to_CRBN_K2Q0_all_remaining/protonet_encoder_seed2025.pt",
+  "source_sha256": "1f3e6b4e092e7540814693e5a802deee2e054b525408b7c5cbc9e0b6d90b0efd",
+  "variant": "ProMeta"
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "encoder_state_dict",
+  "checkpoint_sha256": "f79a7834995f80c570aaf703b86b596af83ba8b973fb2d2aef4fc37a3eea173a",
+  "experiment_id": "s6_vhl_crbn_k2q3_linear",
+  "notes": "Support-trained linear head using the corresponding K/Q-specific ProMeta checkpoint",
+  "response_table": "S6",
+  "seed": 42,
+  "source_checkpoint": "checkpoints/prometa/VHL_to_CRBN_K2Q3/protonet_encoder_seed42.pt",
+  "source_sha256": "f79a7834995f80c570aaf703b86b596af83ba8b973fb2d2aef4fc37a3eea173a",
+  "variant": "ProMeta + linear head"
+}

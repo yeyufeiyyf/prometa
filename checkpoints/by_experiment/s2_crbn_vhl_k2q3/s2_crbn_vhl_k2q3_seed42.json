@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "encoder_state_dict",
+  "checkpoint_sha256": "f06f1e9dddc8337d69174a265b1a4c3286bb49ce5c97e1a9c63a3c1b8de5ed9a",
+  "experiment_id": "s2_crbn_vhl_k2q3",
+  "notes": "Sequence-context label-agree intersection",
+  "response_table": "S2",
+  "seed": 42,
+  "source_checkpoint": "checkpoints/prometa_intersection/prometa_CRBN_to_VHL_seed42.pt",
+  "source_sha256": "f06f1e9dddc8337d69174a265b1a4c3286bb49ce5c97e1a9c63a3c1b8de5ed9a",
+  "variant": "ProMeta intersection-trained"
+}

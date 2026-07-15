@@ -1,0 +1,24 @@
+{
+  "meta_train": {},
+  "meta_val": {},
+  "meta_test": {
+    "__ALL_TARGETS__": [
+      {
+        "support": [
+          "1111__CRBN__HMGCR__P04035",
+          "2942__CRBN__FLT3_ITD__P36888",
+          "2076__CRBN__BTK__Q06187",
+          "1235__CRBN__FLT3__P36888"
+        ],
+        "query": [
+          "384__CRBN__CDK6__Q00534",
+          "1595__CRBN__PDEDELTA__O43924",
+          "146__CRBN__BRD4__O60885",
+          "2523__CRBN__AR__P10275",
+          "2912__CRBN__MIF__P14174",
+          "282__CRBN__BTK__Q06187"
+        ]
+      }
+    ]
+  }
+}

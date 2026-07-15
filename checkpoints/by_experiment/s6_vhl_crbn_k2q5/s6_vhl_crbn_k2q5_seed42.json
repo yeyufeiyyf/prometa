@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "encoder_state_dict",
+  "checkpoint_sha256": "ff3847967ac6874d32b759e80cae7d1ae6af4028c4f9b57bcfc897fd51434f3b",
+  "experiment_id": "s6_vhl_crbn_k2q5",
+  "notes": "Original split including BCR-ABL-family tasks",
+  "response_table": "S6",
+  "seed": 42,
+  "source_checkpoint": "checkpoints/prometa_global/protonet_encoder_seed42.pt",
+  "source_sha256": "ff3847967ac6874d32b759e80cae7d1ae6af4028c4f9b57bcfc897fd51434f3b",
+  "variant": "ProMeta"
+}

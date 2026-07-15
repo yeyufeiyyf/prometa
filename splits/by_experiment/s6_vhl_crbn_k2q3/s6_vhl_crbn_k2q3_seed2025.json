@@ -1,0 +1,724 @@
+{
+  "meta": {
+    "split": "vhl_train_crbn_test_strict_K2Q3_seed2025",
+    "direction": "VHL->CRBN",
+    "source": "VHL",
+    "target": "CRBN",
+    "k_shot": 2,
+    "q_query": 3,
+    "query_setting": "Q3",
+    "seed": 2025,
+    "source_examples": 544,
+    "target_tasks_total": 190,
+    "eligible_tasks": 9,
+    "query_rows_total": 54,
+    "context_col": "context_key_compound_e3_target",
+    "excluded_target_rows": 0,
+    "excluded_target_tasks": 0,
+    "exclude_target_task_regex": ""
+  },
+  "meta_test": {
+    "AR": [
+      {
+        "support": [
+          {
+            "Context ID": "2526||CRBN||AR",
+            "Compound ID": "2526",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "2499||CRBN||AR",
+            "Compound ID": "2499",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "3482||CRBN||AR",
+            "Compound ID": "3482",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "3063||CRBN||AR",
+            "Compound ID": "3063",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2523||CRBN||AR",
+            "Compound ID": "2523",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "2522||CRBN||AR",
+            "Compound ID": "2522",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "1561||CRBN||AR",
+            "Compound ID": "1561",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "2306||CRBN||AR",
+            "Compound ID": "2306",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "3340||CRBN||AR",
+            "Compound ID": "3340",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          },
+          {
+            "Context ID": "3689||CRBN||AR",
+            "Compound ID": "3689",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "AR"
+          }
+        ]
+      }
+    ],
+    "BCL-xL": [
+      {
+        "support": [
+          {
+            "Context ID": "670||CRBN||BCL-xL",
+            "Compound ID": "670",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "657||CRBN||BCL-xL",
+            "Compound ID": "657",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "649||CRBN||BCL-xL",
+            "Compound ID": "649",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "655||CRBN||BCL-xL",
+            "Compound ID": "655",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4694||CRBN||BCL-xL",
+            "Compound ID": "4694",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "664||CRBN||BCL-xL",
+            "Compound ID": "664",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "1360||CRBN||BCL-xL",
+            "Compound ID": "1360",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "656||CRBN||BCL-xL",
+            "Compound ID": "656",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "652||CRBN||BCL-xL",
+            "Compound ID": "652",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          },
+          {
+            "Context ID": "716||CRBN||BCL-xL",
+            "Compound ID": "716",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCL-xL"
+          }
+        ]
+      }
+    ],
+    "BCR-ABL": [
+      {
+        "support": [
+          {
+            "Context ID": "1621||CRBN||BCR-ABL",
+            "Compound ID": "1621",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "2705||CRBN||BCR-ABL",
+            "Compound ID": "2705",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "1605||CRBN||BCR-ABL",
+            "Compound ID": "1605",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "316||CRBN||BCR-ABL",
+            "Compound ID": "316",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "2708||CRBN||BCR-ABL",
+            "Compound ID": "2708",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "4934||CRBN||BCR-ABL",
+            "Compound ID": "4934",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "2710||CRBN||BCR-ABL",
+            "Compound ID": "2710",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "4924||CRBN||BCR-ABL",
+            "Compound ID": "4924",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "4905||CRBN||BCR-ABL",
+            "Compound ID": "4905",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          },
+          {
+            "Context ID": "404||CRBN||BCR-ABL",
+            "Compound ID": "404",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BCR-ABL"
+          }
+        ]
+      }
+    ],
+    "BRD4": [
+      {
+        "support": [
+          {
+            "Context ID": "2898||CRBN||BRD4",
+            "Compound ID": "2898",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4868||CRBN||BRD4",
+            "Compound ID": "4868",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "786||CRBN||BRD4",
+            "Compound ID": "786",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4466||CRBN||BRD4",
+            "Compound ID": "4466",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "5944||CRBN||BRD4",
+            "Compound ID": "5944",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "5956||CRBN||BRD4",
+            "Compound ID": "5956",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "5945||CRBN||BRD4",
+            "Compound ID": "5945",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "4866||CRBN||BRD4",
+            "Compound ID": "4866",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "2694||CRBN||BRD4",
+            "Compound ID": "2694",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          },
+          {
+            "Context ID": "146||CRBN||BRD4",
+            "Compound ID": "146",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BRD4"
+          }
+        ]
+      }
+    ],
+    "BTK": [
+      {
+        "support": [
+          {
+            "Context ID": "1385||CRBN||BTK",
+            "Compound ID": "1385",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "3553||CRBN||BTK",
+            "Compound ID": "3553",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "5537||CRBN||BTK",
+            "Compound ID": "5537",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "3901||CRBN||BTK",
+            "Compound ID": "3901",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "281||CRBN||BTK",
+            "Compound ID": "281",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "3999||CRBN||BTK",
+            "Compound ID": "3999",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "3085||CRBN||BTK",
+            "Compound ID": "3085",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "3996||CRBN||BTK",
+            "Compound ID": "3996",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "2830||CRBN||BTK",
+            "Compound ID": "2830",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          },
+          {
+            "Context ID": "5532||CRBN||BTK",
+            "Compound ID": "5532",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "BTK"
+          }
+        ]
+      }
+    ],
+    "CDK4": [
+      {
+        "support": [
+          {
+            "Context ID": "719||CRBN||CDK4",
+            "Compound ID": "719",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "5190||CRBN||CDK4",
+            "Compound ID": "5190",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "2027||CRBN||CDK4",
+            "Compound ID": "2027",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "380||CRBN||CDK4",
+            "Compound ID": "380",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "746||CRBN||CDK4",
+            "Compound ID": "746",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "721||CRBN||CDK4",
+            "Compound ID": "721",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "701||CRBN||CDK4",
+            "Compound ID": "701",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "3785||CRBN||CDK4",
+            "Compound ID": "3785",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "384||CRBN||CDK4",
+            "Compound ID": "384",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          },
+          {
+            "Context ID": "1955||CRBN||CDK4",
+            "Compound ID": "1955",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK4"
+          }
+        ]
+      }
+    ],
+    "CDK6": [
+      {
+        "support": [
+          {
+            "Context ID": "387||CRBN||CDK6",
+            "Compound ID": "387",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "381||CRBN||CDK6",
+            "Compound ID": "381",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "378||CRBN||CDK6",
+            "Compound ID": "378",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "2190||CRBN||CDK6",
+            "Compound ID": "2190",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "719||CRBN||CDK6",
+            "Compound ID": "719",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "384||CRBN||CDK6",
+            "Compound ID": "384",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "385||CRBN||CDK6",
+            "Compound ID": "385",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "1960||CRBN||CDK6",
+            "Compound ID": "1960",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "3792||CRBN||CDK6",
+            "Compound ID": "3792",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          },
+          {
+            "Context ID": "1961||CRBN||CDK6",
+            "Compound ID": "1961",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK6"
+          }
+        ]
+      }
+    ],
+    "CDK9": [
+      {
+        "support": [
+          {
+            "Context ID": "4075||CRBN||CDK9",
+            "Compound ID": "4075",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "3572||CRBN||CDK9",
+            "Compound ID": "3572",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "799||CRBN||CDK9",
+            "Compound ID": "799",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "615||CRBN||CDK9",
+            "Compound ID": "615",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "3574||CRBN||CDK9",
+            "Compound ID": "3574",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "3569||CRBN||CDK9",
+            "Compound ID": "3569",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "610||CRBN||CDK9",
+            "Compound ID": "610",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "4072||CRBN||CDK9",
+            "Compound ID": "4072",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "2140||CRBN||CDK9",
+            "Compound ID": "2140",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          },
+          {
+            "Context ID": "4079||CRBN||CDK9",
+            "Compound ID": "4079",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "CDK9"
+          }
+        ]
+      }
+    ],
+    "HDAC6": [
+      {
+        "support": [
+          {
+            "Context ID": "227||CRBN||HDAC6",
+            "Compound ID": "227",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "1008||CRBN||HDAC6",
+            "Compound ID": "1008",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "3229||CRBN||HDAC6",
+            "Compound ID": "3229",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "3224||CRBN||HDAC6",
+            "Compound ID": "3224",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "1154||CRBN||HDAC6",
+            "Compound ID": "1154",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "3565||CRBN||HDAC6",
+            "Compound ID": "3565",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "723||CRBN||HDAC6",
+            "Compound ID": "723",
+            "Label_bin": 1,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "3233||CRBN||HDAC6",
+            "Compound ID": "3233",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "226||CRBN||HDAC6",
+            "Compound ID": "226",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          },
+          {
+            "Context ID": "3230||CRBN||HDAC6",
+            "Compound ID": "3230",
+            "Label_bin": 0,
+            "E3 ligase": "CRBN",
+            "Task": "HDAC6"
+          }
+        ]
+      }
+    ]
+  }
+}

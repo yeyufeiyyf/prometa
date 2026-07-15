@@ -1,277 +1,243 @@
 # ProMeta
 
-**Few-shot PROTAC-targeted degradation prediction across E3 ligases**
+Few-shot PROTAC-targeted degradation prediction across E3 ligases.
 
-> *Bioinformatics*, 2026 | [Paper](#) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19647767.svg)](https://doi.org/10.5281/zenodo.19647767)
+[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21371599.svg)](https://doi.org/10.5281/zenodo.21371599)
 
-**Authors:** Yuansheng Liu<sup>1,2</sup>, Yufei Ye<sup>1,2</sup>, Tao Tang<sup>3</sup>, Jiawei Luo<sup>1,2</sup>, Wen Tao<sup>4,\*</sup>, Xiao Luo<sup>5,\*</sup>
-
----
-
-## Overview
-
-ProMeta is a prototype-based meta-learning framework for cross-ligase PROTAC degradation activity prediction. It combines a GCN molecular encoder with a lightweight protein sequence encoder, fusing POI and E3 ligase sequence information via learnable weights for improved generalization to unseen E3 ligases.
-
-**Key features:**
-- Requires only SMILES strings and protein sequences as input — no structural data needed
-- Episodic meta-training on CRBN compounds enables few-shot transfer to unseen E3 ligases
-- Non-parametric prototype classification: no parameter updates at inference time
-- Learnable sequence fusion: `z = z_mol + α_poi · z_poi + α_e3 · z_e3`
-- Outperforms PROTAC-STAN and DegradeMaster on cross-ligase transfer benchmarks
+ProMeta learns a molecular representation from a source E3 ligase and performs
+held-out target-ligase prediction by constructing active/inactive prototypes
+from a small labeled support set. This public release contains only ProMeta,
+ProMeta component variants, and the data needed to reproduce their reported
+performance. Results from other prediction methods are deliberately excluded.
 
 <p align="center">
-  <img src="model_frame.png" width="800"/>
-  <br>
-  <em>Overview of the ProMeta framework. The GCN encoder is meta-trained on CRBN episodes alongside a ProteinEncoder for POI and E3 sequences, and directly transferred to unseen E3 ligases at inference time via prototype-based classification.</em>
+  <img src="figures/model_framework.png" width="820" alt="ProMeta framework"/>
 </p>
 
----
+## Release contents
 
-## Repository Structure
+- `prometa/`: model, data loading, training, prototype inference, metrics, and
+  the RDKit-3D descriptor control.
+- `experiments/`: split builders, training/evaluation entry points, experiment
+  registry, and response-letter consistency checks.
+- `data/`: the 1,386-context strict CRBN/VHL table, the full labeled context
+  table used for rare-E3 evaluation, graph cache, intersection table, and 3D
+  descriptor cache.
+- `splits/response_letter/`: retained source support/query split profiles.
+- `splits/by_experiment/`: one explicitly named split directory for every
+  reported experiment; R9/VZ185 directories contain clearly marked frozen
+  cohorts because no standalone historical support/query split was retained.
+- `checkpoints/by_experiment/`: one explicitly named checkpoint artifact for
+  every reported ProMeta experiment. Encoder-backed experiments contain
+  byte-identical encoder copies; historical audits without a complete retained
+  model/input pair contain frozen prediction checkpoints.
+- `results/released/`: ProMeta-only query predictions and summaries reported in
+  the response letter.
 
-```
-ProMeta/
-├── train.py          # Meta-training entry point
-├── predict.py        # Evaluation entry point
-├── models.py         # GCNEncoder and ProteinEncoder definitions
-├── data.py           # Graph construction, protein index, episode sampling
-├── utils.py          # Metrics (AUROC, AUPRC, F1, …) and seed utilities
-├── requirements.txt  # Python dependencies
-└── splits/           # Pre-generated episodic split JSON files
-```
+The strict CRBN/VHL table contains 1,386 unique compound--E3--target contexts:
+842 CRBN and 544 VHL, with 690 positive and 696 negative labels.
 
----
+## Response-letter experiment map
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-repo/ProMeta.git
-cd ProMeta
-
-# Create a conda environment (recommended)
-conda create -n prometa python=3.9 -y
-conda activate prometa
-
-# Install PyTorch (adjust CUDA version as needed)
-pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.0 \
-    --index-url https://download.pytorch.org/whl/cu118
-
-# Install PyTorch Geometric
-pip install torch-geometric==2.3.0
-
-# Install remaining dependencies
-pip install -r requirements.txt
-```
-
----
-
-## Data Preparation
-
-All processed data files and episodic splits are available on Zenodo:
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19647767.svg)](https://doi.org/10.5281/zenodo.19647767)
-
-```bash
-# Download via zenodo_get (recommended)
-pip install zenodo_get
-zenodo_get 10.5281/zenodo.19647767
-
-# Or download manually from:
-# https://doi.org/10.5281/zenodo.19647767
-```
-
-Place the downloaded files in the project root:
-
-```
-protac_filtered_balanced.csv   # Preprocessed and balanced PROTAC dataset
-protac.sdf                     # Molecular structures in SDF format
-protac_with_seq.csv            # Protein sequences (POI_seq and E3_seq columns)
-splits/                        # Episodic split JSON files
-```
-
-`protac_with_seq.csv` must contain at minimum the columns `Compound ID`, `POI_seq`, and `E3_seq`. Rows with missing sequences are skipped gracefully, falling back to molecule-only embeddings.
-
-> The raw PROTAC-DB source is also available at [https://protacdb.com](https://protacdb.com). Our preprocessed and balanced version is provided on Zenodo.
-
-The split files follow the naming convention:
-```
-splits/crbn_vhl_K2Q3_seed{42,2025,3407}.json           # CRBN→VHL, K=2 Q=3
-splits/crbn_vhl_K2Q5_bootstrap_seed{42,2025,3407}.json  # CRBN→VHL, K=2 Q=5†
-splits/crbn_rareE3_K1Q1_seed{42,2025,3407}.json         # Rare E3, K=1 Q=1
-splits/crbn_rareE3_K2Q2_seed{42,2025,3407}.json         # Rare E3, K=2 Q=2
-```
-
----
-
-## Usage
-
-Training and evaluation are split into two scripts. Run `train.py` first to meta-train and save encoder checkpoints, then `predict.py` to evaluate on the held-out split.
-
-### ProMeta — CRBN → VHL benchmark (K=2, Q=3)
-
-```bash
-for seed in 42 2025 3407; do
-    python train.py \
-        --csv      protac_filtered_balanced.csv \
-        --sdf      protac.sdf \
-        --split    splits/crbn_vhl_K2Q3_seed${seed}.json \
-        --seq-csv  protac_with_seq.csv \
-        --seed     ${seed} \
-        --device   cuda \
-        --outdir   results/vhl_K2Q3_seed${seed}
-
-    python predict.py \
-        --csv         protac_filtered_balanced.csv \
-        --sdf         protac.sdf \
-        --split       splits/crbn_vhl_K2Q3_seed${seed}.json \
-        --seq-csv     protac_with_seq.csv \
-        --encoder     results/vhl_K2Q3_seed${seed}/encoder_seed${seed}.pt \
-        --poi-encoder results/vhl_K2Q3_seed${seed}/poi_encoder_seed${seed}.pt \
-        --e3-encoder  results/vhl_K2Q3_seed${seed}/e3_encoder_seed${seed}.pt \
-        --seed        ${seed} \
-        --device      cuda \
-        --outdir      results/vhl_K2Q3_seed${seed}
-done
-```
-
-### ProMeta — CRBN → VHL benchmark (K=2, Q=5†, bootstrap)
-
-```bash
-for seed in 42 2025 3407; do
-    python train.py \
-        --csv      protac_filtered_balanced.csv \
-        --sdf      protac.sdf \
-        --split    splits/crbn_vhl_K2Q5_bootstrap_seed${seed}.json \
-        --seq-csv  protac_with_seq.csv \
-        --meta-q   5 \
-        --seed     ${seed} \
-        --device   cuda \
-        --outdir   results/vhl_K2Q5_seed${seed}
-
-    python predict.py \
-        --csv         protac_filtered_balanced.csv \
-        --sdf         protac.sdf \
-        --split       splits/crbn_vhl_K2Q5_bootstrap_seed${seed}.json \
-        --seq-csv     protac_with_seq.csv \
-        --encoder     results/vhl_K2Q5_seed${seed}/encoder_seed${seed}.pt \
-        --poi-encoder results/vhl_K2Q5_seed${seed}/poi_encoder_seed${seed}.pt \
-        --e3-encoder  results/vhl_K2Q5_seed${seed}/e3_encoder_seed${seed}.pt \
-        --seed        ${seed} \
-        --device      cuda \
-        --outdir      results/vhl_K2Q5_seed${seed}
-done
-```
-
-### ProMeta — Rare E3 ligase benchmark (one-shot, K=1 Q=1)
-
-```bash
-for seed in 42 2025 3407; do
-    python train.py \
-        --csv        protac_filtered_balanced.csv \
-        --sdf        protac.sdf \
-        --split      splits/crbn_rareE3_K1Q1_seed${seed}.json \
-        --seq-csv    protac_with_seq.csv \
-        --exclude-e3 rare \
-        --meta-k     1 --meta-q 1 \
-        --seed       ${seed} \
-        --device     cuda \
-        --outdir     results/rareE3_K1Q1_seed${seed}
-
-    python predict.py \
-        --csv         protac_filtered_balanced.csv \
-        --sdf         protac.sdf \
-        --split       splits/crbn_rareE3_K1Q1_seed${seed}.json \
-        --seq-csv     protac_with_seq.csv \
-        --encoder     results/rareE3_K1Q1_seed${seed}/encoder_seed${seed}.pt \
-        --poi-encoder results/rareE3_K1Q1_seed${seed}/poi_encoder_seed${seed}.pt \
-        --e3-encoder  results/rareE3_K1Q1_seed${seed}/e3_encoder_seed${seed}.pt \
-        --meta-k      1 --meta-q 1 \
-        --seed        ${seed} \
-        --device      cuda \
-        --outdir      results/rareE3_K1Q1_seed${seed}
-done
-```
-
-### Aggregate Results Across Seeds
-
-```python
-import pandas as pd
-import numpy as np
-
-seeds   = [42, 2025, 3407]
-metrics = ["AUROC", "AUPRC", "Accuracy", "F1", "BALACC"]
-
-data = {m: [] for m in metrics}
-for seed in seeds:
-    df = pd.read_csv(f"results/vhl_K2Q3_seed{seed}/summary_seed{seed}.csv")
-    for m in metrics:
-        data[m].append(df[m].values[0])
-
-for m in metrics:
-    print(f"{m}: {np.mean(data[m]):.3f} ± {np.std(data[m]):.3f}")
-```
-
-> **Note:** After training, three checkpoints are saved per seed: `encoder_seed{N}.pt`, `poi_encoder_seed{N}.pt`, and `e3_encoder_seed{N}.pt`. The learned fusion weights α\_poi and α\_e3 are printed at the end of training.
-
----
-
-## Key Hyperparameters
-
-**`train.py`**
-
-| Argument | Default | Description |
+| Table | ProMeta experiment | Public entry point |
 |---|---|---|
-| `--meta-epochs` | 100 | Number of meta-training epochs |
-| `--episodes-per-epoch` | 100 | Episodes sampled per epoch |
-| `--meta-k` | 2 | Support samples per class |
-| `--meta-q` | 3 | Query samples per class |
-| `--encoder-hidden` | 128 | GCN hidden dimension |
-| `--encoder-layers` | 3 | Number of GCN layers |
-| `--meta-lr` | 1e-3 | Adam learning rate |
-| `--seq-csv` | — | CSV with `POI_seq` and `E3_seq` columns (enables protein fusion) |
-| `--prot-embed-dim` | 64 | Amino acid embedding dimension |
-| `--prot-max-len` | 2000 | Max sequence length (truncated beyond this) |
-| `--exclude-e3` | `VHL` | E3 ligase(s) held out as test set; use `rare` for rare E3 benchmark |
+| S2 | Shared-intersection, bidirectional K=2 evaluation | `evaluate_prometa.py` |
+| S3 | Bidirectional CRBN/VHL fixed-query evaluation | `evaluate_prometa.py` |
+| S4--S5 | Rare-E3 common-query evaluation and audit | `evaluate_prometa.py`, `summarize_rare_e3.py` |
+| S6 | Prototype versus support-trained linear head | `evaluate_prometa.py` |
+| S7 | ProMeta, linear-head, and no-episodic variants | `train_prometa.py`, released predictions |
+| S8 | ProMeta plus RDKit conformer descriptors | `evaluate_prometa_3d.py` |
+| S9 | K/Q and all-remaining-query sensitivity | `evaluate_prometa.py` |
+| R9 case families | CDK6 and BCL-xL series with the main S3 checkpoint | released compound predictions |
+| VZ185 | Retrospective 12-compound correctness audit | released compound audit |
 
+`experiments/response_letter_experiments.csv` records each split profile,
+retained source-checkpoint family, head, K/Q setting, and data table. The
+direct run-time paths are in `experiment_checkpoint_manifest.csv`. In
+particular:
 
-## Results
+- S3 K=2,Q=3 and the S9 analyses use the BCR--ABL-excluded profile where stated
+  in the response letter.
+- S3 K=2,Q=5 and S6 use the original fixed-query profile.
+- S9 K=2 all-remaining-query uses its corresponding K/Q-specific checkpoint.
+- S6 linear-head rows use the corresponding K/Q-specific ProMeta checkpoint;
+  prototype rows use the recovered global checkpoint.
+- Rare-E3 S4 metrics pool the 90 episode-level common-query rows, rather than
+  averaging one metric value per seed.
 
-### CRBN → VHL Transfer Benchmark
+`experiments/experiment_checkpoint_manifest.csv` and
+`experiments/experiment_split_manifest.csv` map every reported experiment and
+seed to its dedicated checkpoint and split paths and record source/copy
+SHA-256 hashes.
+
+## Environment
+
+Create the recorded environment:
+
+```bash
+conda env create -f environment.yml
+conda activate prometa
+```
+
+For a CPU-oriented pip installation, the equivalent direct dependencies are
+also listed in `requirements.txt`:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+All evaluation commands also run on CPU by passing `--device cpu`.
+
+## One-command reproduction
+
+From the repository root, the following command verifies the downloaded
+files, recomputes every public ProMeta experiment, and runs the numerical
+audits:
+
+```bash
+bash run_all_experiments.sh
+```
+
+Set `DEVICE=cuda` to use a CUDA device. Fresh results are written only under
+`results/recomputed/`; the immutable references remain under
+`results/released/`.
+
+## Rebuild the frozen splits
+
+The builders are deterministic and use seeds 42, 2025, and 3407:
+
+```bash
+python experiments/build_response_splits.py --profile all
+python experiments/build_rare_common_query_splits.py
+python experiments/materialize_experiment_splits.py --force
+```
+
+## Reproduce ProMeta performance
+
+The upload directory already contains all dedicated checkpoints and splits.
+To rebuild them from the retained source artifacts, run:
+
+```bash
+python experiments/materialize_experiment_checkpoints.py --force
+python experiments/materialize_experiment_splits.py --force
+```
+
+Re-evaluate all checkpoint-backed rows in S2, S3, S4--S6, and S9:
+
+```bash
+python experiments/evaluate_prometa.py --device cpu
+```
+
+This writes one directory per experiment under `results/recomputed/`. Pool the
+rare-E3 common-query predictions exactly as in S4:
+
+```bash
+python experiments/summarize_rare_e3.py
+```
+
+Reproduce the ProMeta/RDKit-3D rows in S8:
+
+```bash
+python experiments/evaluate_prometa_3d.py --device cpu
+```
+
+Recompute the exact S7, compound-family, and legacy VZ185 values from their
+dedicated frozen-prediction checkpoints:
+
+```bash
+python experiments/evaluate_frozen_checkpoints.py
+```
+
+Verify that every dedicated artifact exists, is stored under the correct
+experiment ID, and matches its recorded source/checkpoint SHA-256:
+
+```bash
+python experiments/verify_experiment_checkpoints.py
+python experiments/verify_experiment_splits.py
+```
+
+Verify the integrity of the complete downloaded release:
+
+```bash
+python scripts/verify_release_checksums.py
+```
+
+Train a ProMeta encoder from source-ligase data (see `--help` for episodic and
+non-episodic modes):
+
+```bash
+python experiments/train_prometa.py --source-e3 CRBN --mode episodic --device cpu \
+  --output checkpoints/new/prometa_crbn_seed42.pt
+```
+
+Finally, audit every released rounded value and confirm that no result table
+contains a non-ProMeta method:
+
+```bash
+python experiments/verify_response_letter.py
+```
+
+The expected successful result is `230` table checks, `21` scope checks, and
+zero failures.
+
+## Main ProMeta-only figures
 
 <p align="center">
-  <img src="radar_K2Q3.png" width="400"/>
-  <img src="radar_K2Q5.png" width="400"/>
-  <br>
-  <em>Radar chart comparison on the CRBN→VHL benchmark (K=2, Q=3) and (K=2, Q=5†).</em>
+  <img src="figures/bidirectional_prometa_only_bar.png" width="720" alt="Bidirectional CRBN/VHL ProMeta performance"/>
 </p>
-
-### Rare E3 Ligase Benchmark
 
 <p align="center">
-  <img src="rare_e3_bar.png" width="400"/>
-  <br>
-  <em>Bar chart comparison on the rare E3 ligase benchmark.</em>
+  <img src="figures/rare_e3_prometa_only_bar.png" width="720" alt="Rare-E3 ProMeta performance"/>
 </p>
 
-### Case Study
+## VZ185 provenance
 
-<p align="center">
-  <img src="casepic.png" width="800"/>
-</p>
+The response letter reports 11/12 correct predictions (91.7%) for the legacy
+Excel-order VZ185 cohort. The released audit preserves that exact 12-row order.
+Because the historical sheet did not contain stable compound identifiers or
+calibrated ProMeta probabilities, this release treats the result as a frozen
+retrospective correctness audit rather than a newly reconstructed probability
+benchmark.
 
----
+Reproduce this case-study result directly from the repository root:
+
+```bash
+python case.py
+```
+
+The command verifies the expected 11/12 result and writes compound-level
+predictions and a summary under `results/recomputed/vz185_case/`.
+
+## Case-study checkpoint provenance
+
+The full checkpoint audit evaluated the CDK6, NAMPT, BTK, and BCL-xL series
+with the same main full-data checkpoint family used in S3:
+`checkpoints/prometa_global/protonet_encoder_seed{seed}.pt`. Compound
+membership and each family's original support/query split were held fixed, and
+each split was paired with the checkpoint from the same seed. The resulting
+correct-classification counts are 11/14, 6/12, 6/10, and 6/6, respectively.
+Response-letter Table R9 reports only the CDK6 and BCL-xL series (11/14 and
+6/6 correct classifications, respectively); the other two series remain in
+the released audit files for provenance.
+`results/released/four_family_main_checkpoint_compound_predictions.csv`
+provides the experimental annotations, compound-level probabilities, binary
+predictions, and correctness indicators; the companion summary provides the
+family-level metrics.
+
+## Build the ProMeta-only upload directory
+
+The development worktree may contain historical manuscript and revision files.
+Do not upload it wholesale. Build a clean, checksum-audited release directory:
+
+```bash
+python scripts/export_prometa_release.py --force
+```
+
+Upload `dist/ProMeta/`. The exporter validates that every public result row is
+a ProMeta method or ProMeta variant and excludes all historical baseline
+artifacts.
 
 ## Citation
 
-If you use ProMeta in your research, please cite our paper (citation will be updated upon publication):
-
-> Yuansheng Liu, Yufei Ye, Tao Tang, Jiawei Luo, Wen Tao, Xiao Luo.
-> *ProMeta: Few-shot PROTAC-targeted degradation prediction across E3 ligases.*
-> Manuscript in preparation, 2026.
-
----
-
-## License
-
-This project is licensed under the MIT License.
+If you use ProMeta or these revision experiments, please cite the associated
+paper and archived code/data release.

@@ -1,0 +1,28 @@
+{
+  "meta_train": {},
+  "meta_val": {},
+  "meta_test": {
+    "__ALL_TARGETS__": [
+      {
+        "support": [
+          "746__CRBN__CDK6__Q00534",
+          "2528__CRBN__AR__P10275",
+          "455__CRBN__MEK1__Q02750",
+          "1850__CRBN__CD147__P35613"
+        ],
+        "query": [
+          "2666__CRBN__TYR__P14679",
+          "719__CRBN__CDK4__P11802",
+          "146__CRBN__BRD4__O60885",
+          "412__CRBN__BRD2__P25440",
+          "387__CRBN__CDK6__Q00534",
+          "2748__CRBN__GSK_3BETA__P49841",
+          "2761__CRBN__GSK3A__P49840",
+          "3093__CRBN__BTK__Q06187",
+          "772__CRBN__JAK2__O60674",
+          "746__CRBN__CDK4__P11802"
+        ]
+      }
+    ]
+  }
+}

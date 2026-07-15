@@ -1,0 +1,28 @@
+{
+  "meta_train": {},
+  "meta_val": {},
+  "meta_test": {
+    "__ALL_TARGETS__": [
+      {
+        "support": [
+          "528__VHL__ALK__Q9UM73",
+          "2613__VHL__EGFR_E19D__P00533",
+          "920__VHL__ER__P03372",
+          "183__VHL__P38DELTA__O15264"
+        ],
+        "query": [
+          "3216__VHL__BCL2__P10415",
+          "2432__VHL__HDAC2__Q92769",
+          "94__VHL__AR__P10275",
+          "2633__VHL__SOS1__Q07889",
+          "1472__VHL__ER__P03372",
+          "335__VHL__BRD3__Q15059",
+          "2892__VHL__FAK__Q05397",
+          "2623__VHL__EGFR_L858R_T790M__P00533",
+          "2343__VHL__BRD2__P25440",
+          "741__VHL__CDK6__Q00534"
+        ]
+      }
+    ]
+  }
+}

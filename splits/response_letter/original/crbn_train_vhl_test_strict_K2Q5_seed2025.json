@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "split": "crbn_train_vhl_test_strict_K2Q5_seed2025",
+    "direction": "CRBN->VHL",
+    "source": "CRBN",
+    "target": "VHL",
+    "k_shot": 2,
+    "q_query": 5,
+    "query_setting": "Q5",
+    "seed": 2025,
+    "source_examples": 842,
+    "target_tasks_total": 112,
+    "eligible_tasks": 2,
+    "query_rows_total": 20,
+    "context_col": "context_key_compound_e3_target",
+    "excluded_target_rows": 0,
+    "excluded_target_tasks": 0,
+    "exclude_target_task_regex": ""
+  },
+  "meta_test": {
+    "ER": [
+      {
+        "support": [
+          {
+            "Context ID": "1469||VHL||ER",
+            "Compound ID": "1469",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1470||VHL||ER",
+            "Compound ID": "1470",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "888||VHL||ER",
+            "Compound ID": "888",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "881||VHL||ER",
+            "Compound ID": "881",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "920||VHL||ER",
+            "Compound ID": "920",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1467||VHL||ER",
+            "Compound ID": "1467",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1468||VHL||ER",
+            "Compound ID": "1468",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1471||VHL||ER",
+            "Compound ID": "1471",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "1472||VHL||ER",
+            "Compound ID": "1472",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "869||VHL||ER",
+            "Compound ID": "869",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "892||VHL||ER",
+            "Compound ID": "892",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "866||VHL||ER",
+            "Compound ID": "866",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "916||VHL||ER",
+            "Compound ID": "916",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          },
+          {
+            "Context ID": "863||VHL||ER",
+            "Compound ID": "863",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "ER"
+          }
+        ]
+      }
+    ],
+    "NAMPT": [
+      {
+        "support": [
+          {
+            "Context ID": "4520||VHL||NAMPT",
+            "Compound ID": "4520",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "3725||VHL||NAMPT",
+            "Compound ID": "3725",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5424||VHL||NAMPT",
+            "Compound ID": "5424",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5418||VHL||NAMPT",
+            "Compound ID": "5418",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          }
+        ],
+        "query": [
+          {
+            "Context ID": "4521||VHL||NAMPT",
+            "Compound ID": "4521",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4512||VHL||NAMPT",
+            "Compound ID": "4512",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4510||VHL||NAMPT",
+            "Compound ID": "4510",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4515||VHL||NAMPT",
+            "Compound ID": "4515",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4687||VHL||NAMPT",
+            "Compound ID": "4687",
+            "Label_bin": 1,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4693||VHL||NAMPT",
+            "Compound ID": "4693",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4508||VHL||NAMPT",
+            "Compound ID": "4508",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4513||VHL||NAMPT",
+            "Compound ID": "4513",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "4692||VHL||NAMPT",
+            "Compound ID": "4692",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          },
+          {
+            "Context ID": "5409||VHL||NAMPT",
+            "Compound ID": "5409",
+            "Label_bin": 0,
+            "E3 ligase": "VHL",
+            "Task": "NAMPT"
+          }
+        ]
+      }
+    ]
+  }
+}

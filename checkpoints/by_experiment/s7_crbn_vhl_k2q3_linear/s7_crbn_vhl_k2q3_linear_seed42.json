@@ -1,0 +1,11 @@
+{
+  "artifact_kind": "frozen_prediction_checkpoint",
+  "checkpoint_sha256": "328817064cb33a8d1ddb35fbbfd47c38ab466cbad856798a10b0ed2066b9b88d",
+  "experiment_id": "s7_crbn_vhl_k2q3_linear",
+  "notes": "Frozen per-query checkpoint. The historical S7 run did not retain a complete standalone model/input pair for every variant.",
+  "response_table": "S7",
+  "seed": 42,
+  "source_checkpoint": "results/released/s6_s7_prometa_variants_query_predictions.csv",
+  "source_sha256": "ae174d3471b06eb905a8692f7bbbb3fe083819cb878301cd5184f4c648f4ab61",
+  "variant": "ProMeta + linear head"
+}

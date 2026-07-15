@@ -1,0 +1,5 @@
+method,checkpoint,family_short,family_direction,family_task,family_doi,evaluation_k_shot,evaluation_q_query,evaluation_query_setting,n_compounds,n_positive,n_negative,n_correct,accuracy,balanced_accuracy,auroc,auprc
+ProMeta,main full-data checkpoint used in S3,BCL-xL (n=6),CRBN->VHL,BCL-xL,10.1016/j.ejmech.2020.112186,1,0,all_remaining,6,3,3,6,1.0,1.0,1.0,1.0
+ProMeta,main full-data checkpoint used in S3,NAMPT (n=12),CRBN->VHL,NAMPT,10.1021/acs.jmedchem.2c01990,1,0,all_remaining,12,10,2,6,0.5,0.3,0.4,0.8469769119769119
+ProMeta,main full-data checkpoint used in S3,BTK (n=10),VHL->CRBN,BTK,10.1016/j.ejmech.2023.115403,1,0,all_remaining,10,7,3,6,0.6,0.42857142857142855,0.5714285714285714,0.8329931972789115
+ProMeta,main full-data checkpoint used in S3,CDK6 (n=14),VHL->CRBN,CDK6,10.1021/acs.jmedchem.9b00871,2,10,Q10,14,11,3,11,0.7857142857142857,0.5,0.5757575757575757,0.8598891007981917
