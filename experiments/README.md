@@ -10,8 +10,16 @@ ProMeta-only public artifacts.
 - `build_response_splits.py`: original and BCR--ABL-excluded CRBN/VHL splits.
 - `build_rare_common_query_splits.py`: the frozen 90-row rare-E3 common-query
   cohort.
+- `build_source_development_splits.py`: deterministic 80/20 source-Target
+  train/validation partitions and source-validation episodes; the held-out
+  target E3 is not accessed.
 - `train_prometa.py`: sequence-aware episodic ProMeta (joint GCN/POI/E3
   optimization) and explicitly labeled GCN-only/non-episodic controls.
+- `source_selection_candidates.csv`: explicit source-validation candidate grid
+  and deterministic selection inputs.
+- `run_source_selection_workflow.py`: source-only training and validation
+  selection, checkpoint freezing, and optional post-selection held-out-E3
+  evaluation; `--dry-run` audits the boundary without retraining.
 - `sequence_checkpoint_manifest.csv`: retained and explicitly missing
   sequence-aware source/input/checkpoint provenance.
 - `materialize_experiment_checkpoints.py`: creates one explicitly named
@@ -50,6 +58,15 @@ python experiments/verify_experiment_splits.py
 python experiments/verify_sequence_provenance.py
 python experiments/evaluate_sequence_aware.py --device cpu
 python experiments/verify_response_letter.py
+```
+
+Audit the source-development and held-out-target boundary independently of the
+frozen-checkpoint numerical reproduction:
+
+```bash
+python experiments/build_source_development_splits.py
+python experiments/run_source_selection_workflow.py --source-e3 CRBN --seed 42 --dry-run
+python experiments/run_source_selection_workflow.py --source-e3 VHL --seed 42 --dry-run
 ```
 
 The frozen reference predictions and summaries are under `results/released/`;

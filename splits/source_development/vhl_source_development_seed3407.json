@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "role": "source_only_model_selection",
+    "source_e3": "VHL",
+    "seed": 3407,
+    "validation_fraction": 0.2,
+    "partition_unit": "Target",
+    "k_shot": 2,
+    "q_query": 3,
+    "source_train_targets": [
+      "ABL2",
+      "AKT1",
+      "AKT2",
+      "ALK",
+      "AR",
+      "AR-V7",
+      "AURKA",
+      "AXL",
+      "Alpha-syn",
+      "BCL-xL",
+      "BCL2",
+      "BCR-ABL",
+      "BCR-ABL T315I",
+      "BRAF G466V",
+      "BRAF G469A",
+      "BRAF V600E",
+      "BRD2",
+      "BRD3",
+      "BRD4",
+      "BRD7",
+      "BTK",
+      "CAMKK1",
+      "CAMKK2",
+      "CARM1",
+      "CDK1",
+      "CDK6",
+      "CRBN",
+      "Cdc20",
+      "CypA",
+      "EED",
+      "EGFR",
+      "EGFR L858R",
+      "EGFR L858R/T790M",
+      "EGFR del19/T790M/C797S",
+      "EGFR e19d",
+      "EPHA3",
+      "ER",
+      "ERK5",
+      "ERalpha",
+      "EZH2",
+      "FAK",
+      "FKBP12 F36V",
+      "FLT3-ITD",
+      "GPX4",
+      "HA",
+      "HDAC1",
+      "HDAC3",
+      "HDAC4",
+      "HDAC6",
+      "HDAC8",
+      "IDO1",
+      "IRAK1",
+      "JAK2",
+      "KRAS G12C",
+      "KRAS G12D",
+      "LDHA",
+      "LDHB",
+      "LIMK2",
+      "LRRK2 G2019S",
+      "MAFF",
+      "MAP3K20",
+      "MAP4K1",
+      "MAP4K2",
+      "MAP4K5",
+      "MAPK7",
+      "MDM2",
+      "MEK1",
+      "NEK9",
+      "NTMT1",
+      "PAK1",
+      "PDGFR-beta",
+      "PIKfyve",
+      "PTP1B",
+      "PTPN2",
+      "RIPK2",
+      "RPS6KA4",
+      "SGK3",
+      "SHP2",
+      "SMARCA2",
+      "STING",
+      "SUZ12",
+      "TTK",
+      "TYK2",
+      "Tau",
+      "VEGFR-2",
+      "Wee1",
+      "XIAP",
+      "cIAP1",
+      "cIAP2"
+    ],
+    "source_validation_targets": [
+      "ABL1",
+      "AKT3",
+      "BRD9",
+      "CDK4",
+      "DcpS",
+      "FGFR1",
+      "HDAC2",
+      "IRAK3",
+      "LRRK2",
+      "LXRA",
+      "MEK2",
+      "NAMPT",
+      "PDGFRB",
+      "PI3Kalpha",
+      "RPS6KA1",
+      "SMARCA4",
+      "SOS1",
+      "VHL",
+      "WDR5",
+      "c-Met",
+      "p38alpha",
+      "p38delta",
+      "sEH"
+    ],
+    "eligible_validation_targets": [
+      "NAMPT"
+    ],
+    "held_out_target_e3_access": "none"
+  },
+  "meta_valid": {
+    "NAMPT": [
+      {
+        "support": [
+          {
+            "Compound ID": "3726",
+            "Label_bin": 1,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "3726||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "4512",
+            "Label_bin": 1,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4512||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "5409",
+            "Label_bin": 0,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "5409||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "4513",
+            "Label_bin": 0,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4513||VHL||NAMPT"
+          }
+        ],
+        "query": [
+          {
+            "Compound ID": "4509",
+            "Label_bin": 1,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4509||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "4515",
+            "Label_bin": 1,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4515||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "3725",
+            "Label_bin": 1,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "3725||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "4692",
+            "Label_bin": 0,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4692||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "4693",
+            "Label_bin": 0,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "4693||VHL||NAMPT"
+          },
+          {
+            "Compound ID": "5418",
+            "Label_bin": 0,
+            "Target": "NAMPT",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "5418||VHL||NAMPT"
+          }
+        ]
+      }
+    ]
+  }
+}

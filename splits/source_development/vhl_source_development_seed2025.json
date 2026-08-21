@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "role": "source_only_model_selection",
+    "source_e3": "VHL",
+    "seed": 2025,
+    "validation_fraction": 0.2,
+    "partition_unit": "Target",
+    "k_shot": 2,
+    "q_query": 3,
+    "source_train_targets": [
+      "AKT2",
+      "AKT3",
+      "ALK",
+      "AR",
+      "AXL",
+      "Alpha-syn",
+      "BCL-xL",
+      "BCL2",
+      "BCR-ABL",
+      "BRAF G466V",
+      "BRAF V600E",
+      "BRD2",
+      "BRD3",
+      "BRD4",
+      "BRD7",
+      "BRD9",
+      "BTK",
+      "CAMKK1",
+      "CAMKK2",
+      "CDK1",
+      "CDK6",
+      "CRBN",
+      "Cdc20",
+      "CypA",
+      "EED",
+      "EGFR",
+      "EGFR L858R",
+      "EGFR L858R/T790M",
+      "EGFR del19/T790M/C797S",
+      "EPHA3",
+      "ER",
+      "ERK5",
+      "EZH2",
+      "FAK",
+      "FGFR1",
+      "FLT3-ITD",
+      "GPX4",
+      "HA",
+      "HDAC2",
+      "HDAC3",
+      "HDAC4",
+      "HDAC6",
+      "HDAC8",
+      "IDO1",
+      "IRAK1",
+      "IRAK3",
+      "JAK2",
+      "KRAS G12C",
+      "KRAS G12D",
+      "LDHA",
+      "LDHB",
+      "LIMK2",
+      "LRRK2 G2019S",
+      "MAP4K1",
+      "MAP4K2",
+      "MAP4K5",
+      "MAPK7",
+      "MDM2",
+      "MEK1",
+      "MEK2",
+      "NAMPT",
+      "NEK9",
+      "NTMT1",
+      "PAK1",
+      "PDGFRB",
+      "PI3Kalpha",
+      "PTP1B",
+      "PTPN2",
+      "RPS6KA4",
+      "SGK3",
+      "SHP2",
+      "SMARCA2",
+      "SMARCA4",
+      "SOS1",
+      "STING",
+      "SUZ12",
+      "TTK",
+      "TYK2",
+      "Tau",
+      "VHL",
+      "WDR5",
+      "Wee1",
+      "XIAP",
+      "c-Met",
+      "cIAP1",
+      "cIAP2",
+      "p38alpha",
+      "p38delta",
+      "sEH"
+    ],
+    "source_validation_targets": [
+      "ABL1",
+      "ABL2",
+      "AKT1",
+      "AR-V7",
+      "AURKA",
+      "BCR-ABL T315I",
+      "BRAF G469A",
+      "CARM1",
+      "CDK4",
+      "DcpS",
+      "EGFR e19d",
+      "ERalpha",
+      "FKBP12 F36V",
+      "HDAC1",
+      "LRRK2",
+      "LXRA",
+      "MAFF",
+      "MAP3K20",
+      "PDGFR-beta",
+      "PIKfyve",
+      "RIPK2",
+      "RPS6KA1",
+      "VEGFR-2"
+    ],
+    "eligible_validation_targets": [
+      "EGFR e19d"
+    ],
+    "held_out_target_e3_access": "none"
+  },
+  "meta_valid": {
+    "EGFR e19d": [
+      {
+        "support": [
+          {
+            "Compound ID": "593",
+            "Label_bin": 1,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "593||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2411",
+            "Label_bin": 1,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2411||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2616",
+            "Label_bin": 0,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2616||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2410",
+            "Label_bin": 0,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2410||VHL||EGFR e19d"
+          }
+        ],
+        "query": [
+          {
+            "Compound ID": "2414",
+            "Label_bin": 1,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2414||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "1995",
+            "Label_bin": 1,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "1995||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2625",
+            "Label_bin": 1,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2625||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2608",
+            "Label_bin": 0,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2608||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "5491",
+            "Label_bin": 0,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "5491||VHL||EGFR e19d"
+          },
+          {
+            "Compound ID": "2617",
+            "Label_bin": 0,
+            "Target": "EGFR e19d",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "2617||VHL||EGFR e19d"
+          }
+        ]
+      }
+    ]
+  }
+}

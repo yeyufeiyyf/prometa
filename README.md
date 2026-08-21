@@ -26,7 +26,9 @@ deliberately excluded.
 - `data/`: the compound-linked POI/E3 sequence table, the 1,386-context strict CRBN/VHL table, the full labeled context
   table used for rare-E3 evaluation, graph cache, intersection table, and 3D
   descriptor cache.
-- `splits/response_letter/`: retained source support/query split profiles.
+- `splits/response_letter/`: retained target support/query split profiles.
+- `splits/source_development/`: deterministic 80/20 source-Target development
+  partitions and source-validation episodes for each source ligase and seed.
 - `splits/by_experiment/`: one explicitly named split directory for every
   reported experiment; R9/VZ185 directories contain clearly marked frozen
   cohorts because no standalone historical support/query split was retained.
@@ -159,6 +161,47 @@ python experiments/build_response_splits.py --profile all
 python experiments/build_rare_common_query_splits.py
 python experiments/materialize_experiment_splits.py --force
 ```
+
+## Source-only model selection and target-label isolation
+
+Numerical reproduction of the reported values uses the retained frozen
+checkpoints described below.  Separately, the repository provides an auditable
+retraining path that implements the stated source-development boundary without
+claiming to reconstruct unretained historical selection logs.
+
+Build the deterministic 80/20 source-Target partitions and source-validation
+episodes for CRBN and VHL under seeds 42, 2025, and 3407:
+
+```bash
+python experiments/build_source_development_splits.py
+```
+
+The generated `splits/source_development/source_target_partitions.csv` records
+every source Target and its partition.  Each source-development JSON contains
+only source-E3 Targets and explicitly records `held_out_target_e3_access: none`.
+Audit the full selection plan without training:
+
+```bash
+python experiments/run_source_selection_workflow.py \
+  --source-e3 CRBN --seed 42 --dry-run
+```
+
+Remove `--dry-run` to train every configuration in
+`experiments/source_selection_candidates.csv`, rank checkpoints by source-only
+validation AUROC and then AUPRC, and freeze the selected GCN/POI/E3 triplet.  A
+held-out target split may be supplied only for the post-selection evaluation:
+
+```bash
+python experiments/run_source_selection_workflow.py \
+  --source-e3 CRBN --seed 42 --device cpu \
+  --target-split splits/response_letter/bcr_abl_excluded/crbn_train_vhl_test_strict_K2Q3_seed42.json
+```
+
+The workflow verifies that source-training and source-validation Targets are
+disjoint and jointly cover the source ligase.  The target split is not opened
+until after source-validation checkpoint selection.  Within target evaluation,
+support labels construct the prototypes, probabilities are computed without
+query labels, and query labels are retained only for metric calculation.
 
 ## Reproduce ProMeta performance
 

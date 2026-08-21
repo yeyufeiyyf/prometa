@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "role": "source_only_model_selection",
+    "source_e3": "VHL",
+    "seed": 42,
+    "validation_fraction": 0.2,
+    "partition_unit": "Target",
+    "k_shot": 2,
+    "q_query": 3,
+    "source_train_targets": [
+      "ABL1",
+      "AKT1",
+      "AKT2",
+      "AKT3",
+      "AR",
+      "AR-V7",
+      "AURKA",
+      "AXL",
+      "Alpha-syn",
+      "BCL-xL",
+      "BCL2",
+      "BCR-ABL T315I",
+      "BRAF G466V",
+      "BRAF G469A",
+      "BRAF V600E",
+      "BRD2",
+      "BRD3",
+      "BRD4",
+      "BRD7",
+      "BTK",
+      "CAMKK1",
+      "CAMKK2",
+      "CARM1",
+      "CDK1",
+      "CDK6",
+      "Cdc20",
+      "CypA",
+      "DcpS",
+      "EED",
+      "EGFR",
+      "EGFR L858R",
+      "EGFR L858R/T790M",
+      "EGFR del19/T790M/C797S",
+      "EGFR e19d",
+      "EPHA3",
+      "ER",
+      "ERK5",
+      "ERalpha",
+      "EZH2",
+      "FLT3-ITD",
+      "GPX4",
+      "HA",
+      "HDAC1",
+      "HDAC3",
+      "HDAC4",
+      "HDAC6",
+      "HDAC8",
+      "IRAK3",
+      "JAK2",
+      "KRAS G12C",
+      "KRAS G12D",
+      "LDHA",
+      "LDHB",
+      "LIMK2",
+      "LXRA",
+      "MAFF",
+      "MAP3K20",
+      "MAP4K1",
+      "MAP4K2",
+      "MAP4K5",
+      "MAPK7",
+      "MEK1",
+      "MEK2",
+      "NAMPT",
+      "NEK9",
+      "NTMT1",
+      "PAK1",
+      "PDGFR-beta",
+      "PDGFRB",
+      "PI3Kalpha",
+      "RIPK2",
+      "RPS6KA1",
+      "RPS6KA4",
+      "SHP2",
+      "SMARCA4",
+      "STING",
+      "SUZ12",
+      "TTK",
+      "Tau",
+      "VEGFR-2",
+      "VHL",
+      "WDR5",
+      "Wee1",
+      "XIAP",
+      "c-Met",
+      "cIAP1",
+      "cIAP2",
+      "p38alpha",
+      "sEH"
+    ],
+    "source_validation_targets": [
+      "ABL2",
+      "ALK",
+      "BCR-ABL",
+      "BRD9",
+      "CDK4",
+      "CRBN",
+      "FAK",
+      "FGFR1",
+      "FKBP12 F36V",
+      "HDAC2",
+      "IDO1",
+      "IRAK1",
+      "LRRK2",
+      "LRRK2 G2019S",
+      "MDM2",
+      "PIKfyve",
+      "PTP1B",
+      "PTPN2",
+      "SGK3",
+      "SMARCA2",
+      "SOS1",
+      "TYK2",
+      "p38delta"
+    ],
+    "eligible_validation_targets": [
+      "BCR-ABL"
+    ],
+    "held_out_target_e3_access": "none"
+  },
+  "meta_valid": {
+    "BCR-ABL": [
+      {
+        "support": [
+          {
+            "Compound ID": "1648",
+            "Label_bin": 1,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "1648||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "465",
+            "Label_bin": 1,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "465||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "408",
+            "Label_bin": 0,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "408||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "410",
+            "Label_bin": 0,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "410||VHL||BCR-ABL"
+          }
+        ],
+        "query": [
+          {
+            "Compound ID": "464",
+            "Label_bin": 1,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "464||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "469",
+            "Label_bin": 1,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "469||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "959",
+            "Label_bin": 1,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "959||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "461",
+            "Label_bin": 0,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "461||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "321",
+            "Label_bin": 0,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "321||VHL||BCR-ABL"
+          },
+          {
+            "Compound ID": "403",
+            "Label_bin": 0,
+            "Target": "BCR-ABL",
+            "E3 ligase": "VHL",
+            "context_key_compound_e3_target": "403||VHL||BCR-ABL"
+          }
+        ]
+      }
+    ]
+  }
+}

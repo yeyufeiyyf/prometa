@@ -1,0 +1,907 @@
+source_e3,seed,target,partition,rows,positive,negative,eligible_validation_episode
+CRBN,42,ABL1,source_train,1,0,1,False
+CRBN,42,ADRA1A,source_train,1,1,0,False
+CRBN,42,AKT1,source_train,5,2,3,False
+CRBN,42,AKT2,source_train,4,1,3,False
+CRBN,42,AKT3,source_train,7,1,6,False
+CRBN,42,ALK,source_train,6,1,5,False
+CRBN,42,APT1,source_train,1,0,1,False
+CRBN,42,AR L702H and T878A,source_train,1,1,0,False
+CRBN,42,AR T878A,source_train,6,6,0,False
+CRBN,42,AR-V delta LBD,source_train,1,0,1,False
+CRBN,42,AR-V7,source_train,7,0,7,False
+CRBN,42,AURKA,source_train,8,2,6,False
+CRBN,42,AURKB,source_train,3,0,3,False
+CRBN,42,AXL,source_train,5,2,3,False
+CRBN,42,Alpha-tubulin,source_train,4,0,4,False
+CRBN,42,BCL-xL,source_train,12,7,5,True
+CRBN,42,BCL2,source_train,2,0,2,False
+CRBN,42,BCR-ABL,source_train,37,29,8,True
+CRBN,42,BCR-ABL T315I,source_train,1,0,1,False
+CRBN,42,BLK,source_train,3,0,3,False
+CRBN,42,BMP2K,source_train,1,0,1,False
+CRBN,42,BPTF BD,source_train,1,0,1,False
+CRBN,42,BRAF V600E,source_train,9,9,0,False
+CRBN,42,BRD2,source_train,9,4,5,False
+CRBN,42,BRD2 BD1,source_train,2,0,2,False
+CRBN,42,BRD3 BD1,source_train,1,0,1,False
+CRBN,42,BRD3 BD2,source_train,3,0,3,False
+CRBN,42,BRD4,source_train,46,28,18,True
+CRBN,42,BRD4-L,source_train,2,0,2,False
+CRBN,42,BRD7,source_train,1,0,1,False
+CRBN,42,BRD9,source_train,7,6,1,False
+CRBN,42,BTK,source_train,57,41,16,True
+CRBN,42,BTK C481A,source_train,1,1,0,False
+CRBN,42,BTK C481G,source_train,1,1,0,False
+CRBN,42,BTK C481S,source_train,8,8,0,False
+CRBN,42,BTK C481T,source_train,1,1,0,False
+CRBN,42,BTK C481W,source_train,1,1,0,False
+CRBN,42,Beta-tubulin,source_train,1,0,1,False
+CRBN,42,CA2,source_train,3,2,1,False
+CRBN,42,CDK12,source_train,4,0,4,False
+CRBN,42,CDK13,source_train,2,0,2,False
+CRBN,42,CDK2,source_train,8,1,7,False
+CRBN,42,CDK4,source_train,20,5,15,True
+CRBN,42,CDK5,source_train,1,0,1,False
+CRBN,42,CDK9,source_train,17,7,10,True
+CRBN,42,COQ8A,source_train,2,0,2,False
+CRBN,42,CSK,source_train,2,0,2,False
+CRBN,42,EGFR,source_train,10,3,7,False
+CRBN,42,EGFR L858R,source_train,1,1,0,False
+CRBN,42,EGFR T790M,source_train,1,0,1,False
+CRBN,42,EGFR e19d,source_train,13,3,10,False
+CRBN,42,EML4-ALK C1156Y,source_train,1,1,0,False
+CRBN,42,EML4-ALK L1196M,source_train,1,1,0,False
+CRBN,42,EML4-ALK L1196M/G1202R,source_train,2,2,0,False
+CRBN,42,EP300,source_train,17,17,0,False
+CRBN,42,EPHB4,source_train,1,0,1,False
+CRBN,42,ER,source_train,13,13,0,False
+CRBN,42,ERalpha,source_train,19,18,1,False
+CRBN,42,EZH2,source_train,3,0,3,False
+CRBN,42,FAK,source_train,9,3,6,False
+CRBN,42,FER,source_train,2,0,2,False
+CRBN,42,FGFR1,source_train,1,0,1,False
+CRBN,42,FGFR2,source_train,6,1,5,False
+CRBN,42,FKBP12,source_train,1,1,0,False
+CRBN,42,FLT1,source_train,1,0,1,False
+CRBN,42,FLT3,source_train,11,4,7,False
+CRBN,42,FLT3-ITD,source_train,3,1,2,False
+CRBN,42,FLT3-ITD-F691L,source_train,1,0,1,False
+CRBN,42,FYN,source_train,1,0,1,False
+CRBN,42,GPX4,source_train,4,1,3,False
+CRBN,42,GR,source_train,1,0,1,False
+CRBN,42,GSPT1,source_train,4,4,0,False
+CRBN,42,HDAC1,source_train,3,0,3,False
+CRBN,42,HDAC6,source_train,14,8,6,True
+CRBN,42,HDAC8,source_train,9,4,5,False
+CRBN,42,HPGDS,source_train,7,6,1,False
+CRBN,42,HSP90,source_train,2,1,1,False
+CRBN,42,HSP90beta,source_train,1,0,1,False
+CRBN,42,IDO1,source_train,8,1,7,False
+CRBN,42,IGF-1R,source_train,2,0,2,False
+CRBN,42,IRAK3,source_train,1,1,0,False
+CRBN,42,ITK,source_train,13,13,0,False
+CRBN,42,JAK2,source_train,6,4,2,False
+CRBN,42,JAK2 R683G,source_train,1,1,0,False
+CRBN,42,KRAS G12C,source_train,2,0,2,False
+CRBN,42,LIMK1,source_train,4,0,4,False
+CRBN,42,MAP4K1,source_train,4,4,0,False
+CRBN,42,MAPK8,source_train,1,0,1,False
+CRBN,42,MAPK9,source_train,1,0,1,False
+CRBN,42,MAPKAPK2,source_train,1,0,1,False
+CRBN,42,MDM2,source_train,7,2,5,False
+CRBN,42,MEK1,source_train,3,0,3,False
+CRBN,42,MEK2,source_train,3,0,3,False
+CRBN,42,MIF,source_train,3,0,3,False
+CRBN,42,MITF,source_train,1,0,1,False
+CRBN,42,MLKL,source_train,1,0,1,False
+CRBN,42,MLLT1,source_train,2,2,0,False
+CRBN,42,MerTK,source_train,1,0,1,False
+CRBN,42,NAMPT,source_train,3,3,0,False
+CRBN,42,NEK9,source_train,1,0,1,False
+CRBN,42,NS3,source_train,1,1,0,False
+CRBN,42,NUAK1,source_train,2,0,2,False
+CRBN,42,PAK2,source_train,2,0,2,False
+CRBN,42,PAK4,source_train,2,0,2,False
+CRBN,42,PARP1,source_train,8,4,4,False
+CRBN,42,PARP14,source_train,1,1,0,False
+CRBN,42,PARP2,source_train,2,1,1,False
+CRBN,42,PCLAF,source_train,1,1,0,False
+CRBN,42,PD-L1,source_train,4,0,4,False
+CRBN,42,PDCD2,source_train,2,1,1,False
+CRBN,42,PDGFRB,source_train,1,0,1,False
+CRBN,42,PDK1,source_train,1,0,1,False
+CRBN,42,PDK2,source_train,2,0,2,False
+CRBN,42,PIM2,source_train,1,0,1,False
+CRBN,42,PIP4K2A,source_train,1,0,1,False
+CRBN,42,PLK4,source_train,1,0,1,False
+CRBN,42,PRKAA1,source_train,1,0,1,False
+CRBN,42,PTK2B,source_train,1,0,1,False
+CRBN,42,PTP1B,source_train,1,0,1,False
+CRBN,42,PTPN2,source_train,2,1,1,False
+CRBN,42,RIPK2,source_train,1,1,0,False
+CRBN,42,RPS6KA1,source_train,1,0,1,False
+CRBN,42,RPS6KA3,source_train,1,0,1,False
+CRBN,42,Rpn13,source_train,1,1,0,False
+CRBN,42,SGK3,source_train,1,0,1,False
+CRBN,42,SIK2,source_train,2,0,2,False
+CRBN,42,SIRT2,source_train,1,0,1,False
+CRBN,42,SLC9A1,source_train,1,0,1,False
+CRBN,42,SMARCA2,source_train,6,6,0,False
+CRBN,42,SOS1,source_train,7,4,3,False
+CRBN,42,STAT3,source_train,4,2,2,False
+CRBN,42,STING,source_train,1,0,1,False
+CRBN,42,STK17A,source_train,1,0,1,False
+CRBN,42,Src,source_train,1,0,1,False
+CRBN,42,TEC,source_train,1,0,1,False
+CRBN,42,TNK2,source_train,1,0,1,False
+CRBN,42,TRKA,source_train,1,0,1,False
+CRBN,42,TRKB,source_train,2,0,2,False
+CRBN,42,TTK,source_train,1,0,1,False
+CRBN,42,TYR,source_train,2,0,2,False
+CRBN,42,Tau,source_train,1,0,1,False
+CRBN,42,ULK1,source_train,2,0,2,False
+CRBN,42,USP7,source_train,4,3,1,False
+CRBN,42,Wee1,source_train,3,0,3,False
+CRBN,42,YES1,source_train,1,0,1,False
+CRBN,42,c-Src,source_train,4,4,0,False
+CRBN,42,cIAP1,source_train,3,0,3,False
+CRBN,42,cIAP2,source_train,1,0,1,False
+CRBN,42,eIF4E,source_train,2,0,2,False
+CRBN,42,p-p38,source_train,1,1,0,False
+CRBN,42,p38alpha,source_train,2,0,2,False
+CRBN,42,AAK1,source_validation,1,0,1,False
+CRBN,42,AIMP2,source_validation,2,0,2,False
+CRBN,42,AR,source_validation,41,30,11,True
+CRBN,42,AR Del 873-879,source_validation,1,0,1,False
+CRBN,42,Alpha-syn,source_validation,2,1,1,False
+CRBN,42,BCKDK,source_validation,1,0,1,False
+CRBN,42,BCR-ABL G671R,source_validation,1,0,1,False
+CRBN,42,BRD3,source_validation,8,3,5,False
+CRBN,42,BRD4 BD1,source_validation,3,1,2,False
+CRBN,42,CBP,source_validation,19,19,0,False
+CRBN,42,CD147,source_validation,2,0,2,False
+CRBN,42,CDK11B,source_validation,1,0,1,False
+CRBN,42,CDK6,source_validation,28,14,14,True
+CRBN,42,CYP1B1,source_validation,1,0,1,False
+CRBN,42,EGFR L858R/T790M,source_validation,6,2,4,False
+CRBN,42,EML4-ALK,source_validation,7,7,0,False
+CRBN,42,EML4-ALK G1202R,source_validation,4,4,0,False
+CRBN,42,ERK1,source_validation,1,0,1,False
+CRBN,42,FLT3-ITD-D835V,source_validation,1,0,1,False
+CRBN,42,GSK-3beta,source_validation,8,2,6,False
+CRBN,42,GSK3A,source_validation,3,3,0,False
+CRBN,42,HDAC3,source_validation,8,5,3,False
+CRBN,42,HMGCR,source_validation,6,0,6,False
+CRBN,42,IRAK4,source_validation,4,0,4,False
+CRBN,42,JAK3,source_validation,1,1,0,False
+CRBN,42,KEAP1,source_validation,1,1,0,False
+CRBN,42,MAP3K20,source_validation,2,0,2,False
+CRBN,42,MYC,source_validation,1,0,1,False
+CRBN,42,NSD2,source_validation,3,0,3,False
+CRBN,42,Nef,source_validation,1,0,1,False
+CRBN,42,PDEdelta,source_validation,3,1,2,False
+CRBN,42,PDK3,source_validation,2,0,2,False
+CRBN,42,REXO4,source_validation,1,0,1,False
+CRBN,42,SHP2,source_validation,1,1,0,False
+CRBN,42,STK33,source_validation,1,0,1,False
+CRBN,42,XIAP,source_validation,2,0,2,False
+CRBN,42,c-KIT,source_validation,1,0,1,False
+CRBN,42,c-Met,source_validation,5,0,5,False
+CRBN,42,p38delta,source_validation,1,1,0,False
+CRBN,2025,AAK1,source_train,1,0,1,False
+CRBN,2025,AIMP2,source_train,2,0,2,False
+CRBN,2025,AKT1,source_train,5,2,3,False
+CRBN,2025,AKT2,source_train,4,1,3,False
+CRBN,2025,AKT3,source_train,7,1,6,False
+CRBN,2025,APT1,source_train,1,0,1,False
+CRBN,2025,AR,source_train,41,30,11,True
+CRBN,2025,AR L702H and T878A,source_train,1,1,0,False
+CRBN,2025,AR T878A,source_train,6,6,0,False
+CRBN,2025,AURKB,source_train,3,0,3,False
+CRBN,2025,Alpha-syn,source_train,2,1,1,False
+CRBN,2025,Alpha-tubulin,source_train,4,0,4,False
+CRBN,2025,BCKDK,source_train,1,0,1,False
+CRBN,2025,BCL-xL,source_train,12,7,5,True
+CRBN,2025,BCL2,source_train,2,0,2,False
+CRBN,2025,BCR-ABL,source_train,37,29,8,True
+CRBN,2025,BCR-ABL G671R,source_train,1,0,1,False
+CRBN,2025,BLK,source_train,3,0,3,False
+CRBN,2025,BMP2K,source_train,1,0,1,False
+CRBN,2025,BPTF BD,source_train,1,0,1,False
+CRBN,2025,BRAF V600E,source_train,9,9,0,False
+CRBN,2025,BRD2,source_train,9,4,5,False
+CRBN,2025,BRD3 BD2,source_train,3,0,3,False
+CRBN,2025,BRD4,source_train,46,28,18,True
+CRBN,2025,BRD4 BD1,source_train,3,1,2,False
+CRBN,2025,BRD4-L,source_train,2,0,2,False
+CRBN,2025,BRD9,source_train,7,6,1,False
+CRBN,2025,BTK C481G,source_train,1,1,0,False
+CRBN,2025,BTK C481S,source_train,8,8,0,False
+CRBN,2025,BTK C481T,source_train,1,1,0,False
+CRBN,2025,Beta-tubulin,source_train,1,0,1,False
+CRBN,2025,CA2,source_train,3,2,1,False
+CRBN,2025,CD147,source_train,2,0,2,False
+CRBN,2025,CDK11B,source_train,1,0,1,False
+CRBN,2025,CDK12,source_train,4,0,4,False
+CRBN,2025,CDK13,source_train,2,0,2,False
+CRBN,2025,CDK2,source_train,8,1,7,False
+CRBN,2025,CDK4,source_train,20,5,15,True
+CRBN,2025,CDK6,source_train,28,14,14,True
+CRBN,2025,COQ8A,source_train,2,0,2,False
+CRBN,2025,CSK,source_train,2,0,2,False
+CRBN,2025,CYP1B1,source_train,1,0,1,False
+CRBN,2025,EGFR,source_train,10,3,7,False
+CRBN,2025,EGFR L858R,source_train,1,1,0,False
+CRBN,2025,EGFR L858R/T790M,source_train,6,2,4,False
+CRBN,2025,EGFR T790M,source_train,1,0,1,False
+CRBN,2025,EGFR e19d,source_train,13,3,10,False
+CRBN,2025,EML4-ALK,source_train,7,7,0,False
+CRBN,2025,EML4-ALK C1156Y,source_train,1,1,0,False
+CRBN,2025,EML4-ALK G1202R,source_train,4,4,0,False
+CRBN,2025,EML4-ALK L1196M,source_train,1,1,0,False
+CRBN,2025,EML4-ALK L1196M/G1202R,source_train,2,2,0,False
+CRBN,2025,EP300,source_train,17,17,0,False
+CRBN,2025,EPHB4,source_train,1,0,1,False
+CRBN,2025,ER,source_train,13,13,0,False
+CRBN,2025,ERK1,source_train,1,0,1,False
+CRBN,2025,ERalpha,source_train,19,18,1,False
+CRBN,2025,EZH2,source_train,3,0,3,False
+CRBN,2025,FAK,source_train,9,3,6,False
+CRBN,2025,FER,source_train,2,0,2,False
+CRBN,2025,FGFR1,source_train,1,0,1,False
+CRBN,2025,FGFR2,source_train,6,1,5,False
+CRBN,2025,FKBP12,source_train,1,1,0,False
+CRBN,2025,FLT1,source_train,1,0,1,False
+CRBN,2025,FLT3,source_train,11,4,7,False
+CRBN,2025,FLT3-ITD-D835V,source_train,1,0,1,False
+CRBN,2025,FLT3-ITD-F691L,source_train,1,0,1,False
+CRBN,2025,FYN,source_train,1,0,1,False
+CRBN,2025,GPX4,source_train,4,1,3,False
+CRBN,2025,GR,source_train,1,0,1,False
+CRBN,2025,GSK3A,source_train,3,3,0,False
+CRBN,2025,HDAC1,source_train,3,0,3,False
+CRBN,2025,HDAC3,source_train,8,5,3,False
+CRBN,2025,HDAC6,source_train,14,8,6,True
+CRBN,2025,HMGCR,source_train,6,0,6,False
+CRBN,2025,HSP90,source_train,2,1,1,False
+CRBN,2025,IDO1,source_train,8,1,7,False
+CRBN,2025,IGF-1R,source_train,2,0,2,False
+CRBN,2025,ITK,source_train,13,13,0,False
+CRBN,2025,JAK2,source_train,6,4,2,False
+CRBN,2025,JAK2 R683G,source_train,1,1,0,False
+CRBN,2025,JAK3,source_train,1,1,0,False
+CRBN,2025,KEAP1,source_train,1,1,0,False
+CRBN,2025,KRAS G12C,source_train,2,0,2,False
+CRBN,2025,LIMK1,source_train,4,0,4,False
+CRBN,2025,MAP3K20,source_train,2,0,2,False
+CRBN,2025,MAP4K1,source_train,4,4,0,False
+CRBN,2025,MAPK8,source_train,1,0,1,False
+CRBN,2025,MAPK9,source_train,1,0,1,False
+CRBN,2025,MDM2,source_train,7,2,5,False
+CRBN,2025,MEK1,source_train,3,0,3,False
+CRBN,2025,MEK2,source_train,3,0,3,False
+CRBN,2025,MIF,source_train,3,0,3,False
+CRBN,2025,MITF,source_train,1,0,1,False
+CRBN,2025,MLKL,source_train,1,0,1,False
+CRBN,2025,MLLT1,source_train,2,2,0,False
+CRBN,2025,MYC,source_train,1,0,1,False
+CRBN,2025,MerTK,source_train,1,0,1,False
+CRBN,2025,NAMPT,source_train,3,3,0,False
+CRBN,2025,NEK9,source_train,1,0,1,False
+CRBN,2025,NS3,source_train,1,1,0,False
+CRBN,2025,NSD2,source_train,3,0,3,False
+CRBN,2025,NUAK1,source_train,2,0,2,False
+CRBN,2025,PAK4,source_train,2,0,2,False
+CRBN,2025,PARP1,source_train,8,4,4,False
+CRBN,2025,PARP14,source_train,1,1,0,False
+CRBN,2025,PARP2,source_train,2,1,1,False
+CRBN,2025,PCLAF,source_train,1,1,0,False
+CRBN,2025,PDEdelta,source_train,3,1,2,False
+CRBN,2025,PDK1,source_train,1,0,1,False
+CRBN,2025,PDK2,source_train,2,0,2,False
+CRBN,2025,PDK3,source_train,2,0,2,False
+CRBN,2025,PIM2,source_train,1,0,1,False
+CRBN,2025,PIP4K2A,source_train,1,0,1,False
+CRBN,2025,PRKAA1,source_train,1,0,1,False
+CRBN,2025,PTK2B,source_train,1,0,1,False
+CRBN,2025,PTPN2,source_train,2,1,1,False
+CRBN,2025,REXO4,source_train,1,0,1,False
+CRBN,2025,RPS6KA1,source_train,1,0,1,False
+CRBN,2025,RPS6KA3,source_train,1,0,1,False
+CRBN,2025,SGK3,source_train,1,0,1,False
+CRBN,2025,SHP2,source_train,1,1,0,False
+CRBN,2025,SIK2,source_train,2,0,2,False
+CRBN,2025,SLC9A1,source_train,1,0,1,False
+CRBN,2025,SMARCA2,source_train,6,6,0,False
+CRBN,2025,SOS1,source_train,7,4,3,False
+CRBN,2025,STAT3,source_train,4,2,2,False
+CRBN,2025,STING,source_train,1,0,1,False
+CRBN,2025,STK17A,source_train,1,0,1,False
+CRBN,2025,STK33,source_train,1,0,1,False
+CRBN,2025,Src,source_train,1,0,1,False
+CRBN,2025,TEC,source_train,1,0,1,False
+CRBN,2025,TNK2,source_train,1,0,1,False
+CRBN,2025,TRKA,source_train,1,0,1,False
+CRBN,2025,TRKB,source_train,2,0,2,False
+CRBN,2025,TTK,source_train,1,0,1,False
+CRBN,2025,TYR,source_train,2,0,2,False
+CRBN,2025,Tau,source_train,1,0,1,False
+CRBN,2025,ULK1,source_train,2,0,2,False
+CRBN,2025,USP7,source_train,4,3,1,False
+CRBN,2025,Wee1,source_train,3,0,3,False
+CRBN,2025,YES1,source_train,1,0,1,False
+CRBN,2025,c-KIT,source_train,1,0,1,False
+CRBN,2025,c-Met,source_train,5,0,5,False
+CRBN,2025,c-Src,source_train,4,4,0,False
+CRBN,2025,cIAP1,source_train,3,0,3,False
+CRBN,2025,cIAP2,source_train,1,0,1,False
+CRBN,2025,eIF4E,source_train,2,0,2,False
+CRBN,2025,p-p38,source_train,1,1,0,False
+CRBN,2025,p38alpha,source_train,2,0,2,False
+CRBN,2025,p38delta,source_train,1,1,0,False
+CRBN,2025,ABL1,source_validation,1,0,1,False
+CRBN,2025,ADRA1A,source_validation,1,1,0,False
+CRBN,2025,ALK,source_validation,6,1,5,False
+CRBN,2025,AR Del 873-879,source_validation,1,0,1,False
+CRBN,2025,AR-V delta LBD,source_validation,1,0,1,False
+CRBN,2025,AR-V7,source_validation,7,0,7,False
+CRBN,2025,AURKA,source_validation,8,2,6,False
+CRBN,2025,AXL,source_validation,5,2,3,False
+CRBN,2025,BCR-ABL T315I,source_validation,1,0,1,False
+CRBN,2025,BRD2 BD1,source_validation,2,0,2,False
+CRBN,2025,BRD3,source_validation,8,3,5,False
+CRBN,2025,BRD3 BD1,source_validation,1,0,1,False
+CRBN,2025,BRD7,source_validation,1,0,1,False
+CRBN,2025,BTK,source_validation,57,41,16,True
+CRBN,2025,BTK C481A,source_validation,1,1,0,False
+CRBN,2025,BTK C481W,source_validation,1,1,0,False
+CRBN,2025,CBP,source_validation,19,19,0,False
+CRBN,2025,CDK5,source_validation,1,0,1,False
+CRBN,2025,CDK9,source_validation,17,7,10,True
+CRBN,2025,FLT3-ITD,source_validation,3,1,2,False
+CRBN,2025,GSK-3beta,source_validation,8,2,6,False
+CRBN,2025,GSPT1,source_validation,4,4,0,False
+CRBN,2025,HDAC8,source_validation,9,4,5,False
+CRBN,2025,HPGDS,source_validation,7,6,1,False
+CRBN,2025,HSP90beta,source_validation,1,0,1,False
+CRBN,2025,IRAK3,source_validation,1,1,0,False
+CRBN,2025,IRAK4,source_validation,4,0,4,False
+CRBN,2025,MAPKAPK2,source_validation,1,0,1,False
+CRBN,2025,Nef,source_validation,1,0,1,False
+CRBN,2025,PAK2,source_validation,2,0,2,False
+CRBN,2025,PD-L1,source_validation,4,0,4,False
+CRBN,2025,PDCD2,source_validation,2,1,1,False
+CRBN,2025,PDGFRB,source_validation,1,0,1,False
+CRBN,2025,PLK4,source_validation,1,0,1,False
+CRBN,2025,PTP1B,source_validation,1,0,1,False
+CRBN,2025,RIPK2,source_validation,1,1,0,False
+CRBN,2025,Rpn13,source_validation,1,1,0,False
+CRBN,2025,SIRT2,source_validation,1,0,1,False
+CRBN,2025,XIAP,source_validation,2,0,2,False
+CRBN,3407,ABL1,source_train,1,0,1,False
+CRBN,3407,ADRA1A,source_train,1,1,0,False
+CRBN,3407,AIMP2,source_train,2,0,2,False
+CRBN,3407,AKT1,source_train,5,2,3,False
+CRBN,3407,AKT2,source_train,4,1,3,False
+CRBN,3407,AKT3,source_train,7,1,6,False
+CRBN,3407,ALK,source_train,6,1,5,False
+CRBN,3407,APT1,source_train,1,0,1,False
+CRBN,3407,AR,source_train,41,30,11,True
+CRBN,3407,AR Del 873-879,source_train,1,0,1,False
+CRBN,3407,AR L702H and T878A,source_train,1,1,0,False
+CRBN,3407,AR T878A,source_train,6,6,0,False
+CRBN,3407,AR-V delta LBD,source_train,1,0,1,False
+CRBN,3407,AURKB,source_train,3,0,3,False
+CRBN,3407,AXL,source_train,5,2,3,False
+CRBN,3407,Alpha-syn,source_train,2,1,1,False
+CRBN,3407,Alpha-tubulin,source_train,4,0,4,False
+CRBN,3407,BCKDK,source_train,1,0,1,False
+CRBN,3407,BCL-xL,source_train,12,7,5,True
+CRBN,3407,BCL2,source_train,2,0,2,False
+CRBN,3407,BCR-ABL T315I,source_train,1,0,1,False
+CRBN,3407,BLK,source_train,3,0,3,False
+CRBN,3407,BMP2K,source_train,1,0,1,False
+CRBN,3407,BPTF BD,source_train,1,0,1,False
+CRBN,3407,BRAF V600E,source_train,9,9,0,False
+CRBN,3407,BRD2 BD1,source_train,2,0,2,False
+CRBN,3407,BRD3,source_train,8,3,5,False
+CRBN,3407,BRD3 BD1,source_train,1,0,1,False
+CRBN,3407,BRD3 BD2,source_train,3,0,3,False
+CRBN,3407,BRD4,source_train,46,28,18,True
+CRBN,3407,BRD4-L,source_train,2,0,2,False
+CRBN,3407,BRD7,source_train,1,0,1,False
+CRBN,3407,BRD9,source_train,7,6,1,False
+CRBN,3407,BTK,source_train,57,41,16,True
+CRBN,3407,BTK C481A,source_train,1,1,0,False
+CRBN,3407,BTK C481T,source_train,1,1,0,False
+CRBN,3407,Beta-tubulin,source_train,1,0,1,False
+CRBN,3407,CA2,source_train,3,2,1,False
+CRBN,3407,CBP,source_train,19,19,0,False
+CRBN,3407,CD147,source_train,2,0,2,False
+CRBN,3407,CDK11B,source_train,1,0,1,False
+CRBN,3407,CDK12,source_train,4,0,4,False
+CRBN,3407,CDK13,source_train,2,0,2,False
+CRBN,3407,CDK2,source_train,8,1,7,False
+CRBN,3407,CDK5,source_train,1,0,1,False
+CRBN,3407,CDK6,source_train,28,14,14,True
+CRBN,3407,CDK9,source_train,17,7,10,True
+CRBN,3407,COQ8A,source_train,2,0,2,False
+CRBN,3407,CSK,source_train,2,0,2,False
+CRBN,3407,EGFR,source_train,10,3,7,False
+CRBN,3407,EGFR L858R,source_train,1,1,0,False
+CRBN,3407,EGFR L858R/T790M,source_train,6,2,4,False
+CRBN,3407,EML4-ALK,source_train,7,7,0,False
+CRBN,3407,EML4-ALK C1156Y,source_train,1,1,0,False
+CRBN,3407,EML4-ALK G1202R,source_train,4,4,0,False
+CRBN,3407,EML4-ALK L1196M,source_train,1,1,0,False
+CRBN,3407,EP300,source_train,17,17,0,False
+CRBN,3407,EPHB4,source_train,1,0,1,False
+CRBN,3407,ER,source_train,13,13,0,False
+CRBN,3407,ERK1,source_train,1,0,1,False
+CRBN,3407,FAK,source_train,9,3,6,False
+CRBN,3407,FER,source_train,2,0,2,False
+CRBN,3407,FGFR2,source_train,6,1,5,False
+CRBN,3407,FLT3,source_train,11,4,7,False
+CRBN,3407,FLT3-ITD,source_train,3,1,2,False
+CRBN,3407,FLT3-ITD-F691L,source_train,1,0,1,False
+CRBN,3407,FYN,source_train,1,0,1,False
+CRBN,3407,GPX4,source_train,4,1,3,False
+CRBN,3407,GSK3A,source_train,3,3,0,False
+CRBN,3407,GSPT1,source_train,4,4,0,False
+CRBN,3407,HDAC3,source_train,8,5,3,False
+CRBN,3407,HDAC6,source_train,14,8,6,True
+CRBN,3407,HDAC8,source_train,9,4,5,False
+CRBN,3407,HSP90beta,source_train,1,0,1,False
+CRBN,3407,IDO1,source_train,8,1,7,False
+CRBN,3407,IRAK4,source_train,4,0,4,False
+CRBN,3407,ITK,source_train,13,13,0,False
+CRBN,3407,JAK2,source_train,6,4,2,False
+CRBN,3407,JAK3,source_train,1,1,0,False
+CRBN,3407,KRAS G12C,source_train,2,0,2,False
+CRBN,3407,LIMK1,source_train,4,0,4,False
+CRBN,3407,MAP3K20,source_train,2,0,2,False
+CRBN,3407,MAP4K1,source_train,4,4,0,False
+CRBN,3407,MAPK8,source_train,1,0,1,False
+CRBN,3407,MAPK9,source_train,1,0,1,False
+CRBN,3407,MAPKAPK2,source_train,1,0,1,False
+CRBN,3407,MDM2,source_train,7,2,5,False
+CRBN,3407,MEK1,source_train,3,0,3,False
+CRBN,3407,MEK2,source_train,3,0,3,False
+CRBN,3407,MIF,source_train,3,0,3,False
+CRBN,3407,MITF,source_train,1,0,1,False
+CRBN,3407,MLKL,source_train,1,0,1,False
+CRBN,3407,MLLT1,source_train,2,2,0,False
+CRBN,3407,MerTK,source_train,1,0,1,False
+CRBN,3407,NAMPT,source_train,3,3,0,False
+CRBN,3407,NS3,source_train,1,1,0,False
+CRBN,3407,NSD2,source_train,3,0,3,False
+CRBN,3407,NUAK1,source_train,2,0,2,False
+CRBN,3407,Nef,source_train,1,0,1,False
+CRBN,3407,PAK2,source_train,2,0,2,False
+CRBN,3407,PAK4,source_train,2,0,2,False
+CRBN,3407,PARP1,source_train,8,4,4,False
+CRBN,3407,PARP14,source_train,1,1,0,False
+CRBN,3407,PARP2,source_train,2,1,1,False
+CRBN,3407,PCLAF,source_train,1,1,0,False
+CRBN,3407,PD-L1,source_train,4,0,4,False
+CRBN,3407,PDCD2,source_train,2,1,1,False
+CRBN,3407,PDEdelta,source_train,3,1,2,False
+CRBN,3407,PDGFRB,source_train,1,0,1,False
+CRBN,3407,PDK1,source_train,1,0,1,False
+CRBN,3407,PDK2,source_train,2,0,2,False
+CRBN,3407,PDK3,source_train,2,0,2,False
+CRBN,3407,PIM2,source_train,1,0,1,False
+CRBN,3407,PIP4K2A,source_train,1,0,1,False
+CRBN,3407,PLK4,source_train,1,0,1,False
+CRBN,3407,PRKAA1,source_train,1,0,1,False
+CRBN,3407,PTK2B,source_train,1,0,1,False
+CRBN,3407,PTPN2,source_train,2,1,1,False
+CRBN,3407,REXO4,source_train,1,0,1,False
+CRBN,3407,RIPK2,source_train,1,1,0,False
+CRBN,3407,RPS6KA1,source_train,1,0,1,False
+CRBN,3407,RPS6KA3,source_train,1,0,1,False
+CRBN,3407,Rpn13,source_train,1,1,0,False
+CRBN,3407,SGK3,source_train,1,0,1,False
+CRBN,3407,SIRT2,source_train,1,0,1,False
+CRBN,3407,SLC9A1,source_train,1,0,1,False
+CRBN,3407,SMARCA2,source_train,6,6,0,False
+CRBN,3407,SOS1,source_train,7,4,3,False
+CRBN,3407,STAT3,source_train,4,2,2,False
+CRBN,3407,STING,source_train,1,0,1,False
+CRBN,3407,STK17A,source_train,1,0,1,False
+CRBN,3407,STK33,source_train,1,0,1,False
+CRBN,3407,Src,source_train,1,0,1,False
+CRBN,3407,TEC,source_train,1,0,1,False
+CRBN,3407,TNK2,source_train,1,0,1,False
+CRBN,3407,TRKA,source_train,1,0,1,False
+CRBN,3407,TRKB,source_train,2,0,2,False
+CRBN,3407,TTK,source_train,1,0,1,False
+CRBN,3407,TYR,source_train,2,0,2,False
+CRBN,3407,ULK1,source_train,2,0,2,False
+CRBN,3407,USP7,source_train,4,3,1,False
+CRBN,3407,XIAP,source_train,2,0,2,False
+CRBN,3407,YES1,source_train,1,0,1,False
+CRBN,3407,c-Met,source_train,5,0,5,False
+CRBN,3407,c-Src,source_train,4,4,0,False
+CRBN,3407,cIAP1,source_train,3,0,3,False
+CRBN,3407,cIAP2,source_train,1,0,1,False
+CRBN,3407,eIF4E,source_train,2,0,2,False
+CRBN,3407,p-p38,source_train,1,1,0,False
+CRBN,3407,p38alpha,source_train,2,0,2,False
+CRBN,3407,p38delta,source_train,1,1,0,False
+CRBN,3407,AAK1,source_validation,1,0,1,False
+CRBN,3407,AR-V7,source_validation,7,0,7,False
+CRBN,3407,AURKA,source_validation,8,2,6,False
+CRBN,3407,BCR-ABL,source_validation,37,29,8,True
+CRBN,3407,BCR-ABL G671R,source_validation,1,0,1,False
+CRBN,3407,BRD2,source_validation,9,4,5,False
+CRBN,3407,BRD4 BD1,source_validation,3,1,2,False
+CRBN,3407,BTK C481G,source_validation,1,1,0,False
+CRBN,3407,BTK C481S,source_validation,8,8,0,False
+CRBN,3407,BTK C481W,source_validation,1,1,0,False
+CRBN,3407,CDK4,source_validation,20,5,15,True
+CRBN,3407,CYP1B1,source_validation,1,0,1,False
+CRBN,3407,EGFR T790M,source_validation,1,0,1,False
+CRBN,3407,EGFR e19d,source_validation,13,3,10,False
+CRBN,3407,EML4-ALK L1196M/G1202R,source_validation,2,2,0,False
+CRBN,3407,ERalpha,source_validation,19,18,1,False
+CRBN,3407,EZH2,source_validation,3,0,3,False
+CRBN,3407,FGFR1,source_validation,1,0,1,False
+CRBN,3407,FKBP12,source_validation,1,1,0,False
+CRBN,3407,FLT1,source_validation,1,0,1,False
+CRBN,3407,FLT3-ITD-D835V,source_validation,1,0,1,False
+CRBN,3407,GR,source_validation,1,0,1,False
+CRBN,3407,GSK-3beta,source_validation,8,2,6,False
+CRBN,3407,HDAC1,source_validation,3,0,3,False
+CRBN,3407,HMGCR,source_validation,6,0,6,False
+CRBN,3407,HPGDS,source_validation,7,6,1,False
+CRBN,3407,HSP90,source_validation,2,1,1,False
+CRBN,3407,IGF-1R,source_validation,2,0,2,False
+CRBN,3407,IRAK3,source_validation,1,1,0,False
+CRBN,3407,JAK2 R683G,source_validation,1,1,0,False
+CRBN,3407,KEAP1,source_validation,1,1,0,False
+CRBN,3407,MYC,source_validation,1,0,1,False
+CRBN,3407,NEK9,source_validation,1,0,1,False
+CRBN,3407,PTP1B,source_validation,1,0,1,False
+CRBN,3407,SHP2,source_validation,1,1,0,False
+CRBN,3407,SIK2,source_validation,2,0,2,False
+CRBN,3407,Tau,source_validation,1,0,1,False
+CRBN,3407,Wee1,source_validation,3,0,3,False
+CRBN,3407,c-KIT,source_validation,1,0,1,False
+VHL,42,ABL1,source_train,1,0,1,False
+VHL,42,AKT1,source_train,10,2,8,False
+VHL,42,AKT2,source_train,7,1,6,False
+VHL,42,AKT3,source_train,8,1,7,False
+VHL,42,AR,source_train,10,1,9,False
+VHL,42,AR-V7,source_train,7,0,7,False
+VHL,42,AURKA,source_train,1,0,1,False
+VHL,42,AXL,source_train,1,0,1,False
+VHL,42,Alpha-syn,source_train,2,0,2,False
+VHL,42,BCL-xL,source_train,14,9,5,True
+VHL,42,BCL2,source_train,3,2,1,False
+VHL,42,BCR-ABL T315I,source_train,1,0,1,False
+VHL,42,BRAF G466V,source_train,2,0,2,False
+VHL,42,BRAF G469A,source_train,1,1,0,False
+VHL,42,BRAF V600E,source_train,2,1,1,False
+VHL,42,BRD2,source_train,8,5,3,False
+VHL,42,BRD3,source_train,6,4,2,False
+VHL,42,BRD4,source_train,25,23,2,False
+VHL,42,BRD7,source_train,4,1,3,False
+VHL,42,BTK,source_train,2,0,2,False
+VHL,42,CAMKK1,source_train,1,0,1,False
+VHL,42,CAMKK2,source_train,1,0,1,False
+VHL,42,CARM1,source_train,4,2,2,False
+VHL,42,CDK1,source_train,2,0,2,False
+VHL,42,CDK6,source_train,6,3,3,False
+VHL,42,Cdc20,source_train,1,0,1,False
+VHL,42,CypA,source_train,3,3,0,False
+VHL,42,DcpS,source_train,1,1,0,False
+VHL,42,EED,source_train,4,1,3,False
+VHL,42,EGFR,source_train,7,3,4,False
+VHL,42,EGFR L858R,source_train,1,1,0,False
+VHL,42,EGFR L858R/T790M,source_train,7,4,3,False
+VHL,42,EGFR del19/T790M/C797S,source_train,1,1,0,False
+VHL,42,EGFR e19d,source_train,14,6,8,True
+VHL,42,EPHA3,source_train,1,0,1,False
+VHL,42,ER,source_train,27,7,20,True
+VHL,42,ERK5,source_train,3,2,1,False
+VHL,42,ERalpha,source_train,4,2,2,False
+VHL,42,EZH2,source_train,11,2,9,False
+VHL,42,FLT3-ITD,source_train,2,0,2,False
+VHL,42,GPX4,source_train,4,0,4,False
+VHL,42,HA,source_train,1,0,1,False
+VHL,42,HDAC1,source_train,3,0,3,False
+VHL,42,HDAC3,source_train,10,3,7,False
+VHL,42,HDAC4,source_train,3,3,0,False
+VHL,42,HDAC6,source_train,2,1,1,False
+VHL,42,HDAC8,source_train,3,2,1,False
+VHL,42,IRAK3,source_train,2,0,2,False
+VHL,42,JAK2,source_train,1,0,1,False
+VHL,42,KRAS G12C,source_train,4,2,2,False
+VHL,42,KRAS G12D,source_train,8,8,0,False
+VHL,42,LDHA,source_train,5,1,4,False
+VHL,42,LDHB,source_train,1,1,0,False
+VHL,42,LIMK2,source_train,1,0,1,False
+VHL,42,LXRA,source_train,1,0,1,False
+VHL,42,MAFF,source_train,4,0,4,False
+VHL,42,MAP3K20,source_train,1,0,1,False
+VHL,42,MAP4K1,source_train,1,0,1,False
+VHL,42,MAP4K2,source_train,1,0,1,False
+VHL,42,MAP4K5,source_train,1,0,1,False
+VHL,42,MAPK7,source_train,1,1,0,False
+VHL,42,MEK1,source_train,5,0,5,False
+VHL,42,MEK2,source_train,3,0,3,False
+VHL,42,NAMPT,source_train,22,14,8,True
+VHL,42,NEK9,source_train,1,0,1,False
+VHL,42,NTMT1,source_train,1,0,1,False
+VHL,42,PAK1,source_train,1,0,1,False
+VHL,42,PDGFR-beta,source_train,1,0,1,False
+VHL,42,PDGFRB,source_train,1,0,1,False
+VHL,42,PI3Kalpha,source_train,1,0,1,False
+VHL,42,RIPK2,source_train,1,1,0,False
+VHL,42,RPS6KA1,source_train,2,0,2,False
+VHL,42,RPS6KA4,source_train,1,0,1,False
+VHL,42,SHP2,source_train,5,1,4,False
+VHL,42,SMARCA4,source_train,30,28,2,False
+VHL,42,STING,source_train,7,7,0,False
+VHL,42,SUZ12,source_train,2,2,0,False
+VHL,42,TTK,source_train,2,0,2,False
+VHL,42,Tau,source_train,2,1,1,False
+VHL,42,VEGFR-2,source_train,2,0,2,False
+VHL,42,VHL,source_train,1,0,1,False
+VHL,42,WDR5,source_train,9,1,8,False
+VHL,42,Wee1,source_train,1,0,1,False
+VHL,42,XIAP,source_train,4,1,3,False
+VHL,42,c-Met,source_train,1,0,1,False
+VHL,42,cIAP1,source_train,4,1,3,False
+VHL,42,cIAP2,source_train,4,1,3,False
+VHL,42,p38alpha,source_train,7,5,2,False
+VHL,42,sEH,source_train,1,0,1,False
+VHL,42,ABL2,source_validation,1,0,1,False
+VHL,42,ALK,source_validation,10,8,2,False
+VHL,42,BCR-ABL,source_validation,14,8,6,True
+VHL,42,BRD9,source_validation,2,1,1,False
+VHL,42,CDK4,source_validation,7,3,4,False
+VHL,42,CRBN,source_validation,7,4,3,False
+VHL,42,FAK,source_validation,11,10,1,False
+VHL,42,FGFR1,source_validation,5,1,4,False
+VHL,42,FKBP12 F36V,source_validation,1,0,1,False
+VHL,42,HDAC2,source_validation,5,0,5,False
+VHL,42,IDO1,source_validation,4,0,4,False
+VHL,42,IRAK1,source_validation,8,8,0,False
+VHL,42,LRRK2,source_validation,4,2,2,False
+VHL,42,LRRK2 G2019S,source_validation,2,2,0,False
+VHL,42,MDM2,source_validation,2,0,2,False
+VHL,42,PIKfyve,source_validation,2,1,1,False
+VHL,42,PTP1B,source_validation,2,1,1,False
+VHL,42,PTPN2,source_validation,6,3,3,False
+VHL,42,SGK3,source_validation,1,0,1,False
+VHL,42,SMARCA2,source_validation,38,38,0,False
+VHL,42,SOS1,source_validation,8,2,6,False
+VHL,42,TYK2,source_validation,2,1,1,False
+VHL,42,p38delta,source_validation,4,3,1,False
+VHL,2025,AKT2,source_train,7,1,6,False
+VHL,2025,AKT3,source_train,8,1,7,False
+VHL,2025,ALK,source_train,10,8,2,False
+VHL,2025,AR,source_train,10,1,9,False
+VHL,2025,AXL,source_train,1,0,1,False
+VHL,2025,Alpha-syn,source_train,2,0,2,False
+VHL,2025,BCL-xL,source_train,14,9,5,True
+VHL,2025,BCL2,source_train,3,2,1,False
+VHL,2025,BCR-ABL,source_train,14,8,6,True
+VHL,2025,BRAF G466V,source_train,2,0,2,False
+VHL,2025,BRAF V600E,source_train,2,1,1,False
+VHL,2025,BRD2,source_train,8,5,3,False
+VHL,2025,BRD3,source_train,6,4,2,False
+VHL,2025,BRD4,source_train,25,23,2,False
+VHL,2025,BRD7,source_train,4,1,3,False
+VHL,2025,BRD9,source_train,2,1,1,False
+VHL,2025,BTK,source_train,2,0,2,False
+VHL,2025,CAMKK1,source_train,1,0,1,False
+VHL,2025,CAMKK2,source_train,1,0,1,False
+VHL,2025,CDK1,source_train,2,0,2,False
+VHL,2025,CDK6,source_train,6,3,3,False
+VHL,2025,CRBN,source_train,7,4,3,False
+VHL,2025,Cdc20,source_train,1,0,1,False
+VHL,2025,CypA,source_train,3,3,0,False
+VHL,2025,EED,source_train,4,1,3,False
+VHL,2025,EGFR,source_train,7,3,4,False
+VHL,2025,EGFR L858R,source_train,1,1,0,False
+VHL,2025,EGFR L858R/T790M,source_train,7,4,3,False
+VHL,2025,EGFR del19/T790M/C797S,source_train,1,1,0,False
+VHL,2025,EPHA3,source_train,1,0,1,False
+VHL,2025,ER,source_train,27,7,20,True
+VHL,2025,ERK5,source_train,3,2,1,False
+VHL,2025,EZH2,source_train,11,2,9,False
+VHL,2025,FAK,source_train,11,10,1,False
+VHL,2025,FGFR1,source_train,5,1,4,False
+VHL,2025,FLT3-ITD,source_train,2,0,2,False
+VHL,2025,GPX4,source_train,4,0,4,False
+VHL,2025,HA,source_train,1,0,1,False
+VHL,2025,HDAC2,source_train,5,0,5,False
+VHL,2025,HDAC3,source_train,10,3,7,False
+VHL,2025,HDAC4,source_train,3,3,0,False
+VHL,2025,HDAC6,source_train,2,1,1,False
+VHL,2025,HDAC8,source_train,3,2,1,False
+VHL,2025,IDO1,source_train,4,0,4,False
+VHL,2025,IRAK1,source_train,8,8,0,False
+VHL,2025,IRAK3,source_train,2,0,2,False
+VHL,2025,JAK2,source_train,1,0,1,False
+VHL,2025,KRAS G12C,source_train,4,2,2,False
+VHL,2025,KRAS G12D,source_train,8,8,0,False
+VHL,2025,LDHA,source_train,5,1,4,False
+VHL,2025,LDHB,source_train,1,1,0,False
+VHL,2025,LIMK2,source_train,1,0,1,False
+VHL,2025,LRRK2 G2019S,source_train,2,2,0,False
+VHL,2025,MAP4K1,source_train,1,0,1,False
+VHL,2025,MAP4K2,source_train,1,0,1,False
+VHL,2025,MAP4K5,source_train,1,0,1,False
+VHL,2025,MAPK7,source_train,1,1,0,False
+VHL,2025,MDM2,source_train,2,0,2,False
+VHL,2025,MEK1,source_train,5,0,5,False
+VHL,2025,MEK2,source_train,3,0,3,False
+VHL,2025,NAMPT,source_train,22,14,8,True
+VHL,2025,NEK9,source_train,1,0,1,False
+VHL,2025,NTMT1,source_train,1,0,1,False
+VHL,2025,PAK1,source_train,1,0,1,False
+VHL,2025,PDGFRB,source_train,1,0,1,False
+VHL,2025,PI3Kalpha,source_train,1,0,1,False
+VHL,2025,PTP1B,source_train,2,1,1,False
+VHL,2025,PTPN2,source_train,6,3,3,False
+VHL,2025,RPS6KA4,source_train,1,0,1,False
+VHL,2025,SGK3,source_train,1,0,1,False
+VHL,2025,SHP2,source_train,5,1,4,False
+VHL,2025,SMARCA2,source_train,38,38,0,False
+VHL,2025,SMARCA4,source_train,30,28,2,False
+VHL,2025,SOS1,source_train,8,2,6,False
+VHL,2025,STING,source_train,7,7,0,False
+VHL,2025,SUZ12,source_train,2,2,0,False
+VHL,2025,TTK,source_train,2,0,2,False
+VHL,2025,TYK2,source_train,2,1,1,False
+VHL,2025,Tau,source_train,2,1,1,False
+VHL,2025,VHL,source_train,1,0,1,False
+VHL,2025,WDR5,source_train,9,1,8,False
+VHL,2025,Wee1,source_train,1,0,1,False
+VHL,2025,XIAP,source_train,4,1,3,False
+VHL,2025,c-Met,source_train,1,0,1,False
+VHL,2025,cIAP1,source_train,4,1,3,False
+VHL,2025,cIAP2,source_train,4,1,3,False
+VHL,2025,p38alpha,source_train,7,5,2,False
+VHL,2025,p38delta,source_train,4,3,1,False
+VHL,2025,sEH,source_train,1,0,1,False
+VHL,2025,ABL1,source_validation,1,0,1,False
+VHL,2025,ABL2,source_validation,1,0,1,False
+VHL,2025,AKT1,source_validation,10,2,8,False
+VHL,2025,AR-V7,source_validation,7,0,7,False
+VHL,2025,AURKA,source_validation,1,0,1,False
+VHL,2025,BCR-ABL T315I,source_validation,1,0,1,False
+VHL,2025,BRAF G469A,source_validation,1,1,0,False
+VHL,2025,CARM1,source_validation,4,2,2,False
+VHL,2025,CDK4,source_validation,7,3,4,False
+VHL,2025,DcpS,source_validation,1,1,0,False
+VHL,2025,EGFR e19d,source_validation,14,6,8,True
+VHL,2025,ERalpha,source_validation,4,2,2,False
+VHL,2025,FKBP12 F36V,source_validation,1,0,1,False
+VHL,2025,HDAC1,source_validation,3,0,3,False
+VHL,2025,LRRK2,source_validation,4,2,2,False
+VHL,2025,LXRA,source_validation,1,0,1,False
+VHL,2025,MAFF,source_validation,4,0,4,False
+VHL,2025,MAP3K20,source_validation,1,0,1,False
+VHL,2025,PDGFR-beta,source_validation,1,0,1,False
+VHL,2025,PIKfyve,source_validation,2,1,1,False
+VHL,2025,RIPK2,source_validation,1,1,0,False
+VHL,2025,RPS6KA1,source_validation,2,0,2,False
+VHL,2025,VEGFR-2,source_validation,2,0,2,False
+VHL,3407,ABL2,source_train,1,0,1,False
+VHL,3407,AKT1,source_train,10,2,8,False
+VHL,3407,AKT2,source_train,7,1,6,False
+VHL,3407,ALK,source_train,10,8,2,False
+VHL,3407,AR,source_train,10,1,9,False
+VHL,3407,AR-V7,source_train,7,0,7,False
+VHL,3407,AURKA,source_train,1,0,1,False
+VHL,3407,AXL,source_train,1,0,1,False
+VHL,3407,Alpha-syn,source_train,2,0,2,False
+VHL,3407,BCL-xL,source_train,14,9,5,True
+VHL,3407,BCL2,source_train,3,2,1,False
+VHL,3407,BCR-ABL,source_train,14,8,6,True
+VHL,3407,BCR-ABL T315I,source_train,1,0,1,False
+VHL,3407,BRAF G466V,source_train,2,0,2,False
+VHL,3407,BRAF G469A,source_train,1,1,0,False
+VHL,3407,BRAF V600E,source_train,2,1,1,False
+VHL,3407,BRD2,source_train,8,5,3,False
+VHL,3407,BRD3,source_train,6,4,2,False
+VHL,3407,BRD4,source_train,25,23,2,False
+VHL,3407,BRD7,source_train,4,1,3,False
+VHL,3407,BTK,source_train,2,0,2,False
+VHL,3407,CAMKK1,source_train,1,0,1,False
+VHL,3407,CAMKK2,source_train,1,0,1,False
+VHL,3407,CARM1,source_train,4,2,2,False
+VHL,3407,CDK1,source_train,2,0,2,False
+VHL,3407,CDK6,source_train,6,3,3,False
+VHL,3407,CRBN,source_train,7,4,3,False
+VHL,3407,Cdc20,source_train,1,0,1,False
+VHL,3407,CypA,source_train,3,3,0,False
+VHL,3407,EED,source_train,4,1,3,False
+VHL,3407,EGFR,source_train,7,3,4,False
+VHL,3407,EGFR L858R,source_train,1,1,0,False
+VHL,3407,EGFR L858R/T790M,source_train,7,4,3,False
+VHL,3407,EGFR del19/T790M/C797S,source_train,1,1,0,False
+VHL,3407,EGFR e19d,source_train,14,6,8,True
+VHL,3407,EPHA3,source_train,1,0,1,False
+VHL,3407,ER,source_train,27,7,20,True
+VHL,3407,ERK5,source_train,3,2,1,False
+VHL,3407,ERalpha,source_train,4,2,2,False
+VHL,3407,EZH2,source_train,11,2,9,False
+VHL,3407,FAK,source_train,11,10,1,False
+VHL,3407,FKBP12 F36V,source_train,1,0,1,False
+VHL,3407,FLT3-ITD,source_train,2,0,2,False
+VHL,3407,GPX4,source_train,4,0,4,False
+VHL,3407,HA,source_train,1,0,1,False
+VHL,3407,HDAC1,source_train,3,0,3,False
+VHL,3407,HDAC3,source_train,10,3,7,False
+VHL,3407,HDAC4,source_train,3,3,0,False
+VHL,3407,HDAC6,source_train,2,1,1,False
+VHL,3407,HDAC8,source_train,3,2,1,False
+VHL,3407,IDO1,source_train,4,0,4,False
+VHL,3407,IRAK1,source_train,8,8,0,False
+VHL,3407,JAK2,source_train,1,0,1,False
+VHL,3407,KRAS G12C,source_train,4,2,2,False
+VHL,3407,KRAS G12D,source_train,8,8,0,False
+VHL,3407,LDHA,source_train,5,1,4,False
+VHL,3407,LDHB,source_train,1,1,0,False
+VHL,3407,LIMK2,source_train,1,0,1,False
+VHL,3407,LRRK2 G2019S,source_train,2,2,0,False
+VHL,3407,MAFF,source_train,4,0,4,False
+VHL,3407,MAP3K20,source_train,1,0,1,False
+VHL,3407,MAP4K1,source_train,1,0,1,False
+VHL,3407,MAP4K2,source_train,1,0,1,False
+VHL,3407,MAP4K5,source_train,1,0,1,False
+VHL,3407,MAPK7,source_train,1,1,0,False
+VHL,3407,MDM2,source_train,2,0,2,False
+VHL,3407,MEK1,source_train,5,0,5,False
+VHL,3407,NEK9,source_train,1,0,1,False
+VHL,3407,NTMT1,source_train,1,0,1,False
+VHL,3407,PAK1,source_train,1,0,1,False
+VHL,3407,PDGFR-beta,source_train,1,0,1,False
+VHL,3407,PIKfyve,source_train,2,1,1,False
+VHL,3407,PTP1B,source_train,2,1,1,False
+VHL,3407,PTPN2,source_train,6,3,3,False
+VHL,3407,RIPK2,source_train,1,1,0,False
+VHL,3407,RPS6KA4,source_train,1,0,1,False
+VHL,3407,SGK3,source_train,1,0,1,False
+VHL,3407,SHP2,source_train,5,1,4,False
+VHL,3407,SMARCA2,source_train,38,38,0,False
+VHL,3407,STING,source_train,7,7,0,False
+VHL,3407,SUZ12,source_train,2,2,0,False
+VHL,3407,TTK,source_train,2,0,2,False
+VHL,3407,TYK2,source_train,2,1,1,False
+VHL,3407,Tau,source_train,2,1,1,False
+VHL,3407,VEGFR-2,source_train,2,0,2,False
+VHL,3407,Wee1,source_train,1,0,1,False
+VHL,3407,XIAP,source_train,4,1,3,False
+VHL,3407,cIAP1,source_train,4,1,3,False
+VHL,3407,cIAP2,source_train,4,1,3,False
+VHL,3407,ABL1,source_validation,1,0,1,False
+VHL,3407,AKT3,source_validation,8,1,7,False
+VHL,3407,BRD9,source_validation,2,1,1,False
+VHL,3407,CDK4,source_validation,7,3,4,False
+VHL,3407,DcpS,source_validation,1,1,0,False
+VHL,3407,FGFR1,source_validation,5,1,4,False
+VHL,3407,HDAC2,source_validation,5,0,5,False
+VHL,3407,IRAK3,source_validation,2,0,2,False
+VHL,3407,LRRK2,source_validation,4,2,2,False
+VHL,3407,LXRA,source_validation,1,0,1,False
+VHL,3407,MEK2,source_validation,3,0,3,False
+VHL,3407,NAMPT,source_validation,22,14,8,True
+VHL,3407,PDGFRB,source_validation,1,0,1,False
+VHL,3407,PI3Kalpha,source_validation,1,0,1,False
+VHL,3407,RPS6KA1,source_validation,2,0,2,False
+VHL,3407,SMARCA4,source_validation,30,28,2,False
+VHL,3407,SOS1,source_validation,8,2,6,False
+VHL,3407,VHL,source_validation,1,0,1,False
+VHL,3407,WDR5,source_validation,9,1,8,False
+VHL,3407,c-Met,source_validation,1,0,1,False
+VHL,3407,p38alpha,source_validation,7,5,2,False
+VHL,3407,p38delta,source_validation,4,3,1,False
+VHL,3407,sEH,source_validation,1,0,1,False
