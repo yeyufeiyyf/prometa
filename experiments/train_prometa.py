@@ -9,8 +9,12 @@ from pathlib import Path
 
 import torch
 
-from prometa.data import graph_index_from_cache, read_contexts
-from prometa.training import train_episodic, train_non_episodic
+from prometa.data import graph_index_from_cache, protein_index_from_csv, read_contexts
+from prometa.training import (
+    train_episodic,
+    train_episodic_sequence_aware,
+    train_non_episodic,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,12 +38,54 @@ def main() -> None:
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--sequence-csv",
+        type=Path,
+        default=ROOT / "data" / "protac_with_seq.csv",
+        help="Compound-linked POI/E3 sequences used by the reported episodic model.",
+    )
+    parser.add_argument("--poi-sequence-column", default="POI_seq")
+    parser.add_argument("--e3-sequence-column", default="E3_seq")
+    parser.add_argument("--protein-max-length", type=int, default=2000)
+    parser.add_argument("--protein-embed-dim", type=int, default=64)
+    parser.add_argument(
+        "--without-protein-sequences",
+        action="store_true",
+        help="Run the explicitly labeled GCN-only ablation/audit path.",
+    )
     args = parser.parse_args()
 
     device = torch.device(args.device if not args.device.startswith("cuda") or torch.cuda.is_available() else "cpu")
     contexts = read_contexts(args.contexts)
     graph_index = graph_index_from_cache(args.graph_cache)
-    if args.mode == "episodic":
+    poi_encoder = None
+    e3_encoder = None
+    if args.mode == "episodic" and not args.without_protein_sequences:
+        poi_index = protein_index_from_csv(
+            args.sequence_csv,
+            args.poi_sequence_column,
+            max_length=args.protein_max_length,
+        )
+        e3_index = protein_index_from_csv(
+            args.sequence_csv,
+            args.e3_sequence_column,
+            max_length=args.protein_max_length,
+        )
+        encoder, poi_encoder, e3_encoder, audit = train_episodic_sequence_aware(
+            contexts,
+            graph_index,
+            poi_index,
+            e3_index,
+            source_e3=args.source_e3,
+            k_shot=args.k,
+            q_query=args.train_q,
+            seed=args.seed,
+            device=device,
+            epochs=args.epochs,
+            episodes_per_epoch=args.episodes_per_epoch,
+            protein_embed_dim=args.protein_embed_dim,
+        )
+    elif args.mode == "episodic":
         encoder, audit = train_episodic(
             contexts,
             graph_index,
@@ -63,6 +109,13 @@ def main() -> None:
         )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     torch.save(encoder.state_dict(), args.output)
+    if poi_encoder is not None and e3_encoder is not None:
+        poi_output = args.output.with_name(f"{args.output.stem}_poi{args.output.suffix}")
+        e3_output = args.output.with_name(f"{args.output.stem}_e3{args.output.suffix}")
+        torch.save(poi_encoder.state_dict(), poi_output)
+        torch.save(e3_encoder.state_dict(), e3_output)
+        audit["poi_checkpoint"] = str(poi_output)
+        audit["e3_checkpoint"] = str(e3_output)
     args.output.with_suffix(".json").write_text(json.dumps(audit, indent=2) + "\n")
     print(f"saved {args.output}")
 

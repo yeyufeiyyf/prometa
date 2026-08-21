@@ -13,6 +13,8 @@ from rdkit import Chem
 from rdkit.Chem import rdchem
 from torch_geometric.data import Data
 
+from .model import sequence_to_tensor
+
 
 ATOM_LIST = [6, 7, 8, 9, 15, 16, 17, 35, 53]
 
@@ -98,6 +100,31 @@ def read_contexts(path: str | Path) -> pd.DataFrame:
     frame["Compound ID"] = frame["Compound ID"].astype(str)
     frame["Label_bin"] = frame["Label_bin"].astype(int)
     return frame
+
+
+def protein_index_from_csv(
+    path: str | Path,
+    sequence_column: str,
+    max_length: int = 2000,
+) -> dict[str, torch.LongTensor]:
+    """Build a compound-ID keyed protein-sequence index.
+
+    The sequence table is kept separate from the evaluation context tables so
+    that the latter remain compact and their historical split hashes remain
+    unchanged.
+    """
+    frame = pd.read_csv(path, usecols=["Compound ID", sequence_column], low_memory=False)
+    frame["Compound ID"] = frame["Compound ID"].astype(str)
+    index: dict[str, torch.LongTensor] = {}
+    for _, row in frame.iterrows():
+        value = row[sequence_column]
+        if pd.isna(value):
+            continue
+        sequence = str(value).strip()
+        if not sequence or sequence.lower() in {"nan", "none"}:
+            continue
+        index[str(row["Compound ID"])] = sequence_to_tensor(sequence, max_length=max_length)
+    return index
 
 
 def example_id(example: Any) -> str:

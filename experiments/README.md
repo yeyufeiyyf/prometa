@@ -10,8 +10,10 @@ ProMeta-only public artifacts.
 - `build_response_splits.py`: original and BCR--ABL-excluded CRBN/VHL splits.
 - `build_rare_common_query_splits.py`: the frozen 90-row rare-E3 common-query
   cohort.
-- `train_prometa.py`: episodic ProMeta and non-episodic component-control
-  training.
+- `train_prometa.py`: sequence-aware episodic ProMeta (joint GCN/POI/E3
+  optimization) and explicitly labeled GCN-only/non-episodic controls.
+- `sequence_checkpoint_manifest.csv`: retained and explicitly missing
+  sequence-aware source/input/checkpoint provenance.
 - `materialize_experiment_checkpoints.py`: creates one explicitly named
   checkpoint artifact per reported experiment and writes the checkpoint
   manifest.
@@ -19,6 +21,7 @@ ProMeta-only public artifacts.
   frozen-cohort artifact per reported experiment and writes the split
   manifest.
 - `evaluate_prometa.py`: checkpoint-backed prototype and linear-head inference.
+- `evaluate_sequence_aware.py`: strict-load main seed-42 GCN/POI/E3 inference.
 - `evaluate_prometa_3d.py`: RDKit conformer-descriptor ProMeta control.
 - `evaluate_frozen_checkpoints.py`: exact evaluation of the historical S7,
   compound-family, and VZ185 frozen-prediction checkpoints.
@@ -28,6 +31,8 @@ ProMeta-only public artifacts.
 - `verify_experiment_splits.py`: file existence, source/copy SHA-256, and
   dedicated-path audit for all split/cohort artifacts.
 - `verify_response_letter.py`: numeric and ProMeta-only scope audit.
+- `verify_sequence_provenance.py`: SHA-256, strict checkpoint loading, learned
+  alpha, and optimizer-registration audit for the sequence-aware path.
 
 Typical reproduction sequence:
 
@@ -42,6 +47,8 @@ python experiments/evaluate_prometa_3d.py --device cpu
 python experiments/evaluate_frozen_checkpoints.py
 python experiments/verify_experiment_checkpoints.py
 python experiments/verify_experiment_splits.py
+python experiments/verify_sequence_provenance.py
+python experiments/evaluate_sequence_aware.py --device cpu
 python experiments/verify_response_letter.py
 ```
 

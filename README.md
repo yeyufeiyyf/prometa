@@ -4,11 +4,14 @@ Few-shot PROTAC-targeted degradation prediction across E3 ligases.
 
 [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21371599.svg)](https://doi.org/10.5281/zenodo.21371599)
 
-ProMeta learns a molecular representation from a source E3 ligase and performs
+ProMeta learns a molecule--protein representation from a source E3 ligase and performs
 held-out target-ligase prediction by constructing active/inactive prototypes
-from a small labeled support set. This public release contains only ProMeta,
-ProMeta component variants, and the data needed to reproduce their reported
-performance. Results from other prediction methods are deliberately excluded.
+from a small labeled support set. The sequence-aware model combines a molecular
+GCN with separate POI and E3 encoders through trainable scalar weights. This
+public release contains the integrated implementation, the exact retained
+experimental source snapshot, a checkpoint-provenance audit, and the later
+numerical-reproduction package. Results from other prediction methods are
+deliberately excluded.
 
 <p align="center">
   <img src="figures/model_framework.png" width="820" alt="ProMeta framework"/>
@@ -16,11 +19,11 @@ performance. Results from other prediction methods are deliberately excluded.
 
 ## Release contents
 
-- `prometa/`: model, data loading, training, prototype inference, metrics, and
-  the RDKit-3D descriptor control.
+- `prometa/`: molecular and POI/E3 sequence models, joint episodic training,
+  prototype inference, metrics, and the RDKit-3D descriptor control.
 - `experiments/`: split builders, training/evaluation entry points, experiment
   registry, and response-letter consistency checks.
-- `data/`: the 1,386-context strict CRBN/VHL table, the full labeled context
+- `data/`: the compound-linked POI/E3 sequence table, the 1,386-context strict CRBN/VHL table, the full labeled context
   table used for rare-E3 evaluation, graph cache, intersection table, and 3D
   descriptor cache.
 - `splits/response_letter/`: retained source support/query split profiles.
@@ -31,6 +34,10 @@ performance. Results from other prediction methods are deliberately excluded.
   every reported ProMeta experiment. Encoder-backed experiments contain
   byte-identical encoder copies; historical audits without a complete retained
   model/input pair contain frozen prediction checkpoints.
+- `checkpoints/sequence_aware/`: retained POI/E3/GCN checkpoint triplets for
+  the main seed-42 run and the rare-E3 K=1,Q=1 runs.
+- `archive/sequence_aware_source/`: exact self-contained experimental source
+  snapshot from which the protein branch was integrated into `prometa/`.
 - `results/released/`: ProMeta-only query predictions and summaries reported in
   the response letter.
 
@@ -69,6 +76,47 @@ particular:
 `experiments/experiment_split_manifest.csv` map every reported experiment and
 seed to its dedicated checkpoint and split paths and record source/copy
 SHA-256 hashes.
+
+## Sequence-aware implementation and provenance
+
+The reported sequence-aware encoder is implemented in `prometa/model.py` and
+`prometa/training.py` as
+
+```text
+z = z_mol + alpha_poi * z_poi + alpha_e3 * z_e3
+```
+
+The GCN, POI encoder, E3 encoder, `alpha_poi`, and `alpha_e3` are jointly
+optimized. The exact retained source snapshot is
+`archive/sequence_aware_source/run_baselines_vhl.py`; the compound-linked
+inputs are `data/protac_with_seq.csv`.
+
+`experiments/sequence_checkpoint_manifest.csv` records retained and missing
+artifact roles rather than silently substituting files. The complete
+GCN/POI/E3 triplet is retained for the main seed-42 run, and all three triplets
+are retained for rare-E3 K=1,Q=1. For main seeds 2025 and 3407, the molecular
+GCN branches are retained but the original dual-sequence sidecars are not;
+those missing files are explicitly marked `not_retained_not_reconstructed`.
+
+Verify every retained hash, strict-load every neural checkpoint, compare the
+main seed-42 GCN with the byte-identical numerical-release copy, and audit the
+joint optimizer registration:
+
+```bash
+python experiments/verify_sequence_provenance.py
+```
+
+Run the retained main seed-42 sequence-aware inference path on the four S3
+support/query settings:
+
+```bash
+python experiments/evaluate_sequence_aware.py --device cpu
+```
+
+This sequence-provenance run is separate from the three-seed numerical audit:
+the latter reproduces the rounded response-letter values from retained GCN
+branches, splits, and frozen outputs and must not be interpreted as proof that
+all historical dual-sequence sidecars survived packaging.
 
 ## Environment
 
@@ -162,8 +210,9 @@ Verify the integrity of the complete downloaded release:
 python scripts/verify_release_checksums.py
 ```
 
-Train a ProMeta encoder from source-ligase data (see `--help` for episodic and
-non-episodic modes):
+Train the sequence-aware ProMeta encoder from source-ligase data. The command
+saves the GCN checkpoint plus POI and E3 sidecars; pass
+`--without-protein-sequences` only for the explicitly labeled GCN-only path:
 
 ```bash
 python experiments/train_prometa.py --source-e3 CRBN --mode episodic --device cpu \

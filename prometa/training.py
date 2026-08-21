@@ -13,7 +13,7 @@ from torch_geometric.data import Batch, Data
 from torch_geometric.loader import DataLoader
 
 from .data import graphs_for_examples
-from .model import GCNEncoder
+from .model import GCNEncoder, ProteinEncoder
 
 
 def set_seed(seed: int) -> None:
@@ -26,6 +26,23 @@ def set_seed(seed: int) -> None:
 def encode(encoder: GCNEncoder, graphs: list[Data], device: torch.device) -> torch.Tensor:
     batch = Batch.from_data_list(graphs).to(device)
     return encoder(batch.x, batch.edge_index, batch.batch)
+
+
+def encode_sequence_aware(
+    encoder: GCNEncoder,
+    poi_encoder: ProteinEncoder,
+    e3_encoder: ProteinEncoder,
+    graphs: list[Data],
+    poi_index: dict[str, torch.LongTensor],
+    e3_index: dict[str, torch.LongTensor],
+    device: torch.device,
+) -> torch.Tensor:
+    """Apply the reported additive molecule/POI/E3 fusion."""
+    molecular = encode(encoder, graphs, device)
+    compound_ids = [str(getattr(graph, "cid", "")) for graph in graphs]
+    poi = poi_encoder.encode_compound_ids(compound_ids, poi_index, device)
+    e3 = e3_encoder.encode_compound_ids(compound_ids, e3_index, device)
+    return molecular + poi_encoder.alpha * poi + e3_encoder.alpha * e3
 
 
 def source_tasks(
@@ -136,6 +153,93 @@ def train_episodic(
         "n_source_tasks": len(tasks),
         "epochs": int(epochs),
         "episodes_per_epoch": int(episodes_per_epoch),
+    }
+
+
+def train_episodic_sequence_aware(
+    contexts: pd.DataFrame,
+    graph_index: dict[str, Data],
+    poi_index: dict[str, torch.LongTensor],
+    e3_index: dict[str, torch.LongTensor],
+    source_e3: str,
+    k_shot: int,
+    q_query: int,
+    seed: int,
+    device: torch.device,
+    epochs: int = 100,
+    episodes_per_epoch: int = 100,
+    learning_rate: float = 1e-3,
+    weight_decay: float = 1e-5,
+    protein_embed_dim: int = 64,
+) -> tuple[GCNEncoder, ProteinEncoder, ProteinEncoder, dict[str, Any]]:
+    """Train the sequence-aware episodic model used in the original runs.
+
+    All GCN, POI, E3, and scalar-alpha parameters are registered in the same
+    Adam optimizer.  This explicit routine is retained separately from the
+    GCN-only numerical-audit path to make the two release scopes unambiguous.
+    """
+    set_seed(seed)
+    tasks, task_mode = source_tasks(
+        contexts, graph_index, source_e3, k_shot, q_query
+    )
+    encoder = GCNEncoder().to(device)
+    poi_encoder = ProteinEncoder(embed_dim=protein_embed_dim).to(device)
+    e3_encoder = ProteinEncoder(embed_dim=protein_embed_dim).to(device)
+    optimizer = torch.optim.Adam(
+        [
+            *encoder.parameters(),
+            *poi_encoder.parameters(),
+            *e3_encoder.parameters(),
+        ],
+        lr=learning_rate,
+        weight_decay=weight_decay,
+    )
+    loss_function = nn.BCEWithLogitsLoss()
+    task_names = list(tasks)
+    for _ in range(int(epochs)):
+        encoder.train()
+        poi_encoder.train()
+        e3_encoder.train()
+        for _ in range(int(episodes_per_epoch)):
+            support, support_labels, query, query_labels = sample_episode(
+                tasks[random.choice(task_names)],
+                graph_index,
+                k_shot,
+                q_query,
+                device,
+            )
+            support_embedding = encode_sequence_aware(
+                encoder, poi_encoder, e3_encoder, support, poi_index, e3_index, device
+            )
+            query_embedding = encode_sequence_aware(
+                encoder, poi_encoder, e3_encoder, query, poi_index, e3_index, device
+            )
+            positive = support_embedding[support_labels == 1].mean(0, keepdim=True)
+            negative = support_embedding[support_labels == 0].mean(0, keepdim=True)
+            logits = -(
+                torch.norm(query_embedding - positive, dim=1)
+                - torch.norm(query_embedding - negative, dim=1)
+            )
+            loss = loss_function(logits, query_labels)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+    encoder.eval()
+    poi_encoder.eval()
+    e3_encoder.eval()
+    return encoder, poi_encoder, e3_encoder, {
+        "source_e3": source_e3,
+        "seed": int(seed),
+        "k_shot": int(k_shot),
+        "train_q": int(q_query),
+        "task_mode": task_mode,
+        "n_source_tasks": len(tasks),
+        "epochs": int(epochs),
+        "episodes_per_epoch": int(episodes_per_epoch),
+        "sequence_aware": True,
+        "poi_alpha": float(poi_encoder.alpha.detach().cpu()),
+        "e3_alpha": float(e3_encoder.alpha.detach().cpu()),
+        "optimizer_parameter_groups": ["gcn", "poi_encoder", "e3_encoder"],
     }
 
 

@@ -21,7 +21,7 @@ from sklearn.metrics import (
 from torch_geometric.data import Batch, Data
 
 from .data import graphs_for_examples, iter_episodes, read_split
-from .model import GCNEncoder
+from .model import GCNEncoder, ProteinEncoder
 
 
 # RDKit emits one deprecation line per molecule for the historical ECFP API.
@@ -73,6 +73,29 @@ def load_encoder(checkpoint: str | Path, device: torch.device) -> GCNEncoder:
     return encoder
 
 
+def load_protein_encoder(
+    checkpoint: str | Path,
+    device: torch.device,
+    embed_dim: int = 64,
+    out_dim: int = 128,
+) -> ProteinEncoder:
+    """Load a retained POI or E3 sequence checkpoint with strict key checks."""
+    encoder = ProteinEncoder(embed_dim=embed_dim, out_dim=out_dim).to(device)
+    try:
+        state: Any = torch.load(checkpoint, map_location=device, weights_only=True)
+    except TypeError:  # PyTorch < 2.0
+        state = torch.load(checkpoint, map_location=device)
+    if isinstance(state, dict):
+        for key in ["encoder", "state_dict", "model", "module"]:
+            if key in state and isinstance(state[key], dict):
+                state = state[key]
+                break
+        state = {key.removeprefix("module."): value for key, value in state.items()}
+    encoder.load_state_dict(state, strict=True)
+    encoder.eval()
+    return encoder
+
+
 @torch.no_grad()
 def encode_graphs(
     encoder: GCNEncoder,
@@ -81,6 +104,26 @@ def encode_graphs(
 ) -> np.ndarray:
     batch = Batch.from_data_list(graphs).to(device)
     embedding = encoder(batch.x, batch.edge_index, batch.batch)
+    return embedding.detach().cpu().numpy().astype(np.float32)
+
+
+@torch.no_grad()
+def encode_graphs_sequence_aware(
+    encoder: GCNEncoder,
+    poi_encoder: ProteinEncoder,
+    e3_encoder: ProteinEncoder,
+    graphs: list[Data],
+    poi_index: dict[str, torch.LongTensor],
+    e3_index: dict[str, torch.LongTensor],
+    device: torch.device,
+) -> np.ndarray:
+    """Encode graphs with the retained additive POI/E3 sequence branches."""
+    batch = Batch.from_data_list(graphs).to(device)
+    molecular = encoder(batch.x, batch.edge_index, batch.batch)
+    compound_ids = [str(getattr(graph, "cid", "")) for graph in graphs]
+    poi = poi_encoder.encode_compound_ids(compound_ids, poi_index, device)
+    e3 = e3_encoder.encode_compound_ids(compound_ids, e3_index, device)
+    embedding = molecular + poi_encoder.alpha * poi + e3_encoder.alpha * e3
     return embedding.detach().cpu().numpy().astype(np.float32)
 
 
@@ -141,11 +184,29 @@ def evaluate_split(
     fingerprint_weight: float = 0.5,
     phase: str = "meta_test",
     metadata_overrides: dict[str, Any] | None = None,
+    poi_checkpoint: str | Path | None = None,
+    e3_checkpoint: str | Path | None = None,
+    poi_index: dict[str, torch.LongTensor] | None = None,
+    e3_index: dict[str, torch.LongTensor] | None = None,
 ) -> pd.DataFrame:
     split_path = Path(split_path)
     split = read_split(split_path)
     meta = {**split.get("meta", {}), **(metadata_overrides or {})}
     encoder = load_encoder(checkpoint, device)
+    sequence_arguments = [poi_checkpoint, e3_checkpoint, poi_index, e3_index]
+    if any(argument is not None for argument in sequence_arguments) and not all(
+        argument is not None for argument in sequence_arguments
+    ):
+        raise ValueError(
+            "Sequence-aware inference requires both checkpoints and both sequence indices"
+        )
+    sequence_aware = all(argument is not None for argument in sequence_arguments)
+    poi_encoder = (
+        load_protein_encoder(poi_checkpoint, device) if poi_checkpoint is not None else None
+    )
+    e3_encoder = (
+        load_protein_encoder(e3_checkpoint, device) if e3_checkpoint is not None else None
+    )
     fingerprints = fingerprint_index(contexts, bits=fingerprint_bits)
     fallback_labels = dict(zip(contexts["Compound ID"], contexts["Label_bin"]))
     rows: list[dict[str, Any]] = []
@@ -161,14 +222,28 @@ def evaluate_split(
             continue
         if any(compound_id not in fingerprints for compound_id in support_ids + query_ids):
             continue
+        support_embedding = (
+            encode_graphs_sequence_aware(
+                encoder, poi_encoder, e3_encoder, support, poi_index, e3_index, device
+            )
+            if sequence_aware
+            else encode_graphs(encoder, support, device)
+        )
+        query_embedding = (
+            encode_graphs_sequence_aware(
+                encoder, poi_encoder, e3_encoder, query, poi_index, e3_index, device
+            )
+            if sequence_aware
+            else encode_graphs(encoder, query, device)
+        )
         support_features = fused_features(
-            encode_graphs(encoder, support, device),
+            support_embedding,
             support_ids,
             fingerprints,
             fingerprint_weight,
         )
         query_features = fused_features(
-            encode_graphs(encoder, query, device),
+            query_embedding,
             query_ids,
             fingerprints,
             fingerprint_weight,
@@ -190,7 +265,15 @@ def evaluate_split(
                     "q_query": meta.get("q_query", ""),
                     "query_setting": meta.get("query_setting", ""),
                     "seed": meta.get("seed", ""),
-                    "method": "ProMeta" if head == "prototype" else "ProMeta + linear head",
+                    "method": (
+                        "ProMeta (sequence-aware)"
+                        if sequence_aware and head == "prototype"
+                        else "ProMeta + linear head (sequence-aware)"
+                        if sequence_aware
+                        else "ProMeta"
+                        if head == "prototype"
+                        else "ProMeta + linear head"
+                    ),
                     "task": task,
                     "episode": episode_index,
                     "compound_id": compound_id,
