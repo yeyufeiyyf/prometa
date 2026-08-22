@@ -19,4 +19,7 @@ results/released/s8_rdkit_3d_summary.csv,ProMeta + 3D descriptor fusion | ProMet
 results/released/s9_kq_sensitivity_query_predictions.csv,ProMeta,PASS
 results/released/s9_kq_sensitivity_split_metrics.csv,ProMeta,PASS
 results/released/s9_kq_sensitivity_summary.csv,ProMeta,PASS
+results/released/sequence_aware_retrained_main_2026_query_predictions.csv,ProMeta (sequence-aware),PASS
+results/released/sequence_aware_retrained_main_2026_split_metrics.csv,ProMeta (sequence-aware),PASS
+results/released/sequence_aware_retrained_main_2026_summary.csv,ProMeta (sequence-aware),PASS
 results/released/vz185_prometa_summary.csv,ProMeta_legacy_excel_order,PASS

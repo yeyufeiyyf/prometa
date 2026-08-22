@@ -37,7 +37,9 @@ deliberately excluded.
   byte-identical encoder copies; historical audits without a complete retained
   model/input pair contain frozen prediction checkpoints.
 - `checkpoints/sequence_aware/`: retained POI/E3/GCN checkpoint triplets for
-  the main seed-42 run and the rare-E3 K=1,Q=1 runs.
+  the main seed-42 run and the rare-E3 K=1,Q=1 runs, plus complete,
+  direction-specific three-seed triplets from the documented 2026
+  sequence-aware retraining.
 - `archive/sequence_aware_source/`: exact self-contained experimental source
   snapshot from which the protein branch was integrated into `prometa/`.
 - `results/released/`: ProMeta-only query predictions and summaries reported in
@@ -100,12 +102,23 @@ are retained for rare-E3 K=1,Q=1. For main seeds 2025 and 3407, the molecular
 GCN branches are retained but the original dual-sequence sidecars are not;
 those missing files are explicitly marked `not_retained_not_reconstructed`.
 
+To provide a complete executable checkpoint family without fabricating the
+missing historical sidecars, the repository also includes six matched
+retraining runs under
+`checkpoints/sequence_aware/retrained_main_2026/{crbn_source,vhl_source}/`.
+Each source direction has seeds 42, 2025, and 3407, and every seed has its own
+GCN, POI, and E3 checkpoint plus a training-audit JSON. These 18 neural files
+are labeled `reproducibly_retrained`, not `retained_original`, in
+`experiments/retrained_sequence_checkpoint_manifest.csv`.
+
 Verify every retained hash, strict-load every neural checkpoint, compare the
 main seed-42 GCN with the byte-identical numerical-release copy, and audit the
 joint optimizer registration:
 
 ```bash
 python experiments/verify_sequence_provenance.py
+python experiments/verify_sequence_provenance.py \
+  --manifest experiments/retrained_sequence_checkpoint_manifest.csv
 ```
 
 Run the retained main seed-42 sequence-aware inference path on the four S3
@@ -113,12 +126,31 @@ support/query settings:
 
 ```bash
 python experiments/evaluate_sequence_aware.py --device cpu
+python experiments/evaluate_sequence_aware.py \
+  --family retrained_main_2026 --device cpu
 ```
 
-This sequence-provenance run is separate from the three-seed numerical audit:
-the latter reproduces the rounded response-letter values from retained GCN
-branches, splits, and frozen outputs and must not be interpreted as proof that
-all historical dual-sequence sidecars survived packaging.
+The second command reproduces the separately released three-seed retraining
+results in
+`results/released/sequence_aware_retrained_main_2026_{summary,split_metrics,query_predictions}.csv`.
+Its mean AUROCs for CRBN->VHL are 0.769 (Q3) and 0.850 (Q5), and those for
+VHL->CRBN are 0.637 (Q3) and 0.702 (Q5). These values document above-random
+cross-ligase transfer for the rerun but are not substituted for the historical
+response-letter values. The original sequence-provenance run and the
+three-seed numerical audit remain separate: the latter reproduces the rounded
+response-letter values from retained GCN branches, splits, and frozen outputs
+and must not be interpreted as proof that all historical dual-sequence
+sidecars survived packaging.
+
+To rebuild all six retrained checkpoint triplets from source, use the following
+optional command. It is intentionally destructive only when `--force` is
+given because the verified triplets are already included. CPU training is
+limited to one PyTorch thread per run.
+
+```bash
+python experiments/train_retrained_sequence_aware_main.py \
+  --device cpu --force
+```
 
 ## Environment
 
@@ -269,7 +301,7 @@ contains a non-ProMeta method:
 python experiments/verify_response_letter.py
 ```
 
-The expected successful result is `230` table checks, `21` scope checks, and
+The expected successful result is `230` table checks, `24` scope checks, and
 zero failures.
 
 ## Main ProMeta-only figures

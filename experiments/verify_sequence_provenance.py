@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 from pathlib import Path
 
@@ -25,7 +26,16 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    manifest = pd.read_csv(MANIFEST, keep_default_na=False)
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        default=MANIFEST,
+        help="Sequence-checkpoint manifest to verify.",
+    )
+    args = parser.parse_args()
+    manifest_path = args.manifest if args.manifest.is_absolute() else ROOT / args.manifest
+    manifest = pd.read_csv(manifest_path, keep_default_na=False)
     device = torch.device("cpu")
     failures: list[str] = []
     retained = 0
@@ -70,10 +80,11 @@ def main() -> None:
         if required not in source_text:
             failures.append(f"integrated training source is missing: {required}")
 
-    main_gcn = ROOT / "checkpoints" / "sequence_aware" / "main_seed42" / "protonet_encoder_seed42.pt"
-    numerical_gcn = ROOT / "checkpoints" / "prometa_global" / "protonet_encoder_seed42.pt"
-    if sha256(main_gcn) != sha256(numerical_gcn):
-        failures.append("main seed-42 GCN provenance copy is not byte-identical")
+    if manifest_path.resolve() == MANIFEST.resolve():
+        main_gcn = ROOT / "checkpoints" / "sequence_aware" / "main_seed42" / "protonet_encoder_seed42.pt"
+        numerical_gcn = ROOT / "checkpoints" / "prometa_global" / "protonet_encoder_seed42.pt"
+        if sha256(main_gcn) != sha256(numerical_gcn):
+            failures.append("main seed-42 GCN provenance copy is not byte-identical")
 
     print(
         f"sequence provenance: retained={retained}; "

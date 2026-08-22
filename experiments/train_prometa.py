@@ -37,6 +37,12 @@ def main() -> None:
     parser.add_argument("--episodes-per-epoch", type=int, default=100)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--device", default="cuda")
+    parser.add_argument(
+        "--cpu-threads",
+        type=int,
+        default=None,
+        help="Limit PyTorch intra-op CPU threads; useful for parallel reproducibility runs.",
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument(
         "--sequence-csv",
@@ -54,6 +60,12 @@ def main() -> None:
         help="Run the explicitly labeled GCN-only ablation/audit path.",
     )
     args = parser.parse_args()
+
+    if args.cpu_threads is not None:
+        if args.cpu_threads < 1:
+            raise ValueError("--cpu-threads must be at least 1")
+        torch.set_num_threads(args.cpu_threads)
+        torch.set_num_interop_threads(1)
 
     device = torch.device(args.device if not args.device.startswith("cuda") or torch.cuda.is_available() else "cpu")
     contexts = read_contexts(args.contexts)
@@ -108,6 +120,7 @@ def main() -> None:
             batch_size=args.batch_size,
         )
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    audit["cpu_threads"] = args.cpu_threads
     torch.save(encoder.state_dict(), args.output)
     if poi_encoder is not None and e3_encoder is not None:
         poi_output = args.output.with_name(f"{args.output.stem}_poi{args.output.suffix}")

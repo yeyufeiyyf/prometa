@@ -14,6 +14,8 @@ printf '%s\n' '[1/10] Verifying release checksums'
 
 printf '%s\n' '[2/10] Verifying sequence-aware source, inputs, and checkpoints'
 "$PYTHON_BIN" experiments/verify_sequence_provenance.py
+"$PYTHON_BIN" experiments/verify_sequence_provenance.py \
+  --manifest experiments/retrained_sequence_checkpoint_manifest.csv
 
 printf '%s\n' '[3/10] Verifying experiment-specific checkpoints and splits'
 "$PYTHON_BIN" experiments/verify_experiment_checkpoints.py
@@ -31,8 +33,10 @@ printf '%s\n' '[6/10] Recomputing the S8 RDKit-3D control'
 printf '%s\n' '[7/10] Evaluating frozen S7, compound-family, and VZ185 checkpoints'
 "$PYTHON_BIN" experiments/evaluate_frozen_checkpoints.py
 
-printf '%s\n' '[8/10] Running the retained main seed-42 sequence-aware path'
+printf '%s\n' '[8/10] Running the retained and retrained sequence-aware paths'
 "$PYTHON_BIN" experiments/evaluate_sequence_aware.py --device "$DEVICE"
+"$PYTHON_BIN" experiments/evaluate_sequence_aware.py \
+  --family retrained_main_2026 --device "$DEVICE"
 
 printf '%s\n' '[9/10] Auditing all released response-letter values'
 "$PYTHON_BIN" experiments/verify_response_letter.py

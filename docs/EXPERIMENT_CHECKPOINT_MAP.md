@@ -26,6 +26,21 @@ The frozen artifacts are explicit about this distinction; they are not
 presented as recovered neural weights.  They preserve the exact reported
 values and are evaluated by `experiments/evaluate_frozen_checkpoints.py`.
 
+## Sequence-aware checkpoint families
+
+The historical sequence-aware provenance is recorded separately in
+`experiments/sequence_checkpoint_manifest.csv`. It identifies which original
+GCN, POI, and E3 files were retained and explicitly marks the two missing
+historical main-run sidecar pairs as `not_retained_not_reconstructed`.
+
+The complete, direction-specific three-seed rerun is stored under
+`checkpoints/sequence_aware/retrained_main_2026/` and recorded in
+`experiments/retrained_sequence_checkpoint_manifest.csv`. All 18 GCN/POI/E3
+files are paired by source direction and seed, SHA-256 hashed, strict-loaded,
+and labeled `reproducibly_retrained`; they are not presented as recovered
+historical weights. The corresponding query-level outputs and summaries are
+released under `results/released/sequence_aware_retrained_main_2026_*.csv`.
+
 ## Rebuild and evaluate
 
 ```bash
@@ -36,6 +51,12 @@ python experiments/evaluate_prometa_3d.py --device cpu
 python experiments/evaluate_frozen_checkpoints.py
 python experiments/verify_experiment_checkpoints.py
 python experiments/verify_experiment_splits.py
+python experiments/verify_sequence_provenance.py
+python experiments/verify_sequence_provenance.py \
+  --manifest experiments/retrained_sequence_checkpoint_manifest.csv
+python experiments/evaluate_sequence_aware.py --device cpu
+python experiments/evaluate_sequence_aware.py \
+  --family retrained_main_2026 --device cpu
 python experiments/verify_response_letter.py
 ```
 
