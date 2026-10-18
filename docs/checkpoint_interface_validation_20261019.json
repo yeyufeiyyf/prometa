@@ -1,0 +1,35 @@
+{
+  "checkpoint_entries": 99,
+  "per_study": {
+    "transfer": 45,
+    "kcurve": 6,
+    "poi": 20,
+    "linker": 6,
+    "families": 9,
+    "efficiency": 3,
+    "rare_e3": 10
+  },
+  "all_file_hashes_verified": true,
+  "all_models_loaded_with_strict_state_dict": true,
+  "missing_or_ambiguous_selection_rejected": true,
+  "cdk6_missing_checkpoint_reported": true,
+  "date": "2026-10-19",
+  "automatic_and_explicit_checkpoint_predictions_equal": true,
+  "new_query_rows": 6,
+  "rare_architecture_prediction_passed": true,
+  "single_setting_inference": {
+    "evaluations": 3,
+    "query_rows": 72,
+    "maximum_absolute_score_difference": 1.1102230246251565e-16,
+    "score_tolerance": 1e-05,
+    "query_identities_and_labels_equal": true
+  },
+  "single_seed_inference": {
+    "evaluations": 1,
+    "query_rows": 279,
+    "maximum_absolute_score_difference": 1.1102230246251565e-16,
+    "score_tolerance": 1e-05,
+    "query_identities_and_labels_equal": true
+  },
+  "all_15_setting_metrics_recomputed": true
+}

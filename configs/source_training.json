@@ -1,0 +1,71 @@
+{
+  "experiment_tag": "main_bidirectional_20260918_frozen_K2Q3_Q5",
+  "protocol": "strict_leave_target_e3_out_fixed_query_nested_support",
+  "split_protocol": "e3_v3_nested_k_v1",
+  "seeds": [
+    42,
+    2025,
+    3407
+  ],
+  "directions": [
+    {
+      "source_e3": "CRBN",
+      "target_e3": "VHL"
+    },
+    {
+      "source_e3": "VHL",
+      "target_e3": "CRBN"
+    }
+  ],
+  "variants": [
+    "grounded_interaction"
+  ],
+  "evaluation_e3_conditions": [
+    "correct"
+  ],
+  "k_shot": 2,
+  "train_q": 3,
+  "test_k": [
+    2
+  ],
+  "reported_k": [
+    2
+  ],
+  "test_q": 3,
+  "epochs": 100,
+  "episodes_per_epoch": 100,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "compatibility_loss_weight": 0.0,
+  "source_validation_fraction": 0.2,
+  "source_validation_episodes_per_task": 2,
+  "early_stopping_patience": 15,
+  "validation_min_delta": 0.0001,
+  "ctp_epochs": 5,
+  "ctp_batch_size": 64,
+  "ctp_learning_rate": 0.0003,
+  "max_protein_length": 2000,
+  "protein_feature_mode": "frozen_esm2_1280_separate_poi_e3_adapters",
+  "supervised_train_scope": "source_e3_only",
+  "metric": "shared_squared_euclidean_with_learned_temperature",
+  "zero_shot": {
+    "definition": "no target-E3 support; class prototypes use source-E3 training tasks only",
+    "reference_rows_per_training_task_per_class": 5,
+    "exclude_source_validation_tasks": true,
+    "same_trained_checkpoint_as_k_ge_1": true
+  },
+  "data": {
+    "contexts": "../data-prometa/tables/strict_crbn_vhl_contexts_fair_esm_v1.csv",
+    "sequence_table": "../data-prometa/tables/protac_with_seq_fair_esm_v1.csv",
+    "tuple_table": "../data-prometa/tables/protac_db.csv",
+    "component_table": "../data-prometa/tables/protac-fine_esm_complete_v1.csv",
+    "protein_embeddings": "../data-prometa/embeddings/protein_embeddings_fair_v1.pt",
+    "split_root": "../main_bidirectional/splits"
+  },
+  "outputs": {
+    "results": "../main_bidirectional/reproduced/training/results",
+    "checkpoints": "../main_bidirectional/reproduced/training/checkpoints",
+    "logs": "../main_bidirectional/reproduced/training/logs"
+  },
+  "archive_note": "Transfer K2Q5 uses independently source-trained K2Q5 checkpoints; all other transfer settings and the final K curve use K2Q3 checkpoints."
+}

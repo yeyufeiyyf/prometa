@@ -1,367 +1,143 @@
 # ProMeta
 
-Few-shot PROTAC-targeted degradation prediction across E3 ligases.
+ProMeta predicts binary PROTAC degradation activity in a new E3-ligase context from a small labeled support set. A molecular GNN with bond features and fixed protein features supplies the representation; global and recruiter–E3 interaction branches combine the inputs. Active/inactive class prototypes classify query compounds without updating the encoder at target inference.
 
-[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21371599.svg)](https://doi.org/10.5281/zenodo.21371599)
+This repository contains the ProMeta method and its publication experiments. Comparator implementations and weights are excluded. The code is MIT-licensed; frozen molecular data retain their original source attribution.
 
-ProMeta learns a molecule--protein representation from a source E3 ligase and performs
-held-out target-ligase prediction by constructing active/inactive prototypes
-from a small labeled support set. The sequence-aware model combines a molecular
-GCN with separate POI and E3 encoders through trainable scalar weights. This
-public release contains the integrated implementation, the exact retained
-experimental source snapshot, a checkpoint-provenance audit, and the later
-numerical-reproduction package. Results from other prediction methods are
-deliberately excluded.
+## Install
 
-<p align="center">
-  <img src="figures/model_framework.png" width="820" alt="ProMeta framework"/>
-</p>
-
-## Release contents
-
-- `prometa/`: molecular and POI/E3 sequence models, joint episodic training,
-  prototype inference, metrics, and the RDKit-3D descriptor control.
-- `experiments/`: split builders, training/evaluation entry points, experiment
-  registry, and response-letter consistency checks.
-- `data/`: the compound-linked POI/E3 sequence table, the 1,386-context strict CRBN/VHL table, the full labeled context
-  table used for rare-E3 evaluation, graph cache, intersection table, and 3D
-  descriptor cache.
-- `splits/response_letter/`: retained target support/query split profiles.
-- `splits/source_development/`: deterministic 80/20 source-Target development
-  partitions and source-validation episodes for each source ligase and seed.
-- `splits/by_experiment/`: one explicitly named split directory for every
-  reported experiment; R9/VZ185 directories contain clearly marked frozen
-  cohorts because no standalone historical support/query split was retained.
-- `checkpoints/by_experiment/`: one explicitly named checkpoint artifact for
-  every reported ProMeta experiment. Encoder-backed experiments contain
-  byte-identical encoder copies; historical audits without a complete retained
-  model/input pair contain frozen prediction checkpoints.
-- `checkpoints/sequence_aware/`: retained POI/E3/GCN checkpoint triplets for
-  the main seed-42 run and the rare-E3 K=1,Q=1 runs, plus complete,
-  direction-specific three-seed triplets from the documented 2026
-  sequence-aware retraining.
-- `archive/sequence_aware_source/`: exact self-contained experimental source
-  snapshot from which the protein branch was integrated into `prometa/`.
-- `results/released/`: ProMeta-only query predictions and summaries reported in
-  the response letter.
-
-The strict CRBN/VHL table contains 1,386 unique compound--E3--target contexts:
-842 CRBN and 544 VHL, with 690 positive and 696 negative labels.
-
-## Response-letter experiment map
-
-| Table | ProMeta experiment | Public entry point |
-|---|---|---|
-| S2 | Shared-intersection, bidirectional K=2 evaluation | `evaluate_prometa.py` |
-| S3 | Bidirectional CRBN/VHL fixed-query evaluation | `evaluate_prometa.py` |
-| S4--S5 | Rare-E3 common-query evaluation and audit | `evaluate_prometa.py`, `summarize_rare_e3.py` |
-| S6 | Prototype versus support-trained linear head | `evaluate_prometa.py` |
-| S7 | ProMeta, linear-head, and no-episodic variants | `train_prometa.py`, released predictions |
-| S8 | ProMeta plus RDKit conformer descriptors | `evaluate_prometa_3d.py` |
-| S9 | K/Q and all-remaining-query sensitivity | `evaluate_prometa.py` |
-| R9 case families | CDK6 and BCL-xL series with the main S3 checkpoint | released compound predictions |
-| VZ185 | Retrospective 12-compound correctness audit | released compound audit |
-
-`experiments/response_letter_experiments.csv` records each split profile,
-retained source-checkpoint family, head, K/Q setting, and data table. The
-direct run-time paths are in `experiment_checkpoint_manifest.csv`. In
-particular:
-
-- S3 K=2,Q=3 and the S9 analyses use the BCR--ABL-excluded profile where stated
-  in the response letter.
-- S3 K=2,Q=5 and S6 use the original fixed-query profile.
-- S9 K=2 all-remaining-query uses its corresponding K/Q-specific checkpoint.
-- S6 linear-head rows use the corresponding K/Q-specific ProMeta checkpoint;
-  prototype rows use the recovered global checkpoint.
-- Rare-E3 S4 metrics pool the 90 episode-level common-query rows, rather than
-  averaging one metric value per seed.
-
-`experiments/experiment_checkpoint_manifest.csv` and
-`experiments/experiment_split_manifest.csv` map every reported experiment and
-seed to its dedicated checkpoint and split paths and record source/copy
-SHA-256 hashes.
-
-## Sequence-aware implementation and provenance
-
-The reported sequence-aware encoder is implemented in `prometa/model.py` and
-`prometa/training.py` as
-
-```text
-z = z_mol + alpha_poi * z_poi + alpha_e3 * z_e3
-```
-
-The GCN, POI encoder, E3 encoder, `alpha_poi`, and `alpha_e3` are jointly
-optimized. The exact retained source snapshot is
-`archive/sequence_aware_source/run_baselines_vhl.py`; the compound-linked
-inputs are `data/protac_with_seq.csv`.
-
-`experiments/sequence_checkpoint_manifest.csv` records retained and missing
-artifact roles rather than silently substituting files. The complete
-GCN/POI/E3 triplet is retained for the main seed-42 run, and all three triplets
-are retained for rare-E3 K=1,Q=1. For main seeds 2025 and 3407, the molecular
-GCN branches are retained but the original dual-sequence sidecars are not;
-those missing files are explicitly marked `not_retained_not_reconstructed`.
-
-To provide a complete executable checkpoint family without fabricating the
-missing historical sidecars, the repository also includes six matched
-retraining runs under
-`checkpoints/sequence_aware/retrained_main_2026/{crbn_source,vhl_source}/`.
-Each source direction has seeds 42, 2025, and 3407, and every seed has its own
-GCN, POI, and E3 checkpoint plus a training-audit JSON. These 18 neural files
-are labeled `reproducibly_retrained`, not `retained_original`, in
-`experiments/retrained_sequence_checkpoint_manifest.csv`.
-
-Verify every retained hash, strict-load every neural checkpoint, compare the
-main seed-42 GCN with the byte-identical numerical-release copy, and audit the
-joint optimizer registration:
-
-```bash
-python experiments/verify_sequence_provenance.py
-python experiments/verify_sequence_provenance.py \
-  --manifest experiments/retrained_sequence_checkpoint_manifest.csv
-```
-
-Run the retained main seed-42 sequence-aware inference path on the four S3
-support/query settings:
-
-```bash
-python experiments/evaluate_sequence_aware.py --device cpu
-python experiments/evaluate_sequence_aware.py \
-  --family retrained_main_2026 --device cpu
-```
-
-The second command reproduces the separately released three-seed retraining
-results in
-`results/released/sequence_aware_retrained_main_2026_{summary,split_metrics,query_predictions}.csv`.
-Its mean AUROCs for CRBN->VHL are 0.769 (Q3) and 0.850 (Q5), and those for
-VHL->CRBN are 0.637 (Q3) and 0.702 (Q5). These values document above-random
-cross-ligase transfer for the rerun but are not substituted for the historical
-response-letter values. The original sequence-provenance run and the
-three-seed numerical audit remain separate: the latter reproduces the rounded
-response-letter values from retained GCN branches, splits, and frozen outputs
-and must not be interpreted as proof that all historical dual-sequence
-sidecars survived packaging.
-
-To rebuild all six retrained checkpoint triplets from source, use the following
-optional command. It is intentionally destructive only when `--force` is
-given because the verified triplets are already included. CPU training is
-limited to one PyTorch thread per run.
-
-```bash
-python experiments/train_retrained_sequence_aware_main.py \
-  --device cpu --force
-```
-
-## Environment
-
-Create the recorded environment:
+The tested environment is Python 3.10, PyTorch 2.5.1, PyG 2.8.0 and the versions in `requirements.txt`. The local validation used the CUDA 12.1 build of PyTorch, including CPU inference runs.
 
 ```bash
 conda env create -f environment.yml
 conda activate prometa
+python -m pip install -e . --no-deps
+python verify_release.py --code-only
 ```
 
-For a CPU-oriented pip installation, the equivalent direct dependencies are
-also listed in `requirements.txt`:
+Use a PyTorch build compatible with the available GPU for GPU training/profiling. All archived prediction/metric reproduction commands below run on CPU. ESM-2 feature-producing weights are not needed when using the provided frozen protein bank.
+
+## Download the ProMeta artifacts
+
+The code archive and the frozen artifact archive are separate. Extract `prometa_artifacts_20261019_cdk6.zip` **inside the repository root**; it creates `artifacts/`. The current bidirectional comparison has 45 independently trained direction–setting–seed checkpoints, its 45 fixed splits, and individual query predictions under `artifacts/transfer_setting_fresh_20261015/`. The bundle also retains the earlier shared-checkpoint transfer run for the separate K-curve analysis, plus frozen contexts/components/protein features, other study checkpoints, and measured timings. The artifact bundle is ignored by git and belongs in a GitHub Release asset or the linked data deposit.
 
 ```bash
-python -m pip install -r requirements.txt
+curl -fL -o prometa_artifacts_20261019_cdk6.zip \
+  https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/prometa_artifacts_20261019_cdk6.zip
+unzip prometa_artifacts_20261019_cdk6.zip
+python verify_release.py
 ```
 
-All evaluation commands also run on CPU by passing `--device cpu`.
+Download the [complete checkpoint, split and input bundle](https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/prometa_artifacts_20261019_cdk6.zip) from the [v2.0.0 publication release](https://github.com/yeyufeiyyf/prometa/releases/tag/v2.0.0). The release also supplies the code ZIP and a SHA-256 download manifest. See [checkpoint API documentation](docs/CHECKPOINT_API.md) for individual experiments, including CDK6.
 
-## One-command reproduction
+For direct loading, the artifact bundle includes `study_checkpoints/<study>/<condition>/seed_<seed>/model.pt` for K curve, POI, linker, families, CDK6, efficiency and rare E3. Use the direction as `condition` for K curve/POI/linker, the assay name for families, `CDK6` for the CDK6 case, `FLT3` for efficiency and `common_multisource` for rare E3. These files are copies of the original trained weights; `study_checkpoints/checkpoint_mapping.json` records the exact source and SHA-256 of each copy. To regenerate them from the original weights, run `python -m experiments.materialize_study_checkpoints --artifacts artifacts`.
 
-From the repository root, the following command verifies the downloaded
-files, recomputes every public ProMeta experiment, and runs the numerical
-audits:
+## Reproduce the paper studies
+
+`K` is the support count **per class**, and numeric `Q` is the query count **per class**. Thus K2Q3 uses four labeled references and six queries. An internal `Q=0` filename means all eligible queries remaining after support selection.
+
+Recompute every ProMeta result from the frozen query predictions or measured timings:
 
 ```bash
-bash run_all_experiments.sh
+python reproduce.py --experiment all --mode metrics --output reproduced/paper_metrics
 ```
 
-Set `DEVICE=cuda` to use a CUDA device. Fresh results are written only under
-`results/recomputed/`; the immutable references remain under
-`results/released/`.
-
-## Rebuild the frozen splits
-
-The builders are deterministic and use seeds 42, 2025, and 3407:
+Regenerate predictions for transfer, K learning curves, rare E3, POI, linker, HPK1/FLT3 and CDK6 from their saved weights:
 
 ```bash
-python experiments/build_response_splits.py --profile all
-python experiments/build_rare_common_query_splits.py
-python experiments/materialize_experiment_splits.py --force
+python reproduce.py --experiment all --mode infer --output reproduced/paper_inference --workers 2
 ```
 
-## Source-only model selection and target-label isolation
-
-Numerical reproduction of the reported values uses the retained frozen
-checkpoints described below.  Separately, the repository provides an auditable
-retraining path that implements the stated source-development boundary without
-claiming to reconstruct unretained historical selection logs.
-
-Build the deterministic 80/20 source-Target partitions and source-validation
-episodes for CRBN and VHL under seeds 42, 2025, and 3407:
+Generate ProMeta-only study plots from either output directory:
 
 ```bash
-python experiments/build_source_development_splits.py
+python -m experiments.plot_results --run reproduced/paper_inference --artifacts artifacts --output reproduced/prometa_plots
 ```
 
-The generated `splits/source_development/source_target_partitions.csv` records
-every source Target and its partition.  Each source-development JSON contains
-only source-E3 Targets and explicitly records `held_out_target_e3_access: none`.
-Audit the full selection plan without training:
+The all-study inference command now reloads CDK6's three checkpoints and regenerates all 1,188 query scores under its 33 fixed support pairs. Original efficiency timings are recomputed; GPU timing is not rerun by this command. Each study's level is recorded in `reproduction_status.json`. `comparison.json` checks identities, labels and all paper-rounded metric columns, while recording unrounded score/metric differences.
+
+| Study | Paper protocol | Entry point / evidence |
+|---|---|---|
+| Bidirectional transfer | 15 direction–setting comparisons, seeds 42/2025/3407 | `reproduce.py --experiment transfer`; 45 separately initialized and source-trained checkpoints, 45 matched evaluation cells; pooled-query and task-mean AUROC |
+| K curve | Fixed K5 common-query cohort, K=0–5; K=1–7 extension archived | `reproduce.py --experiment kcurve`; source prototypes at K0 |
+| Rare E3 | CRBN+VHL multi-source; four rare ligases; exhaustive compound-level one-shot supports | `reproduce.py --experiment rare`; ten independently trained weights |
+| POI | 13 POI–direction pairs; 10 seeds; K0/K1/K2 | `reproduce.py --experiment poi`; four K1 support subsets averaged per query before metrics |
+| Linker | Nine fixed-end series, 85 molecules, three seeds | `reproduce.py --experiment linker`; disjoint support/query linkers, equal series weighting |
+| HPK1/FLT3 | All active–inactive support pairs; three seeds | `reproduce.py --experiment families`; FLT3_10nM is a separately labeled secondary endpoint |
+| CDK6 | 14 compounds, 33 support pairs, 1,188 original queries | `reproduce.py --experiment cdk6 --mode infer`; three checkpoints, fixed split; 0.886 ± 0.008, median 0.933 |
+| Efficiency | 33-candidate/FLT3 workload; 1,380 original ProMeta timing samples | `reproduce.py --experiment efficiency --mode metrics` |
+
+Always choose a new output directory. Reproduction never overwrites the reference artifact bundle. See [protocol details](docs/PROTOCOLS.md) for checkpoint selection, aggregation and numerical precision.
+
+## Train ProMeta
+
+The current S2/S3 transfer results can also be checked directly, without running the other studies:
 
 ```bash
-python experiments/run_source_selection_workflow.py \
-  --source-e3 CRBN --seed 42 --dry-run
+python -m experiments.transfer_setting_fresh --artifacts artifacts --output reproduced/transfer_current
+python -m experiments.transfer_setting_fresh --artifacts artifacts --mode infer --output reproduced/transfer_current_infer
 ```
 
-Remove `--dry-run` to train every configuration in
-`experiments/source_selection_candidates.csv`, rank checkpoints by source-only
-validation AUROC and then AUPRC, and freeze the selected GCN/POI/E3 triplet.  A
-held-out target split may be supplied only for the post-selection evaluation:
+The first command recomputes both AUROC aggregations from frozen query predictions; the second reloads each of the 45 distinct checkpoints and evaluates the same saved splits. Training provenance, per-run manifests, configuration, and source-partition hashes accompany the weights. The older `experiments/transfer.py` driver and its 12 source checkpoints belong to the archived shared-checkpoint transfer/K-curve run and do not reproduce the current S2/S3 training protocol.
+
+Train one CRBN+VHL multi-source seed for rare E3:
 
 ```bash
-python experiments/run_source_selection_workflow.py \
-  --source-e3 CRBN --seed 42 --device cpu \
-  --target-split splits/response_letter/bcr_abl_excluded/crbn_train_vhl_test_strict_K2Q3_seed42.json
+python -m experiments.rare_e3 train --artifacts artifacts --seed 42 --device cuda:0 --output reproduced/rare_train_seed42
 ```
 
-The workflow verifies that source-training and source-validation Targets are
-disjoint and jointly cover the source ligase.  The target split is not opened
-until after source-validation checkpoint selection.  Within target evaluation,
-support labels construct the prototypes, probabilities are computed without
-query labels, and query labels are retained only for metric calculation.
+Only `common_multisource` is exposed by this publication entry point. The original rare-model training and inference code version is preserved under `prometa/rare/`.
 
-## Reproduce ProMeta performance
+## Predict a new query set
 
-The upload directory already contains all dedicated checkpoints and splits.
-To rebuild them from the retained source artifacts, run:
+Choose a checkpoint by experiment, direction, K/Q and seed:
 
 ```bash
-python experiments/materialize_experiment_checkpoints.py --force
-python experiments/materialize_experiment_splits.py --force
+python -m prometa.checkpoints --study transfer --verify
+python predict.py --study transfer --direction VHL_to_CRBN --k 2 --q 3 --seed 42 \
+  --support examples/support.csv --query examples/query.csv \
+  --output reproduced/example_selected_checkpoint.csv
 ```
 
-Re-evaluate all checkpoint-backed rows in S2, S3, S4--S6, and S9:
+The source E3 and frozen protein bank are selected automatically. Each prediction
+writes a matching `.metadata.json` recording weight and input hashes. The catalog
+also exposes 57 named checkpoints for the other studies. See
+[checkpoint selection, Python API and individual-setting reproduction](docs/CHECKPOINT_API.md).
+
+Explicit paths are also supported:
 
 ```bash
-python experiments/evaluate_prometa.py --device cpu
+python predict.py \
+  --checkpoint artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_42/grounded_interaction.pt \
+  --protein-bank artifacts/current_transfer/prometa_as/data-prometa/embeddings/protein_embeddings_fair_v1.pt \
+  --support examples/support.csv --query examples/query.csv \
+  --source-e3 VHL --output reproduced/example_predictions.csv
 ```
 
-This writes one directory per experiment under `results/recomputed/`. Pool the
-rare-E3 common-query predictions exactly as in S4:
+The included example is a frozen CRBN target episode. Both CSVs need `Compound ID`, `Uniprot`, `Target`, `E3 ligase` and `Smiles`. The support also needs binary `Label_bin`; query labels do not enter scoring. `e3 ligand smiles` supplies recruiter localization. New proteins need their matching 1,280-dimensional frozen features; `--e3-map` optionally supplies E3-name-to-feature-key mappings. The active-class score concerns binary activity, not DC50/Dmax regression.
+
+## Ablations and profiling
+
+The current CRBN→VHL $K=2,Q=3$ input and model-design ablations are released with three-seed checkpoints, per-query predictions, run audits, and summaries under `artifacts/ablation_matched_source_20261015/`. The older general ablation entry points remain available; see [ablation protocols and results](docs/ABLATIONS.md).
+
+The ProMeta-only profiler checks its archived CPU scoring path without GPU timing:
 
 ```bash
-python experiments/summarize_rare_e3.py
+python -m experiments.efficiency --artifacts artifacts --seed 42 --validate-only --output reproduced/efficiency_input_check
 ```
 
-Reproduce the ProMeta/RDKit-3D rows in S8:
+For a fresh GPU measurement, omit `--validate-only` and choose `--device cuda:0`. The profiler excludes model loading, graph/ESM preprocessing and disk I/O from timed calls, and updates only a disposable training copy.
 
-```bash
-python experiments/evaluate_prometa_3d.py --device cpu
-```
+## Files and versions
 
-Recompute the exact S7, compound-family, and legacy VZ185 values from their
-dedicated frozen-prediction checkpoints:
+- `prometa/`: main GNN, protein adapters, interaction branches, prototype classifier and episodic engine.
+- `prometa/ablations/`: exact extended architecture version implementing removals, concatenation fusion and source-linear scoring.
+- `prometa/rare/`: rare-E3 campaign code version.
+- `experiments/`: ProMeta-only study, ablation and profiling entry points.
+- `configs/`: portable source/ablation settings.
+- `results/`: small ProMeta-only reference summaries; older S4/S5 summaries are explicitly separated.
+- `artifacts/MANIFEST.json`: frozen inputs/checkpoint/prediction hashes.
+- `artifacts/study_checkpoints/`: checkpoint copies named by study, condition/direction and seed; `checkpoint_mapping.json` records their original paths and hashes.
+- `docs/`: protocols, version boundaries, data attribution and publication instructions.
 
-```bash
-python experiments/evaluate_frozen_checkpoints.py
-```
-
-Verify that every dedicated artifact exists, is stored under the correct
-experiment ID, and matches its recorded source/checkpoint SHA-256:
-
-```bash
-python experiments/verify_experiment_checkpoints.py
-python experiments/verify_experiment_splits.py
-```
-
-Verify the integrity of the complete downloaded release:
-
-```bash
-python scripts/verify_release_checksums.py
-```
-
-Train the sequence-aware ProMeta encoder from source-ligase data. The command
-saves the GCN checkpoint plus POI and E3 sidecars; pass
-`--without-protein-sequences` only for the explicitly labeled GCN-only path:
-
-```bash
-python experiments/train_prometa.py --source-e3 CRBN --mode episodic --device cpu \
-  --output checkpoints/new/prometa_crbn_seed42.pt
-```
-
-Finally, audit every released rounded value and confirm that no result table
-contains a non-ProMeta method:
-
-```bash
-python experiments/verify_response_letter.py
-```
-
-The expected successful result is `230` table checks, `24` scope checks, and
-zero failures.
-
-## Main ProMeta-only figures
-
-<p align="center">
-  <img src="figures/bidirectional_prometa_only_bar.png" width="720" alt="Bidirectional CRBN/VHL ProMeta performance"/>
-</p>
-
-<p align="center">
-  <img src="figures/rare_e3_prometa_only_bar.png" width="720" alt="Rare-E3 ProMeta performance"/>
-</p>
-
-## VZ185 provenance
-
-The response letter reports 11/12 correct predictions (91.7%) for the legacy
-Excel-order VZ185 cohort. The released audit preserves that exact 12-row order.
-Because the historical sheet did not contain stable compound identifiers or
-calibrated ProMeta probabilities, this release treats the result as a frozen
-retrospective correctness audit rather than a newly reconstructed probability
-benchmark.
-
-Reproduce this case-study result directly from the repository root:
-
-```bash
-python case.py
-```
-
-The command verifies the expected 11/12 result and writes compound-level
-predictions and a summary under `results/recomputed/vz185_case/`.
-
-## Case-study checkpoint provenance
-
-The full checkpoint audit evaluated the CDK6, NAMPT, BTK, and BCL-xL series
-with the same main full-data checkpoint family used in S3:
-`checkpoints/prometa_global/protonet_encoder_seed{seed}.pt`. Compound
-membership and each family's original support/query split were held fixed, and
-each split was paired with the checkpoint from the same seed. The resulting
-correct-classification counts are 11/14, 6/12, 6/10, and 6/6, respectively.
-Response-letter Table R9 reports only the CDK6 and BCL-xL series (11/14 and
-6/6 correct classifications, respectively); the other two series remain in
-the released audit files for provenance.
-`results/released/four_family_main_checkpoint_compound_predictions.csv`
-provides the experimental annotations, compound-level probabilities, binary
-predictions, and correctness indicators; the companion summary provides the
-family-level metrics.
-
-## Build the ProMeta-only upload directory
-
-The development worktree may contain historical manuscript and revision files.
-Do not upload it wholesale. Build a clean, checksum-audited release directory:
-
-```bash
-python scripts/export_prometa_release.py --force
-```
-
-Upload `dist/ProMeta/`. The exporter validates that every public result row is
-a ProMeta method or ProMeta variant and excludes all historical baseline
-artifacts.
-
-## Citation
-
-If you use ProMeta or these revision experiments, please cite the associated
-paper and archived code/data release.
+Older supplementary UMAP/scaffold pictures and legacy 3D/intersection implementations are not replaced with current-model outputs. The legacy S4/S5 numerical references are identified in [data and legacy scope](docs/DATA_AND_LEGACY.md).

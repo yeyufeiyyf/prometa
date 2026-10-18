@@ -1,0 +1,68 @@
+{
+  "experiment_tag": "prometa2_module_ablation_20260919",
+  "protocol": "strict_leave_target_e3_out_fixed_query_module_ablation",
+  "split_protocol": "e3_v3_nested_k_v1",
+  "seeds": [
+    42,
+    2025,
+    3407
+  ],
+  "directions": [
+    {
+      "source_e3": "CRBN",
+      "target_e3": "VHL"
+    },
+    {
+      "source_e3": "VHL",
+      "target_e3": "CRBN"
+    }
+  ],
+  "variants": [
+    "grounded_interaction",
+    "grounded_no_poi_context",
+    "grounded_no_e3_context",
+    "grounded_no_global",
+    "grounded_no_component",
+    "additive",
+    "grounded_additive",
+    "grounded_source_linear"
+  ],
+  "evaluation_e3_conditions": [
+    "correct"
+  ],
+  "k_shot": 2,
+  "train_q": 3,
+  "test_k": [
+    2
+  ],
+  "test_q": 3,
+  "epochs": 100,
+  "episodes_per_epoch": 100,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "compatibility_loss_weight": 0.0,
+  "source_validation_fraction": 0.2,
+  "source_validation_episodes_per_task": 2,
+  "early_stopping_patience": 15,
+  "validation_min_delta": 0.0001,
+  "ctp_epochs": 5,
+  "ctp_batch_size": 64,
+  "ctp_learning_rate": 0.0003,
+  "max_protein_length": 2000,
+  "supervised_train_scope": "source_e3_only",
+  "primary_variant": "grounded_interaction",
+  "data": {
+    "contexts": "artifacts/current_transfer/prometa_as/data-prometa/tables/strict_crbn_vhl_contexts_fair_esm_v1.csv",
+    "sequence_table": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac_with_seq_fair_esm_v1.csv",
+    "tuple_table": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac_db.csv",
+    "component_table": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac-fine_esm_complete_v1.csv",
+    "protein_embeddings": "artifacts/current_transfer/prometa_as/data-prometa/embeddings/protein_embeddings_fair_v1.pt",
+    "split_root": "artifacts/current_transfer/table_s4_prometa_rerun/splits"
+  },
+  "outputs": {
+    "results": "reproduced/ablations/ablation_variants/results",
+    "checkpoints": "reproduced/ablations/ablation_variants/checkpoints",
+    "logs": "reproduced/ablations/ablation_variants/logs"
+  },
+  "path_base": ".."
+}

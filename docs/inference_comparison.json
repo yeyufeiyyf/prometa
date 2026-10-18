@@ -1,0 +1,435 @@
+{
+  "status": "PASS_AT_PAPER_PRECISION",
+  "checks": [
+    {
+      "study": "transfer",
+      "rows": 210,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 4.708766937255859e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 48,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.2782554626464844e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 87,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.7285346984863281e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 24,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.1324882507324219e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 20,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 4.76837158203125e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 33,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.0728836059570312e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 210,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.7881393432617188e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 48,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.1920928966180355e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 87,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.192092896062924e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 24,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.7881393432617188e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 20,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.384185791015625e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 33,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 4.4703483609298544e-08,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 210,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.278255463201596e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 48,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.4901161199398771e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 87,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.682209014892578e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 24,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.384185791015625e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 20,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.2665987010607171e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 33,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.0861625676937834e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 348,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.311302185114105e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 52,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 4.76837158203125e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 80,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.311302185114105e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 279,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.4007091521661685e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.576278687078549e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 54,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 9.834766387939453e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 9.5367431640625e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 170,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.384185791015625e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 40,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.086162567138672e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 348,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 5.60283660894223e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 52,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.2782554625909732e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 80,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 5.60283660894223e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 279,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.039836883544922e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.771615982055664e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 54,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.562999725341797e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.3709068298339844e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 170,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.115964889609634e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 40,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.5762786865234375e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 348,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.0132789611816406e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 52,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 9.685754776000977e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 80,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.0132789611816406e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 279,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.9669532775878906e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 5.364418029785156e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 54,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.7881393432617188e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 60,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.980232238769531e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 170,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 8.940696715753482e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "rows": 40,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 8.940696715753482e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 461,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 4.708766937255859e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 461,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.7881393432617188e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 461,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.278255463201596e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 1521,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.4007091521661685e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 1521,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 5.60283660894223e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve",
+      "rows": 1521,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.9669532775878906e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "kcurve_zero",
+      "rows": 609,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 2.8312206268310547e-07,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "poi",
+      "rows": 4680,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 8.165836334339538e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "rare",
+      "rows": 34840,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 0.00015078485012059994,
+      "score_within_1e_5": false
+    },
+    {
+      "study": "linker",
+      "rows": 4878,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 3.3676624298095703e-06,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "families",
+      "rows": 11586,
+      "identities_and_labels_match": true,
+      "maximum_score_difference": 1.3234889800848443e-23,
+      "score_within_1e_5": true
+    },
+    {
+      "study": "transfer",
+      "type": "summary",
+      "maximum_metric_difference": 1.933428789149816e-05,
+      "all_columns_match_at_3dec": true
+    },
+    {
+      "study": "kcurve",
+      "type": "summary",
+      "maximum_metric_difference": 3.700702039780013e-05,
+      "all_columns_match_at_3dec": true
+    },
+    {
+      "study": "rare",
+      "type": "summary",
+      "maximum_metric_difference": 0.0,
+      "all_columns_match_at_3dec": true
+    },
+    {
+      "study": "poi",
+      "type": "summary",
+      "maximum_metric_difference": 0.0,
+      "all_columns_match_at_3dec": true
+    },
+    {
+      "study": "linker",
+      "type": "summary",
+      "maximum_metric_difference": 0.0,
+      "all_columns_match_at_3dec": true
+    },
+    {
+      "study": "families",
+      "type": "summary",
+      "maximum_metric_difference": 0.0,
+      "all_columns_match_at_3dec": true
+    }
+  ],
+  "exact_score_equality": false,
+  "numerical_note": "CPU/GPU reductions can change scores and near-tied AUPRC ranks. All identities/labels and rounded mean/SD columns are checked; unrounded differences are reported, not hidden."
+}

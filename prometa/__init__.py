@@ -1,5 +1,8 @@
-"""Public ProMeta implementation used by the response-letter experiments."""
+"""Experimental E3-aware ProMeta v2 utilities."""
 
-from .model import GCNEncoder
+from .data import *  # noqa: F401,F403
+from .data import __all__ as _data_exports
+from .model import *  # noqa: F401,F403
+from .model import __all__ as _model_exports
 
-__all__ = ["GCNEncoder"]
+__all__ = [*_data_exports, *_model_exports]

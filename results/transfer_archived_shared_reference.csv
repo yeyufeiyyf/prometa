@@ -1,0 +1,16 @@
+direction,K,Q,method,query_rows_per_seed,evaluation_batch,AUROC_mean,AUROC_sd,AUPRC_mean,AUPRC_sd,BALACC_mean,BALACC_sd,q
+CRBN->VHL,1,1,ProMeta,48,current_strict_context_rerun,0.685,0.081,0.666,0.083,0.639,0.043,1
+CRBN->VHL,1,all,ProMeta,210,current_strict_context_rerun,0.673,0.047,0.717,0.021,0.63,0.015,0
+CRBN->VHL,2,3,ProMeta,24,current_strict_context_rerun,0.815,0.081,0.858,0.078,0.736,0.134,3
+CRBN->VHL,2,5,ProMeta,20,current_strict_context_rerun,0.853,0.085,0.878,0.07,0.75,0.05,5
+CRBN->VHL,2,all,ProMeta,87,current_strict_context_rerun,0.816,0.055,0.807,0.04,0.722,0.08,0
+CRBN->VHL,5,all,ProMeta,33,current_strict_context_rerun,0.94,0.027,0.913,0.031,0.843,0.055,0
+VHL->CRBN,1,1,ProMeta,52,current_strict_context_rerun,0.663,0.042,0.659,0.066,0.596,0.019,1
+VHL->CRBN,1,all,ProMeta,348,current_strict_context_rerun,0.653,0.091,0.682,0.09,0.617,0.068,0
+VHL->CRBN,2,3,ProMeta,54,current_strict_context_rerun,0.757,0.092,0.741,0.113,0.704,0.067,3
+VHL->CRBN,2,5,ProMeta,60,current_strict_context_rerun,0.735,0.019,0.747,0.022,0.683,0.029,5
+VHL->CRBN,2,all,ProMeta,279,current_strict_context_rerun,0.709,0.072,0.761,0.089,0.683,0.026,0
+VHL->CRBN,5,all,ProMeta,170,current_strict_context_rerun,0.707,0.099,0.855,0.067,0.672,0.068,0
+VHL->CRBN,1,10,ProMeta,80,current_strict_context_rerun,0.685,0.1,0.683,0.098,0.642,0.076,10
+VHL->CRBN,2,10,ProMeta,60,current_strict_context_rerun,0.814,0.089,0.816,0.113,0.778,0.059,10
+VHL->CRBN,5,10,ProMeta,40,current_strict_context_rerun,0.655,0.132,0.668,0.116,0.65,0.115,10

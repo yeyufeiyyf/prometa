@@ -1,0 +1,48 @@
+{
+  "experiment_tag": "prometa2_classic_ablation_20260921",
+  "protocol": "prometa1_matched_learning_mechanism_ablation",
+  "seeds": [
+    42,
+    2025,
+    3407
+  ],
+  "directions": [
+    {
+      "source_e3": "CRBN",
+      "target_e3": "VHL"
+    },
+    {
+      "source_e3": "VHL",
+      "target_e3": "CRBN"
+    }
+  ],
+  "k_shot": 2,
+  "train_q": 3,
+  "test_q": 3,
+  "training_budget_basis": "matched_source_example_exposures",
+  "episodic_train_epochs": 100,
+  "episodic_episodes_per_epoch": 100,
+  "supervised_epochs": 100,
+  "supervised_batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "early_stopping_patience": 15,
+  "validation_min_delta": 0.0001,
+  "source_validation_fraction": 0.2,
+  "data": {
+    "contexts": "artifacts/current_transfer/prometa_as/data-prometa/tables/strict_crbn_vhl_contexts_fair_esm_v1.csv",
+    "sequence_table": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac_with_seq_fair_esm_v1.csv",
+    "component_table": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac-fine_esm_complete_v1.csv",
+    "protein_embeddings": "artifacts/current_transfer/prometa_as/data-prometa/embeddings/protein_embeddings_fair_v1.pt",
+    "split_root": "artifacts/current_transfer/table_s4_prometa_rerun/splits"
+  },
+  "full_results": "artifacts/context_weights/training_records",
+  "full_checkpoints": "artifacts/context_weights/checkpoints",
+  "outputs": {
+    "results": "reproduced/ablations/ablation_training_head/results",
+    "checkpoints": "reproduced/ablations/ablation_training_head/checkpoints",
+    "logs": "reproduced/ablations/ablation_training_head/logs"
+  },
+  "compatibility_loss_weight": 0.0,
+  "path_base": ".."
+}

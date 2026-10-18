@@ -1,4 +1,0 @@
-candidate_id,learning_rate,weight_decay,epochs,episodes_per_epoch,protein_embed_dim
-reported,0.001,0.00001,100,100,64
-lower_learning_rate,0.0005,0.00001,100,100,64
-stronger_weight_decay,0.001,0.0001,100,100,64

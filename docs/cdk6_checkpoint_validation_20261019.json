@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "evaluations": 3,
+  "support_pairs_per_seed": 33,
+  "query_rows": 1188,
+  "query_identities_and_labels_equal": true,
+  "score_tolerance": 1e-05,
+  "maximum_absolute_score_difference": 1.8477439880371094e-06,
+  "split_sha256": "dcecc493e15462b1232e3c137a1950d154a0a9f1f4212d527cbe2cfe98524c67",
+  "runs": [
+    {
+      "seed": 42,
+      "checkpoint_sha256": "2c0f53485573126cfc93c309eb5f0654955a3d8b1b92fd1c8d63641101d397e8",
+      "query_rows": 396,
+      "maximum_absolute_score_difference": 6.556510925292969e-07
+    },
+    {
+      "seed": 2025,
+      "checkpoint_sha256": "0615c981caed77231bba57df2b82e93ab0312360421e4d11e66eb3cc47909df7",
+      "query_rows": 396,
+      "maximum_absolute_score_difference": 1.8477439880371094e-06
+    },
+    {
+      "seed": 3407,
+      "checkpoint_sha256": "7f4f84b88b00a7af9855624f3205664b6c7b52c7baafcbb0f62eb303ae1e4864",
+      "query_rows": 396,
+      "maximum_absolute_score_difference": 1.8179416657049252e-06
+    }
+  ],
+  "metrics": {
+    "status": "PASS",
+    "mean_query_auroc": 0.8858585858585859,
+    "sd_across_seed_means": 0.007626095389162371,
+    "median_support_pair_auroc_averaged_over_seeds": 0.9333333333333332,
+    "seeds": 3,
+    "compounds": 14,
+    "support_pairs": 33,
+    "query_rows": 1188,
+    "reproduction_level": "metrics recomputed from regenerated checkpoint predictions"
+  },
+  "checkpoint_api_entries": 102,
+  "unified_reproduction_interface": {
+    "status": "completed",
+    "levels": {
+      "cdk6": "regenerated_checkpoint_predictions"
+    },
+    "elapsed_seconds": 20.868224143981934,
+    "note": "GPU timing was not remeasured."
+  },
+  "new_query_checkpoint_selector_verified": true,
+  "transfer_metrics_regression_passed": true,
+  "artifact_files_verified": 1114
+}

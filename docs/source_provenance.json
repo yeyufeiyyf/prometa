@@ -1,0 +1,3926 @@
+{
+  "records": [
+    {
+      "destination": "prometa/data.py",
+      "source_name": "data.py",
+      "sha256": "bd58ed28568a827ce06d5f78644971928e15360c7524aab865211f97a24182c5",
+      "modified": false
+    },
+    {
+      "destination": "prometa/model.py",
+      "source_name": "model.py",
+      "sha256": "895123bf9ca8a547d265be79b15c6baedcab7f2cbf8243423829484e33296a42",
+      "modified": false
+    },
+    {
+      "destination": "prometa/experiment.py",
+      "source_name": "experiment.py",
+      "sha256": "46db0a85f922768c93a01eef8d5364f1d71b820536f22c73c7739352044104b5",
+      "modified": false
+    },
+    {
+      "destination": "prometa/__init__.py",
+      "source_name": "__init__.py",
+      "sha256": "0d1c835640e1d71b6804d9ef5c180e7565cd1d6c8c0fd172b8b3057fcca342ac",
+      "modified": false
+    },
+    {
+      "destination": "prometa/rare/data.py",
+      "source_name": "data.py",
+      "sha256": "bd58ed28568a827ce06d5f78644971928e15360c7524aab865211f97a24182c5",
+      "modified": false
+    },
+    {
+      "destination": "prometa/rare/model.py",
+      "source_name": "model.py",
+      "sha256": "3df9abd3b2fde44072f518b10e2d9969d2cde8ae8bbbb3ab5c0334bc50fe3092",
+      "modified": false
+    },
+    {
+      "destination": "prometa/rare/experiment.py",
+      "source_name": "experiment.py",
+      "sha256": "683bf9c79287f266e40954f1360d3ab4ffd7c7ff238f6a858ea122a79e4aec90",
+      "modified": true,
+      "pre_relocation_sha256": "556f6c072955668ae2a1fad738979440f48a317078d8f0e5498c46406482ebc2",
+      "transformation": "Publication path/import/config relocation; code-hash bookkeeping paths updated where needed. Numerical model operations retained."
+    },
+    {
+      "destination": "prometa/rare/__init__.py",
+      "source_name": "__init__.py",
+      "sha256": "0d1c835640e1d71b6804d9ef5c180e7565cd1d6c8c0fd172b8b3057fcca342ac",
+      "modified": false
+    },
+    {
+      "destination": "prometa/ablations/data.py",
+      "source_name": "data.py",
+      "sha256": "bd58ed28568a827ce06d5f78644971928e15360c7524aab865211f97a24182c5",
+      "modified": false
+    },
+    {
+      "destination": "prometa/ablations/model.py",
+      "source_name": "model.py",
+      "sha256": "3df9abd3b2fde44072f518b10e2d9969d2cde8ae8bbbb3ab5c0334bc50fe3092",
+      "modified": false
+    },
+    {
+      "destination": "prometa/ablations/experiment.py",
+      "source_name": "experiment.py",
+      "sha256": "822dde88b1168d5eef3853675b8761aa8c83adb4b7e394d2e9da68675fa49b84",
+      "modified": true,
+      "pre_relocation_sha256": "556f6c072955668ae2a1fad738979440f48a317078d8f0e5498c46406482ebc2",
+      "transformation": "Publication path/import/config relocation; code-hash bookkeeping paths updated where needed. Numerical model operations retained."
+    },
+    {
+      "destination": "prometa/ablations/__init__.py",
+      "source_name": "__init__.py",
+      "sha256": "0d1c835640e1d71b6804d9ef5c180e7565cd1d6c8c0fd172b8b3057fcca342ac",
+      "modified": false
+    },
+    {
+      "destination": "LICENSE",
+      "source_name": "LICENSE",
+      "sha256": "1c1e0bc6b112f6b29ccebefa92f5d2088f91967a24ef463d3e630238c5072511",
+      "modified": false
+    },
+    {
+      "destination": "experiments/transfer.py",
+      "source_name": "table_s4_prometa_rerun.py",
+      "source_sha256": "bf98a2d02c6dfc61f600553a590834f9abc113b004bbed72d1ab4b34d9be892d",
+      "sha256": "93e9b6a5f1dd2b2b3ae9b6fa5cf83d88b6a55d4c260d09265892e77d2bd83270",
+      "modified": true,
+      "transformation": "Publication path/import/config relocation; code-hash bookkeeping paths updated where needed. Numerical model operations retained.",
+      "pre_relocation_sha256": "19a430698d1ac119111ec48c2afe9fee75b0bb4bfddbcb64d14f9061c0330a98"
+    },
+    {
+      "destination": "experiments/kcurve.py",
+      "source_name": "run_k1_to_k7.py",
+      "source_sha256": "fce0e8b79085f4e394d6a47075aed6115588e9c29348cc13cd3daebe237d31a4",
+      "sha256": "da6ec215a07f06624bbd59252602a572cd599e9a42b76479e504234abad37b4d",
+      "modified": true,
+      "transformation": "Publication path/import/config relocation; code-hash bookkeeping paths updated where needed. Numerical model operations retained.",
+      "pre_relocation_sha256": "96af636d783913f8feb30220a6fa1eed323660b18c5172522f43300023c91d12"
+    },
+    {
+      "destination": "experiments/kcurve_zero.py",
+      "source_name": "evaluate_k0.py",
+      "source_sha256": "8141403caec5442e95443a88a713edbdec178993edb7e4af8bb16951d3cf6688",
+      "sha256": "bbeb0e7a4be415595dedac2fd80ad400eaa02dbe5a88c82bbacc9c429b4c1a84",
+      "modified": true,
+      "transformation": "Publication path/import/config relocation; code-hash bookkeeping paths updated where needed. Numerical model operations retained.",
+      "pre_relocation_sha256": "97b1c88f78c0a2c7c5ef60f672ff530e9cb6afd236f33088d55baf895261c574"
+    },
+    {
+      "destination": "experiments/kcurve_matched.py",
+      "source_name": "make_k1_to_k5_paired.py",
+      "source_sha256": "a146299924355645b9d2dcfc677fe0f588afbac3299e0a9bc34bbc2a8e828c6b",
+      "sha256": "64b138a81e0b4e0f7ae6f082be9e55a0c0366079742c3104757c14bc783a92c2",
+      "modified": true,
+      "transformation": "Import namespace and workspace root relocation only."
+    },
+    {
+      "destination": "experiments/plot_kcurve.py",
+      "source_name": "plot_k0_to_k5.py",
+      "source_sha256": "ba2699b15bd9b245f376315354bf85806ad0673e1c800da4bc550025872fe60d",
+      "sha256": "e74800888995439544f59e18c9f41b9db2f0da074c4904e3528aa7d9fc9cd3c6",
+      "modified": true,
+      "transformation": "Import namespace and workspace root relocation only."
+    },
+    {
+      "destination": "experiments/plot_kcurve_single.py",
+      "source_name": "plot_k0_to_k5_single_panel.py",
+      "source_sha256": "35779dee059d2c8fecf9f7fcd67b094e29f3810a7ae220a937f7a0e0957db87c",
+      "sha256": "a2ec1a00147d288751c321747c2476ebf6e81fa3e67b489a26b6daa06427bc13",
+      "modified": true,
+      "transformation": "Import namespace and workspace root relocation only."
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/embeddings/protein_embeddings_fair_v1.pt",
+      "source_name": "protein_embeddings_fair_v1.pt",
+      "sha256": "dc50c770b054c20bd45af5bb0ae35d8f7b8eef497524bf7844da138d2fbeace5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/esm_completion_audit_v1.json",
+      "source_name": "esm_completion_audit_v1.json",
+      "sha256": "120baea152a92559f489318b9c81f92899bd196b64e96de4011d14b7e7df6780",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/fair_esm_evidence_manifest_v1.json",
+      "source_name": "fair_esm_evidence_manifest_v1.json",
+      "sha256": "698984928457eccc9c08e221791cceb41cd0a3fbb857b4631e12c104c7c06031",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/fair_esm_row_audit_v1.csv",
+      "source_name": "fair_esm_row_audit_v1.csv",
+      "sha256": "5e700ef0ef9dc7592d1e607e30a4bc23e9f232cf69ee0b9154ae6b80608a75ed",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/fair_esm_summary_v1.json",
+      "source_name": "fair_esm_summary_v1.json",
+      "sha256": "2d0f44be4be46b911c7784d4bf54f896ca8fba44f850bd0bc2b6bab742a3a043",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/fair_esm_validation_v1.json",
+      "source_name": "fair_esm_validation_v1.json",
+      "sha256": "5305466968a730857259ea670c280b4a4ecd80e27a688eb5285f8577a160321a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/metadata/poi_esm_resolution_v1.csv",
+      "source_name": "poi_esm_resolution_v1.csv",
+      "sha256": "e81e5d966fa0f2995a9f2feecc4cc0dc407b89d0add4d31eca78b46183d5dbb3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/sequences/Q99IB8_NS3.fasta",
+      "source_name": "Q99IB8_NS3.fasta",
+      "sha256": "f8f9554c0d1612c62ddd06ebb9f76cd15ad630fbccfe4e82db504cc01f6d427e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac-fine_esm_complete_v1.csv",
+      "source_name": "protac-fine_esm_complete_v1.csv",
+      "sha256": "93292b9a181012e9f50e26dfcd59c7eb35cbca710fb4a7cd8e83b9b99c040835",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac_db.csv",
+      "source_name": "protac_db.csv",
+      "sha256": "41fa65ee9620a501dacedfc4b2a7e5ebd52fbc181df0524c96347509c23b8b98",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/tables/protac_with_seq_fair_esm_v1.csv",
+      "source_name": "protac_with_seq_fair_esm_v1.csv",
+      "sha256": "301bb28ca3a27254e0605874898205de3625bc396aedf3e1a2249352e5100007",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/tables/rf_sequence_cache_fair_v1.csv",
+      "source_name": "rf_sequence_cache_fair_v1.csv",
+      "sha256": "9df3b1713d6c169257bc18c2e970bbec347eac9ddf0c7d6297c42dd0cc7de9aa",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/data-prometa/tables/strict_crbn_vhl_contexts_fair_esm_v1.csv",
+      "source_name": "strict_crbn_vhl_contexts_fair_esm_v1.csv",
+      "sha256": "c28221e97fc1f684b9806de390e146b44e06a8d03f501fe9bfe6f0a1a2ac7fd2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/REPORT.md",
+      "source_name": "REPORT.md",
+      "sha256": "533afc32c04c67be7b4d5eed5014d85a5b93ff1f2264837dfea74a20b92552f7",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_2025/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "373c365b6c8015c758435ba3a12e4d7f73a62b1d3551c8454efb3020d9189152",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_2025/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "62fd9d206363fc2aecae0dbfae0fed6d26bcad4db3ca3bc57fe6e2127adbd79c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_3407/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "3111ce6c7de1084c908ab61c3a5afb3ea6ca451d330b4e8a795ee0ca5554fd07",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_3407/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "ac3ac6e8a2b002c2e604691cc1897b7e9042b98cb64c1dd4cd9fc0465acf6974",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_42/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "f3d15b878de78e30e7513803f8b10aa76196cdb57604994ccea55ce3431ca7ad",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/CRBN_to_VHL/seed_42/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "77b09169954bdfd02fb9d0eb99e7ebd8c8eaafd5be554583a74fd845fce83068",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_2025/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "42334cd4cb03a41aa3c12bc0802a4de31c7d2f3677966bf4a93bd7d01552675e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_2025/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "76f474826ca00cd84168966be7430f710db84bfd72dfde125fb71064ca6bee6c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_3407/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "b04b7f740044799a673df899a7e527148876c6027b6870e64180cad89491e994",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_3407/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "5435d88a644d59b0b38db9a0a86721a86221218efe778deb30207b8145d2ea06",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_42/train_k2q3/model.pt",
+      "source_name": "model.pt",
+      "sha256": "f00431c11e347b8ddb57b13c9f57b570c7839504083b3a522b8ef775c5f65c17",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/checkpoints/VHL_to_CRBN/seed_42/train_k2q5/model.pt",
+      "source_name": "model.pt",
+      "sha256": "fa5c4b4c1b987da212788f8f883f65fdd03f835910003ca76b02c2337d7390d3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "37bf30642c18dd0240eb99786a9ffb83725e32016c409a0c9eda3ed579a58a35",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "f2e2c310d4e46384b257efb13eac60fbfa2166c789e25f3bb366b9a101751957",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "b13e5245a25406beb176092f29d08a7d234885e8c8db2c57e9d67d9a561e3c50",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "cadc481e09529c121296195a8af45ec9e7489b1403d7b123d703ec7d2b65b2a3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "46c35432b2da91e4fc13d1965e4908f476ff467f9e1456639d268f6d5961d0cf",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "180113aa5c28842c4e17788e76bef5087261ffd4af43b8758b9dd5cf3fea148d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "2f95497f3b9b6874c3dd59f1d5c84f9d90bfcb52e37cad3a71c6097ec4d10704",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "9863a4410bd63caa48770a9da05b8169f5f28c408855c2d9aa3cfaff23b91655",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "e9b7c574d5a826bd67b82ad991a639df11049aa58bb8bd27585f166ae78f7d18",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "0afe5bf2063e99f2e3f4ffafb6bb2d6cd04f8e3978657e3d0f1a9a687f570ad6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "f9132aa931067a907ee5c8ce3ccff48aaa2500045e8ba7af4dce9e716cc4451d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "c91523909aa14e2335c5e12cd315d71ea936212c9cae98f526babbdbf1dd1431",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "0bdbdb1f74394ae06a9a9ee777229a1861365a74a5e25e3d4db5763ef78cac88",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "d00935318e2bfe8f2583e5c7982331bfafdc61a04b7af579a9691da7d8f6403b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "66a84741d7d8f1ad158e43a8e8da02c3437aff637938c5b9cf856d613c96ab33",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "96b321384f4900232e01893c0dffe210aa3024c5cff1d7743ebd77cf69007616",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "ca7035c8f54098dafd755f6288463d4f5c3521268d8b799cff725fd163637f2f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_2025/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "797fc7a19b381952c676a8497c8525991b707093b9d26bbded0a48b5b6f12a08",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "4fb85d5cc0be466d75a4be2f5f2ea2ccf690d7ec7ee11277285c98985f44b339",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "a6a1b5249b5a2667e300334f6d349b40fcee1744b394d63afb2d44a19e5a6921",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "af47fcf33afbdbd5b0df982a522ace0c12e5fa4f8479b7c8c651dd81cf1d9c2b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "a76c01ba6bc7c24ef85e93482f923fb0e282bda50b55f3680c82fd6bb679eb1f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "4db7c831e782d9d3882bb6cbcb5a341f7102db792b2ee4ff5e4c9f89bece058e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "d6d66cbce4d735843b959b30acac931e6466b06f22649a378843b6927181d612",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "b74afffbda98ee9b092db7cf045d64cc42705d4643daf4c1249949b2cb80e3e1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "256832db40214bff35fc460f9517aac6d3f76f341f07d8c6f79bc4f2c32cb719",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "e493edfac596d2c78d151500439d0c54981bfc424b74341677e3ed742189670b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "223ac7f5f5d24fcb1e78d13f653e08e92af33efe47b3fd8cba67b81763a90a94",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "eaa28d83c4872bb82c2786e0d2acccb940865f7742765fcb07bdc05bf1c74df1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "9101acee39e7b1bebe83e1537a21cbd7e34d6ccdc4c50d3c73688d400f55ff7d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "6e2dc48351dbf5c5768c3054f6eb25eb9b9320ab7607be3baee049d88203b0db",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "fccefae27cefc0789337f379bd5c83df819decfb55021120278125424a57d03f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "905b2f0de7a22ca3f1c9f705c266dc6343b751e6ed53a0572b17372ec393c118",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "618586643209fca5bb96bb7be371c0a86c0fd2078ae9e71f85adec1e9e2354ba",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "c98c54a9a53096a917c56b4eb273d0d4a0d0aea15c9c7d1c464ef7422f4bf9db",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_3407/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "b6b875011cfa1850bd5691fa7d770388c177f10b4cc1e108dc2eb6d8a19d90da",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "7aeef9821aa6e7691dcbccb4406505aa73930aa583d40f25b499ff3fe65d7f4d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "6f0e8e4dc460ea53b5fef383eb228b88f24552bdd09246c9b12f9dd21acfd0ca",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "5ddd134485c0d2ca89bea807639780aba1d2c320879dce9545b657818b05b5a1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "b0f0f0e8f34f0d3be9b8962cc31f436d3e8d830c3cea175ea6be02b39002187a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "d6bf1abe426ddeea31985232528585414259d3a85d7610f6c77238c197bb2287",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "7cec7c767ce74074b0158cec814bb9ed8fc4b08ee0b1bbc0fcbc282d4ff59036",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "f1e1e41a0c58663c66f8d3539bf611cbac851c9b4f057f0a05a5218b26a9dad6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "1befff7f14a61fbd92be430f4e936a771322a6d4233d540af528723eba1bdad3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "2c606baf18b49054a98b4a043f683541a80523564b05c5896c61e17f5f4b8095",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "24fe4e7769741eb3c21cdb69c858d99224ceb6678ab149d28c0fc99653d9865d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "3f0d8b7142835990dbe45d5b84108bc259872fb242b21a64d45b9342771711b2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "26ed695208ba8c88ecb1440e44d1cbe385f49d082a622a51ebb253c46b2b2b3a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "7bbed422981b7ce34ba7709f7ce18ac470d034c5bcf34bf59772fd47025bb0b6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "2d315b7c6126290bca13d75be5852a70da9165cc21704f4c2db43679d93bcba4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "df42aed17d970b9b8bf16f1090aae68768fd2996659a2d84234f81aecf80b64d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "b6dab0a7d4d90e41d8ed05afaf9a32492ae81fd1875c7a2552a0e50ff158a63f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "bbaf7064e203a619439ed9372b774cd10602db81af504821176f55a2da00de2c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/CRBN_to_VHL/seed_42/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "77bd5d7f82d0952907d1a34781fbefa8befba6e140bdecea53529370a66d4c2e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "4b36844987d7adef6d3e9135eb2e4164517139d827b8e19d56e697d18ceec09c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "73f914b34da24d75352bab9c5bbfa7d30231f61bac398471ec214b6f5edcf001",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "08745ddaf7a6c336eed93103d694bab80eb82166089125a54ae19e9b4b02481e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "431707c5d0e7f7ebf13ee4b0dc871acba0a39b6b4e3de944d4f7839fbbe83d36",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "f5b822da31e2f14be243361bff033d7de9b96e63e5568459219971dd4fb45922",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "4dd9c7892a5ff04e2bb9552087cee71f1a7719cc0c7a50231fbc0896238ebb9d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "6d1cf98bf8fcd3f5f15b3cde68caead84a2b2fa888f484ef4f04a4a0b2eeb669",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "70811285acedf55328c8fa674d72f4dd898d9d5b4375264fb283e3be968fc0e7",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k1_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "99c0b0506d366b6dd548c7404c629cf11d108877b747a7f6fd8b6d68488986d6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "589e417ae1c1a1a41036ad84df84b1748302837b1db9f6ecfdb5272ca038cda2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "9f6607067a4f2f8972c8a367db176ae2277343f039bf17c4280d09d62a66491b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "6bca86b95a6dcaa3369ae83bf02ff9fc050fbe07ec97e449b9af424725c1c3d3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "613ab615e46900ad5114a640ecb42a566ffa06087141586e19299513fc30842f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "2720c2f4eafee031d3bb6eaa57898b6c801d1dc8dacf3bb19723f6ad2218dd64",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "88af7d188018561d3eae2d183f13e85583f728a2774b9a741746e04865a742b0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "7c972b737c9ba10a73ccd1262097b699233e3530100cb1049c6ab0bcf41262a6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "75682b76607d5e2fce8e5af1a4882952c3b8556f24eb954b44a372e9c4ae8237",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "eca3844f1fb5872f6431a9d70e8595a4293ac714dc22ae93859cb678ab44cf15",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "0b8c64650cdc889d3445744ddac23ec8f18c508d280d64af66c8e9fd5e669fb6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "1aede6cf724491eabe62b8831bcfa1a6ef94f0e398e2586200bb5f4752c1e4a5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "ed3bcbf134a3d574b4e1d23a510472f4e9d96b56c59027609a20f64c6670a062",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "9fc1f2779135daf53cd7b3fa59265724bd2d12418b87b9d2deebbc812566c582",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "801fc6c3ec5f7fd14a715900315e69a90f69160b3f799c274d8912a8856368cd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "b740c8de98eed40b84d86c4fc282341ee17a91c5ba1da777c97aa8fe0597de6e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "8002a3f2dd984eb5068f22db7489b8be2738d396a51efc27f08e0386ebaa4f5b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "edafa9e57ba5bff923acc75c0d3f59afecf163f37b54f4071fb839dcba401bda",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_2025/k5_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "e2272b2d3e10a59ba7118615e79aad5cedf9965c840a5ba790cf1b462e3b3f69",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "14f79e621946649b4ba266ae87da86324fda7f678012847f341c3815bb6f35b1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "c2a530f02c1278d0e6d206667aa26ea7c4d7bfc1cb1b5331b8a92fcad43b299d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "d18af668096f709488196744fdc6f777e5667b762400d8e74ac58ee0e75ee24c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "5fffadb6c2bd1d96e739dc15bd1df87e9157b2f79f6d6e3c950301b8f8a2f2be",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "2ea044192937934d3bc1e7d4b5eea124dd86ccaaf1c4c65f86311a3d5d0dc312",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "385ba01b1c4f7355266b96a06e21c3c56cca8b8c7a40094487cd4a2c79936a20",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "db7a3c98a6a5bb1f087642512b0196bba0a4146caace26540892aae8c03cefd4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "a77074083768914ed05c62928b1671c71ce90ce2b78858690aa40ad4c194bb46",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k1_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "5b501985bcacb0b7627f13e56416bee2372a79f3258099120a07d6456d1cebfc",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "080ae04ec00e08f78642712e82451797f4597e2d343b8990f1a963991212807e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "cf9692e4b7410b57b17da5d30f97ed76a896e33d273d3eb2a933a3b0d6dc226b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "1fdc7eb14618e77093b6915fddc8428f95a0abdc9f7a826b0a3181649a9e73c4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "d3ae95f1497cf64db219834755894ad86efc4631278389613c7f3bf7bb2d1616",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "35c67dbdc4c182db3cd02c4675bdbc721d8c0d178be0f2ff962642eb04d95928",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "7ffa2b0d63b677b85876c4eeeeb6587e868b1ab0fb70c68c3c74021e2e071c68",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "7602ac9e86f358eb3b16cfe894262341a7406eed79e2d46e52f82b72e86915a3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "4c69c72b2cbb1d609906afe894cc4b6b2629792b326036456376eff229ad84ae",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "821bddfccec968243eea4b961043c4bb575535dff09c92179e95ab671b44f5b1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "61502004066fdcaa65b454b55bf571f4a90622864f43ee03a4c82685393038ef",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "2dbcf3d434bf590b93fc15dfc60da1b5e64e2ab1746a31b921d0efdc52885da3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "ac0fb8872d680a8dfc379a70b34b17fe678ad59ee4d3f8a3573e5b34b7c49ba8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "ef6859367c743861507b7c4c754a5319f77b62c098f4759ebd2417d65961be40",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "30f2fddc111f3fb3c86b99002aeb9a9514fb22eb13dd1aff27ea90e23ee322d7",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "cc4d4525837fc843f46d5d970bbeccc2bc718009b4a7b63fe2ee6db450bdb1dd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "80e0c3943ddf361d4b60fa50c05ccd654fa5652121c18fbf9a0da2449b463380",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "994ac6221fbf9d84887cae7b1ee721b63ba9ad6dc24ac7c8604e1f6d1d202586",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_3407/k5_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "efeea68b00e6e366f63a0fe62fb2ebd66f77b0eb63b0aaa1d20fd879dde26f1c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "bc560230810f86eceaef8c7273f32a2bd9fdbd63abd2e1c30ddb5d21a886b583",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "ca8f2be17b7ff1b7d06cd8199a89db2b9d16cac81af254fdb7240890df084113",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "572a50bbd5becb4bfe7c39084c4f03df85726e7df7ff232741c118c15f173123",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q1/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q1/audit.json",
+      "source_name": "audit.json",
+      "sha256": "19d20e7034ed8d2a20590fc4b36e6050f42ee0839f424b1eb845a5b25fa557bd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q1/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "3bde3327b07ab90c7848a777d2cbfee2caca4f53f72ebba620a6699ab1f7e080",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q1/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "8deb5d12ce0a06fe122e73aea09e9a49734bbf6a8dc3e2e99cced3b8121033a3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "f99f842330cb73fed591716591d228030fd121084677f14c412ef082979124f9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "f4b22c0bf68920231a5c6c4326a89991de7b4f107e909d7217db05fcebd226fd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k1_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "88f1fcc03350ce8c439c62ef951485069d9438074feba51303efba261f9cb297",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "8ed400bc4c525c7a0cefdb516d93a4326c63f6410169e2cb4f99932621ea67ab",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "a172883ebb8d496c6ae54a4d7a8a9e387e7a89126038c529d15a85bf7264d70f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "ca6608cb349432cd07474a402e43b6f9edbd56ab1a13eea0cf38c7e55945ec94",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "7e7d6fa3bb7043dc8fb5d21e808ef89943ae974b11a8a2952f394bc5557855e5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "f84802e8c3415b5a8072e7a7f204a066e462168f64b25ce7e8f0589e431b896f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "b98b186734977a7e5d976fb78d745ca8bd2fd5f96363011b7345da4054350301",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q3/audit.json",
+      "source_name": "audit.json",
+      "sha256": "d03c4511fe840834e4325277a9e58fedfea37050629b756635bc9937b24aa19f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q3/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "cca8219fb54857f9ed71bdaf5c4e6c7026df1d317d659ad208834c5e57e1763e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "df33c8694af398e1ed04bd7c259f551b825361edbe26ce17dfd586fb71a9566b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q5/audit.json",
+      "source_name": "audit.json",
+      "sha256": "a9c50ad83e9689224862a7746c3ef2c67710fcee1e7acb88271c529686a86107",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q5/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "9331bb18c9ca3516a5d963fc52e46b1be7b408daf7bb190719c3a281f5f88446",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k2_q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "a4a8b2ce1bd7cfe64a3722fbc0fa18d3feb312e2d273e9baabf078de20b8cce6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q0/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q0/audit.json",
+      "source_name": "audit.json",
+      "sha256": "8d4a07291f7105ae113df57d39792b31e5594445f6f32f99f5ac74bf6efc31e8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q0/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "37e84e39c5d2d0a4993f1f3ef0e08aac248c0460f6b851654029a46a8ed93498",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q0/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "2ab17c1175efe261026c475a6c1a853f169e89ddb38b038dd1804f74c7c4bb8c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q10/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q10/audit.json",
+      "source_name": "audit.json",
+      "sha256": "76ff74aab6b63709831d16cd149d983758aa1a39448f876730eff3f8793dafd0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q10/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "a4f96826403639eaa458ecab4675b358aa092e72222d25c8fc368f06272b1a40",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/evaluation/VHL_to_CRBN/seed_42/k5_q10/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "f7c2294d4833ff41d4768bf6c8148a81a06f53a2c6e93e6eaca9d8142969b8b0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc.alignment.json",
+      "source_name": "figure_local_rerun_auc.alignment.json",
+      "sha256": "bbdab01614d66b77e21fa0ec91b8bee53b77de6f7072dbe0fea5d7ec4b964c40",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc.collision-audit.json",
+      "source_name": "figure_local_rerun_auc.collision-audit.json",
+      "sha256": "66cc3a95c3753df9f038f6ed4f26df293a4c3375709f1b9666359d586bba1e29",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc.qa.json",
+      "source_name": "figure_local_rerun_auc.qa.json",
+      "sha256": "95b8e3b449d5dc143901a54b2f86686bc7b66619b6ca9079eacd19c6c30dae6b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc.source-audit.json",
+      "source_name": "figure_local_rerun_auc.source-audit.json",
+      "sha256": "8be204dc3b4b241b454224718d30753fc85167cd445d79d578ed54d1892efca5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc.text-audit.json",
+      "source_name": "figure_local_rerun_auc.text-audit.json",
+      "sha256": "6fdae41b54de19e7a3fa19fa2845505ca525dbe50bd348fa79dcd659acdeb311",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc_source_seeds.csv",
+      "source_name": "figure_local_rerun_auc_source_seeds.csv",
+      "sha256": "67605c162825101c3fb4a7a2e5e6544ca96990ccb05136724c7c7bccefbafd4f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/figure_local_rerun_auc_source_summary.csv",
+      "source_name": "figure_local_rerun_auc_source_summary.csv",
+      "sha256": "15a3628462322da1f7a7f0328e6220cbf1cfacba89ba0d054e78502340ac5897",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/final_audit.csv",
+      "source_name": "final_audit.csv",
+      "sha256": "54a95f2ca70290274e972710a9bcb2c6a2c970ed3cc8972e2687cdf5463d08cd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/k_learning_curve/paired_query_manifest.csv",
+      "source_name": "paired_query_manifest.csv",
+      "sha256": "9f4615125f87097d23dd671ff3d3e3bf7e23c5ac44fdf6bd5c006bdeaabf06b3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/k_learning_curve/per_seed_metrics.csv",
+      "source_name": "per_seed_metrics.csv",
+      "sha256": "e0283aae934bb7b077a601b1d27863fafaacc6e5909dae67b26c1e84f5498231",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/k_learning_curve/summary.csv",
+      "source_name": "summary.csv",
+      "sha256": "4113c406a710cc36531414be5f175a837e57e7abeb6bbfab4f5a3051d3b1c230",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/per_seed_metrics.csv",
+      "source_name": "per_seed_metrics.csv",
+      "sha256": "05f7eabb061e890db5cc388287571d1e0f2291fa0b766f05791dc752367c7b03",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "c91523909aa14e2335c5e12cd315d71ea936212c9cae98f526babbdbf1dd1431",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "c146f3ec2844e81e33d12f9db88c5254135b08b371053e759f91e4f240a6fe6a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "f9132aa931067a907ee5c8ce3ccff48aaa2500045e8ba7af4dce9e716cc4451d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "66a84741d7d8f1ad158e43a8e8da02c3437aff637938c5b9cf856d613c96ab33",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "c41b37923392d1b19451d85839b3f33ed0d07060960f01fdf848465660e5dabb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_2025/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "d00935318e2bfe8f2583e5c7982331bfafdc61a04b7af579a9691da7d8f6403b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "9101acee39e7b1bebe83e1537a21cbd7e34d6ccdc4c50d3c73688d400f55ff7d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "d8579c839b0b1d68bc3ab905e90cb98f847acb6a24c78bfd3e2fc3585e0900a0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "eaa28d83c4872bb82c2786e0d2acccb940865f7742765fcb07bdc05bf1c74df1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "905b2f0de7a22ca3f1c9f705c266dc6343b751e6ed53a0572b17372ec393c118",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "5b62b731c51c166e57165719d1a6f12ca8aebab81a67748df8211d591e8bfa9d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_3407/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "fccefae27cefc0789337f379bd5c83df819decfb55021120278125424a57d03f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "26ed695208ba8c88ecb1440e44d1cbe385f49d082a622a51ebb253c46b2b2b3a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "c153ff7b3d6db66f5a2cb2ff5f485f6766b4685b9cfd75fccaf09c67152e68a2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "3f0d8b7142835990dbe45d5b84108bc259872fb242b21a64d45b9342771711b2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "df42aed17d970b9b8bf16f1090aae68768fd2996659a2d84234f81aecf80b64d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "6aae22faa24cfcc4f68552c80dee6e51e542f627217ce55211802657135d774d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/CRBN_to_VHL/seed_42/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "2d315b7c6126290bca13d75be5852a70da9165cc21704f4c2db43679d93bcba4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "eca3844f1fb5872f6431a9d70e8595a4293ac714dc22ae93859cb678ab44cf15",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "4858bc83a7ff644d89dead07386781b87bbce7fd486381514ff5e60ead214544",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "75682b76607d5e2fce8e5af1a4882952c3b8556f24eb954b44a372e9c4ae8237",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "ed3bcbf134a3d574b4e1d23a510472f4e9d96b56c59027609a20f64c6670a062",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "9618358c0c53b88e33c516f836360b1f303f0de2fbbf56bd9c585e40917633f2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_2025/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "1aede6cf724491eabe62b8831bcfa1a6ef94f0e398e2586200bb5f4752c1e4a5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "821bddfccec968243eea4b961043c4bb575535dff09c92179e95ab671b44f5b1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "3a677110f97e8b070ac1a06d7e9e7b6cfc15e4e2ba488aa71eb5d1dc7a795401",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "4c69c72b2cbb1d609906afe894cc4b6b2629792b326036456376eff229ad84ae",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "ac0fb8872d680a8dfc379a70b34b17fe678ad59ee4d3f8a3573e5b34b7c49ba8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "74aa8054ff6979a7e45485e8a5c5ecd503f978ef1cedc92b57ca22f9ac061a0d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_3407/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "2dbcf3d434bf590b93fc15dfc60da1b5e64e2ab1746a31b921d0efdc52885da3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q3/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q3/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q3/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "df33c8694af398e1ed04bd7c259f551b825361edbe26ce17dfd586fb71a9566b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q3/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "4419469b3cba8e27959c80e974c14432c6990fdcf61dea2cdecee4f82021b23d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q3/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "cca8219fb54857f9ed71bdaf5c4e6c7026df1d317d659ad208834c5e57e1763e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q5/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q5/graph_and_ligand_mask_audit.csv",
+      "source_name": "graph_and_ligand_mask_audit.csv",
+      "sha256": "7e07af61d6c79896b93d7012c1daadd49a1c26dae70dab7c24e169630fc5b8e3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q5/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "a4a8b2ce1bd7cfe64a3722fbc0fa18d3feb312e2d273e9baabf078de20b8cce6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q5/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "9b91f9b6bd3ef75999c74166ecead17a62ed71705f17d4e8bbaeae04ef357292",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/runs/VHL_to_CRBN/seed_42/train_k2q5/split_metrics.csv",
+      "source_name": "split_metrics.csv",
+      "sha256": "9331bb18c9ca3516a5d963fc52e46b1be7b408daf7bb190719c3a281f5f88446",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/split_audit.csv",
+      "source_name": "split_audit.csv",
+      "sha256": "c57f97d82630b260cf366ade21660bef0c562f6c36c3cd4832c28a15909dce1f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "007df065ba5e3f3690094757396b5f55768dc3fcea5bc5a7ae906f799239a584",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "2531a6db0fd8a8e0ec099ec6a1a22a899f1663f43abfd7790ae41486fbaf0de2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "a73848fafa2ccaf15a8ae4c12b5d2d58ec5aa4b309430f8f999b9bc305ddb939",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "c4520e7372dd65363a3c27a0df1b211ceaf3a7f0b16839356bfd81996a7583d9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "781afc33d367b2dac6aec0c359d1bf746c9eb20528bcd9b9511feb7e348e27e4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_2025/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "a6dbfa491d448ed9b5fd26b8ae9bebe3f88806431a3c7e5c1779a93bfad8e0d8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "cd60abfae6bd9e277fe7903072c5fa908eab8bde27ba11b53ba9c8d90e09bd6c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "dd2c2286716012dcd130557421c6ddcb1e9ca8a3bf1cd54df1342e729411825f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "db04f21f269494b7ed812088137ed6a14eee19b54aaf96139f47132bec2b18f4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "b4ea1641f03338b124e0a2316c652d57d86a9cb412e7a9863e943d9ea5bd567b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "05df5544cc1a97cd7cfd8e0ecd375c9c558680ff2e2f81e11f9cbaf726a79622",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_3407/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "23ec6affec1a1401302258cc52862e395f54eca875dfeabe8e8b520166b5c78d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1ff2a2877d7db95cded6f0c8116465b9ae94a3a90e83113b8bde6a6c04cfe2b5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "4d834e7e5f49beee1f91eafb64060c016e4cdd1fa52c36f1f227fc3cc3b962eb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "f223ca9160c9ad192273dbc5221b4b5f6a3ef851d12bc80d5901bd6aa397a747",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "666c302f9d2bc4199e8497fc4a78dd4fd21c832c2a6ba05ca03e62adb13a6c17",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "fd47df0f6405c0db8776476dff5bf70de265c543d457207ded108bd0a5fe7936",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/crbn_to_vhl/seed_42/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "99e1eff07ad10f6a4177508018b746c61169336edad9978f18d849bc90a76ded",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1e99b7823c7d5b7c1b0ee43c1f2fcdb5d1bf487139c87982dbb47b44a05de30b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "e834a67ddf99e17208a6e161b8a5466eeabec5d5974ea561a6d51132c71c2e80",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k1_q10.json",
+      "source_name": "k1_q10.json",
+      "sha256": "92b337274819bcd79902e5727ff7a71c0668ccf1341cb2596518e3eafc53fa16",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "1e7c85544701fe914d44c4dc7ab54c8de967cce212f6a39ec6463ca49f1d4abf",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k2_q10.json",
+      "source_name": "k2_q10.json",
+      "sha256": "aed198f02bb45c5054e061111ec7d374930dc07e6f83466d7d151bdbd296f4bf",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "f88411113518ac80d56bc84983b876228da3df904cfbf9437d6c473b134c315a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "80867a7019bde6be8867cb3d1f5c6419f0079ffadde863a020d4f527546c0f49",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "42e2062dcefbc80da3887133d640627dc220957431497ae4fd5372d90d57c335",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_2025/k5_q10.json",
+      "source_name": "k5_q10.json",
+      "sha256": "ad983937696ff1b5456ef50b35e88841eebe83dc9551e1a365264779744b5d2a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "e5354e02315029807d2cac6ab612c04fa1942b8205233dfb0eecd2a4c53ef96a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "d80ccab25d8cf0de72df837368df22de0205346c01a2199372e4799fac2bd586",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k1_q10.json",
+      "source_name": "k1_q10.json",
+      "sha256": "401b3b1f7b2fdc4f374dbfa3c653cbd53af032360a2bcba42a95d50cf7f32beb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "eb6fefd3fea8db504d123cdb20d9080d84009ba8d9a30d86369f82c04ed22885",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k2_q10.json",
+      "source_name": "k2_q10.json",
+      "sha256": "46193ac94b88d673ced24a4bcf22af0aa6f2a2230fe554afd2cc02c18b4e8474",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "e39a61d5883c363104562ecc4b37e6fc24c3f10001e7417995c880a148ea7639",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "fda7db1f763c59a5ce42a31168fa50d04dff3220ffdaf5dd328bfc452ac71708",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "6719cba3aa8859ee649c42bbe387a035ac633246d65d6153c841c7a510953239",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_3407/k5_q10.json",
+      "source_name": "k5_q10.json",
+      "sha256": "20e0c30e3c56cd56dddf0063ca78b45129d1d126fb8af27d5e6d00717cde8b2d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1e384d5423494ef1bfe8d14b520c1518c375189b2c6492229c3eca8cb8428ef9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k1_q1.json",
+      "source_name": "k1_q1.json",
+      "sha256": "4cc73f32460b7dc8cab2aa77edb6678593a94b2d6b21773907b10cc93e2058ad",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k1_q10.json",
+      "source_name": "k1_q10.json",
+      "sha256": "8da12004881bc4a351d23b4810b9a9497685052ab4abf772db5b71b2d324c0c1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "941988ce09132251896a994efdf8522e155bcd36dbefc62400dd42ae2930f1ac",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k2_q10.json",
+      "source_name": "k2_q10.json",
+      "sha256": "d51c0fb9d4db755ec96c196ab6760e8bdc6f9fb877908b4f36062bacfb30f4fa",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k2_q3.json",
+      "source_name": "k2_q3.json",
+      "sha256": "bc6c7e0435ff6b4134f0fc29ecaff9bc56fd37fc18446212a3a5c3c73a85ec07",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k2_q5.json",
+      "source_name": "k2_q5.json",
+      "sha256": "a8542a0310c10c66601a8283de51fba276c66221a825e1504cff9075dd65ff17",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "c70081a121a44753118c18fdc61337e8bda5a42cc7823ea4dc3b99bceda3f2ca",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/splits/vhl_to_crbn/seed_42/k5_q10.json",
+      "source_name": "k5_q10.json",
+      "sha256": "12ad14c3b9a15360333d37b8f61c41609a58bbf0b8b48b30dc9fdd473819bb87",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/summary.csv",
+      "source_name": "summary.csv",
+      "sha256": "2707c4bed4247cf2a63c9dac2e398ad61ed155dca44561eef37160c7c3e9c052",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/table_prometa_rerun_15.md",
+      "source_name": "table_prometa_rerun_15.md",
+      "sha256": "fee7779fc7080038c032372ee738b8b53a28aff3f77e61528086716e9a63289f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/table_s4_prometa_rerun/table_prometa_rerun_15_formatted.csv",
+      "source_name": "table_prometa_rerun_15_formatted.csv",
+      "sha256": "c9a2c2719320a373e1c9fde32a8dd0e6cf47b337c6c323a22769c6d7d32e1215",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/common_K7_query_manifest.csv",
+      "source_name": "common_K7_query_manifest.csv",
+      "sha256": "9fa6f0e428d6e658e2a1bac4e77f01dd00d82d4fc2b9a8991f7172c651985d4e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_2025/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_2025/audit.json",
+      "source_name": "audit.json",
+      "sha256": "8ee9bbcbe8269e431f9ecb926d7731b328a34500c4c0216325ad8d7f2e6a507a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_2025/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "8a90e7192d940e299a9b6dc7c4683a53d824de424c6e31d0aa1ec8bbd462434d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_2025/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "76704904c912759e89d4a374beab7bcb01785e448710a1e9a0f09989a579a897",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_3407/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_3407/audit.json",
+      "source_name": "audit.json",
+      "sha256": "8108583bda49a756204654d77bec40e76d7d908ffb02208a14c6d90b53e5f5f2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_3407/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "90b70cdd36da33f3b868dc0e732fb4d0f6406a8c9ef1731e68b19974181154c2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_3407/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "d995d5ace17d3b52f1259e67eb96c5cd80a384f35cad2477e54ec2ea29196f13",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_42/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_42/audit.json",
+      "source_name": "audit.json",
+      "sha256": "d3ca36b7a6d2daecc76e98301cd7e701c3e47aadd6c685a48d1e66f77654768d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_42/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "2248e894c57c77723373a156c83b3fd27c54debd59093290306b06fd179801b1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/CRBN_to_VHL/seed_42/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "7b304e3c4b20a5807acf66bd01a35152b8ac6ff305764f89707410c4ec69a883",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_2025/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_2025/audit.json",
+      "source_name": "audit.json",
+      "sha256": "9702755a7cb8e1f07387146820604b7891fa8762f13ef178054db20d4cf59982",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_2025/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "98d380df6683955c6e933ee15062e902e535a93e97b984775fa24b24553bbcf4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_2025/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "6daadd34a21f942ccb41e3b38250731edbf9af96c95b7b86179335544c6dc45d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_3407/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_3407/audit.json",
+      "source_name": "audit.json",
+      "sha256": "af6cb9171dcc5edc5eadae5d4fb889e694c0f135b6536b63d070211ab2ec5e81",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_3407/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "3de9271a00582500c59bb82556d7a2035f3181c397cac2da21c3ce7ce71809a6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_3407/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "0882eb0ce1fe8b30eb917c8733abad12897bdd399adcc4c72506918d57f18bc9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_42/_SUCCESS",
+      "source_name": "_SUCCESS",
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_42/audit.json",
+      "source_name": "audit.json",
+      "sha256": "2e37c7138f510eac9a1fc522d07fa917758a1ad9f2a3cf6ca602f04cfac86725",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_42/metrics.csv",
+      "source_name": "metrics.csv",
+      "sha256": "9765b5a15086296ae297c91842772c4d87f6ba2886a573700a75eef71dd74346",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/evaluation/VHL_to_CRBN/seed_42/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "92881db473b217bf006149374bd74d4c419a005dcb155deae97e985ecbf78eb4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/final_audit.csv",
+      "source_name": "final_audit.csv",
+      "sha256": "0cf5e471fb9a4501e0dea9cff85695215d552ec4534221f7c16b9a31ff745de3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_audit.json",
+      "source_name": "k0_audit.json",
+      "sha256": "94dbc6578db057046914903c56b2d4a9cf3858ab785c0d27a336dd381011294b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_per_seed_metrics.csv",
+      "source_name": "k0_per_seed_metrics.csv",
+      "sha256": "d7a2c29de4d8547aa7c203e81bf600b51de30e37e4bd71453674c4f3e060c5b8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_query_predictions.csv",
+      "source_name": "k0_query_predictions.csv",
+      "sha256": "50bb5d169211312567167746305cb978402c656c124ddde3477ab267e4b9fd8c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_source_reference_manifest.csv",
+      "source_name": "k0_source_reference_manifest.csv",
+      "sha256": "93c8d4ee43e19b5779abac4c427a8d69751ce2057ff27b3c0aa82393d034e92b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_summary.csv",
+      "source_name": "k0_summary.csv",
+      "sha256": "fbf295847da49a305d5fa69018c7e24b6a14fe3141e718fa9c94839c3b6d0a80",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_to_k5_paired_per_seed.csv",
+      "source_name": "k0_to_k5_paired_per_seed.csv",
+      "sha256": "9aff3103abb188f6b0aeb60f9ba0466f4756bcce70ffb7f2c6184d0b6a8bcc61",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k0_to_k5_paired_summary.csv",
+      "source_name": "k0_to_k5_paired_summary.csv",
+      "sha256": "e7d7763a1410df3c6b175819aa944b1ce3defa82ffde0a622245fe8ae59a1550",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k1_to_k5_paired_per_seed.csv",
+      "source_name": "k1_to_k5_paired_per_seed.csv",
+      "sha256": "60ebe085c62efcc78e23b7526a56c9b12ff706b396347734a231eded184738a1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/k1_to_k5_paired_summary.csv",
+      "source_name": "k1_to_k5_paired_summary.csv",
+      "sha256": "4fccc92a6da6a6ebec5981d9adf94ae9cb73cbe2c09075ed925dc7eb1dd015cb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/per_seed_metrics.csv",
+      "source_name": "per_seed_metrics.csv",
+      "sha256": "b656a57aa4ab24d8a43d2fa4606bb93a3191737b37887c07e14850e872fa4522",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/split_audit.csv",
+      "source_name": "split_audit.csv",
+      "sha256": "4b8cb01d72baaf6368d6bff628b9a65f623b64c68f3e9708e57198ed0c5e7e6e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "007df065ba5e3f3690094757396b5f55768dc3fcea5bc5a7ae906f799239a584",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "a73848fafa2ccaf15a8ae4c12b5d2d58ec5aa4b309430f8f999b9bc305ddb939",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "20adf105d0a52af7d1d914b80786f70215258c40d63db385850dc573141db956",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "b53a2135aa0e1b0bdf8a389f16c72052863f87a45c7d96c53e7260edcc65efa0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "a6dbfa491d448ed9b5fd26b8ae9bebe3f88806431a3c7e5c1779a93bfad8e0d8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "0b47d80cd08a50404a6f0c070f08327f62a92092e87525a2c946b876bf56f670",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_2025/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "cc7b548fad27f21e0ae90cc6c6f91b33e4ee24432a589c7f3299dc4ab0fec1c2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "cd60abfae6bd9e277fe7903072c5fa908eab8bde27ba11b53ba9c8d90e09bd6c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "db04f21f269494b7ed812088137ed6a14eee19b54aaf96139f47132bec2b18f4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "171cd337fb3506d2afc8305f2d916cfdb1105cbe24ad50dd828ed6e682be455c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "a1be1bf5d604cbbb66755999455dac6436b17834b9a77a4c581dc1d07b7996c1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "23ec6affec1a1401302258cc52862e395f54eca875dfeabe8e8b520166b5c78d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "d48657f353d253c8b70920fc75a3d3648e0fbfacda408b6cdfc11e54419cdde6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_3407/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "fe667ce03a6c61dcd92f885b88a2ae5fc8338a990524ffc5886b3908a5d6e6f3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1ff2a2877d7db95cded6f0c8116465b9ae94a3a90e83113b8bde6a6c04cfe2b5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "f223ca9160c9ad192273dbc5221b4b5f6a3ef851d12bc80d5901bd6aa397a747",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "d10f790cbce4509ef7940ab2d8b6e9ccfd25fdc7115b0cb217eb7e771c4c7be0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "83e269bd9b3ec81aa2461e64d67951f0440a0b8691b7bfd14d147290c83e28ca",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "99e1eff07ad10f6a4177508018b746c61169336edad9978f18d849bc90a76ded",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "c0b3b1b14dc5fad85ca1a10ecfaeb8d1eb67725ac562a46c8b5049479e6ad758",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/crbn_to_vhl/seed_42/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "81153e8a2bd8a53d2586e2a7ea6e3e309450cec43235241b175fbef4d3beb15a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1e99b7823c7d5b7c1b0ee43c1f2fcdb5d1bf487139c87982dbb47b44a05de30b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "1e7c85544701fe914d44c4dc7ab54c8de967cce212f6a39ec6463ca49f1d4abf",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "e80bfd883bcf749920ac09f01472d1ca2ffc1439775d5123f3da022036f2671f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "4cf8752b1da18a6f9c9d7e9bc3964090b885778b6c2c61bc0df811eda794cb6a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "42e2062dcefbc80da3887133d640627dc220957431497ae4fd5372d90d57c335",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "063783f9d6cf4d84bf66ed45c6c492695abb4a01326ca7c3f9832a79590f7194",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_2025/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "80d699954c78a43a9b4aa7e382ea100cbf30a67aeee4aea6056433c05cb5ac58",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "e5354e02315029807d2cac6ab612c04fa1942b8205233dfb0eecd2a4c53ef96a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "eb6fefd3fea8db504d123cdb20d9080d84009ba8d9a30d86369f82c04ed22885",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "28a5465714d905c115954e8ac9eb051cc418eb54b13237859cf31a2d2c05c31f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "47258a2e2ea3988a149e90023e8dd31954d0b6fd2622d7a89d1b0c5a7fe1bf8b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "6719cba3aa8859ee649c42bbe387a035ac633246d65d6153c841c7a510953239",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "dc8d2fb7e3068c352b28bad550211af4de440858a4f082ecafca16e2f0d568ad",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_3407/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "9f6b395d02cdd18fa0e855c6be9b6c93131117206640887905a30532a97c3490",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k1_q0.json",
+      "source_name": "k1_q0.json",
+      "sha256": "1e384d5423494ef1bfe8d14b520c1518c375189b2c6492229c3eca8cb8428ef9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k2_q0.json",
+      "source_name": "k2_q0.json",
+      "sha256": "941988ce09132251896a994efdf8522e155bcd36dbefc62400dd42ae2930f1ac",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k3_q0.json",
+      "source_name": "k3_q0.json",
+      "sha256": "497a7370e113001df2b2c6c62f03d638e947704e33c186ee4f176d6caabd70bb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k4_q0.json",
+      "source_name": "k4_q0.json",
+      "sha256": "e8460c1ad949b64fcfbcd41ecac4154e1054c3c609efbd4c48d2a4bf380a6096",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k5_q0.json",
+      "source_name": "k5_q0.json",
+      "sha256": "c70081a121a44753118c18fdc61337e8bda5a42cc7823ea4dc3b99bceda3f2ca",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k6_q0.json",
+      "source_name": "k6_q0.json",
+      "sha256": "f46e5a18467885340d699fd7be8f4890071b505091fe8adc449f550a2ac66924",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/splits/vhl_to_crbn/seed_42/k7_q0.json",
+      "source_name": "k7_q0.json",
+      "sha256": "4fea013b913e2006be8a230cfe2198419e8f003e5e42d1ddc55987f61fa75ef1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/k1_to_k7_20261007/summary.csv",
+      "source_name": "summary.csv",
+      "sha256": "e6038dde8308df034715a749f87b52d6558d1e2ad7c078d16268df829466790a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/current_transfer/prometa_as/main_bidirectional/config_prometa_training.json",
+      "source_name": "source_training.json",
+      "sha256": "08d21dbeab353b4d188a30eead841e139ed2453707a41159f62f942c98ed2670",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_101/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "effae29b9b0771c31e158d217edd5d3c0f38d13971f8ceec6b355bff6a23b241",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_202/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "2b2eb0e168f6d8a793c387984f3c3cebe99498b45e2372370d34feb730363b68",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_2025/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "9b7d1356508d6b515b7e968e7ccb1428e5a3f1fafbe145bb456b4e8eb0ed553a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_303/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "0b8059c8a087811bfe66d19b3d94c778f914ac81a9b8f9265057ddf64617b9d1",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_3407/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "e789dab91f6c69c8bc75da9eb6da5bfc98fdb96d5e592a5b562c30cd01f689be",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_404/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "78479a517b71d7822ad5c3077965aed8841a90bcf0b295793056b90b8cd50e71",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_42/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "67a48e9bd338d4e310dbf53b59727449327af814b154762f2d9066af28e1acc4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_505/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "7361c03f04f500b938215ea58195c9ee947cd01f6ba323ead1e3caefd0eccd68",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_606/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "4438f320a4b630dc8ad137247c3797d8daca83a19188cba7bb29caafa6f5aa58",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/CRBN_to_VHL/seed_707/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "521f913cf76367e0c4d8ccd4a3de77312c98cb81e28214274230c628ed311738",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_101/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "375510e77d496e8df1927b03c24dcdc7fafa5fb9fab7bbba30b2bddbcf462f97",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_202/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "bd3dfedd03911117766385c0d73d45c59d7363fc3180e3877d93a0e3dc5c36bd",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_2025/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "fbfc0d8c1f93e4d0643fab7ccf5612ab50cae02f81b6ab573aa51aad1e0981a9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_303/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "17e437743ea600cf3c13087c0dc84b970c77c6ebbccf77aadf3c730d29e97cb5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_3407/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "c1ffd38aba4bc8ace2ea192443d9e0c7bba53626340a775e0bea3f3868838f64",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_404/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "b4ff71c63a09d4a9ff79e78da425b2b203293975f2251ba43a80fb2b8681d190",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_42/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "38ad98b3974b81165155beb64b36e739bb401dc15542b84320bf774aa37b3fba",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_505/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "3c38959b3ef4c680f0fd475317383e5af2e1fb20af1544a18565e22c9352ce27",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_606/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "fd99c42ea087dd67fc686ade69eb72a4e93b4770fd883e10d72ea3379ad01516",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/checkpoints/VHL_to_CRBN/seed_707/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "2311b39ac84e57bfe7f05dd46384968fe668c1cd60a0fb237ca29a4310fe5a2a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_3407/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "55c95ef5c62ab406586b88bfb793535fb1871d632ae9fd6dcaa7beb484a67e20",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_404/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "07fefd4a8d467e5582f0d15defd1b96988389b98afffb6d1e3abfe2ba39b0089",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_2025/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "b8ea5195c42b6d49afbfbbf8d340f0a049ff7e428a261ea2c67bf30472de7410",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_101/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "9e4cc3cc119912ec6f7f0f074c4ab16962f5e24db576e69ff738f387f3d10c61",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_505/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "df23a9871eeb86248006a79faa21e6b87193e0838d950c74559b6b125b434d78",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_42/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "d6cce3107a5e01dab71edd3520750ea30b76f6dbdf5b4e2f4079f2ec83b9af6a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_303/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "b64d51b623e10360c25f20e6c1ea47094ab4c815a78d832b53ecdd33858df9c3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_202/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "c16c7fe01626e62778ad7c617b053999f43410e8ef0c53aed638da6fc66aa7b3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_707/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "11e35647b318eb256b74ff0c5b544d06f5a80f6d2d6f3d44bd1f50c9c9928c05",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/VHL_to_CRBN/seed_606/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "a44f5d9abf8454eface8d6824c23f8f5537b2b07dd370720fbc8d7622ae5c549",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_3407/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "bc95ef3e7f5d96914f1bdd6e8c3bd7ee5ca663e83c1a66ae71f5bdb52e61b43b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_404/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "99dd9ce1e5d11fab7ddd41fc8f51b59bacddb9ffbbc6edd21a4df8d2bc2cad16",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_2025/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "4d5a9990ec102dece1c7ebf9922d790153ab7f6880fc1a297674096d87603120",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_101/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "be20f87f772250b0661fac0308e825ffe1538d8da45d60bcec4d255ebebdccd5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_505/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "fefcc58e8bb503f4511e730d496cb1015c6ba469fc84d1eb0b8d2819d10a747a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_42/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "7fdf4a77b58c16c9cdbcbaea3cbca4ee09d567fb47e529ebe2faf122b4d04733",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_303/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "1a8c27834f2231eb3c993353d6e9079c57bb8ca11fcdd11756ebaa8798b02256",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_202/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "0387d9a315d93ac2865e99be74498938e86273fe23eb5e3d15a57927a39b41bc",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_707/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "fce1b2a7df77d0081b3c1588b8155470182042cec55fd4358e648d71888fd52e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/context_weights/training_records/CRBN_to_VHL/seed_606/run_manifest.json",
+      "source_name": "run_manifest.json",
+      "sha256": "c48453e2209e4eeb392ed019cb680b84c138d3de286c054d2addd05535501f9a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/tables/prometa_contexts_fair_esm_v1.csv",
+      "source_name": "prometa_contexts_fair_esm_v1.csv",
+      "sha256": "eb1a6092d0124663745a57ba0371711331e9717f1aa8115b3a8c7852d8d95d15",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/tables/protac-fine_esm_complete_v1.csv",
+      "source_name": "protac-fine_esm_complete_v1.csv",
+      "sha256": "93292b9a181012e9f50e26dfcd59c7eb35cbca710fb4a7cd8e83b9b99c040835",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/tables/rare_e3_fair_v1.csv",
+      "source_name": "rare_e3_fair_v1.csv",
+      "sha256": "56a6f05417680c105e41cb7041d4866d6768fcff6707248ccdef882286e5218d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/tables/strict_crbn_vhl_contexts_fair_esm_v1.csv",
+      "source_name": "strict_crbn_vhl_contexts_fair_esm_v1.csv",
+      "sha256": "c28221e97fc1f684b9806de390e146b44e06a8d03f501fe9bfe6f0a1a2ac7fd2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/embeddings/protein_embeddings_fair_v1.pt",
+      "source_name": "protein_embeddings_fair_v1.pt",
+      "sha256": "dc50c770b054c20bd45af5bb0ae35d8f7b8eef497524bf7844da138d2fbeace5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/splits/rare_e3_fair_v1_k1_exhaustive/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "5b04b01d1d154118e8062a04a1df5605b45c0266914998441f7ccfeb53b8c74c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_101/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "c942ad826d5feb1970ff3ed5224bd62b846efdf338cde4ad6414d845074e9afb",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_101/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "947d43d0bfe2df5852540da879d7ea99d05104133b7a5c733a8307aaa75325a8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_101/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "1761eb9859f46f74578d907562774f7f9afd13a03b3c41f83d1a8e9c84317c1d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_101/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "fea61965802ed3433922eec249793bdc0fd402600c2655f26bc0be8f618fbaf5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_101/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "e6a1057f9c92ec9f42bd5220a9166fe4c36311b8defc820f1a8298007c98b68e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_202/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "3289406e7fe530ebd17fdfa7749f3d71ba74f38eed2b49125223b71e754c0b63",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_202/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "f7c5355badc3f5d3199239aad4678f15627a9484f0ae68b30b4c587658650466",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_202/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "603600368ae12d1900192c2a5db8522ab25f641603f6ee9d72f78dc341ffef52",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_202/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "a8c59e37320041a16d7821fd8a1f523df083b21f2458b18d6bd33207811a1329",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_202/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "dbd6b2d5f9c1832bde17e5d2b74c3785fdd4170838e32142b7cd56f9929f1c8b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_2025/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "239847daa1eb93adc0cf9775fa90bf7379d515c783f6c20d1f4f7499d0cfefea",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_2025/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "bec6127de73f91631f74a51c8a7d532274388b592b7c2f77d9861082d3db6ed3",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_2025/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "d1860d810dc2e3d2f205ac58b4b52ae5dd634a154191cb8a1036b7617eeac607",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_2025/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "1394eb8cec419e02860006145823b0cfe66a6671cae8a693a600a5c241c3cfba",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_2025/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "50cda80c7e64fab3fc304fc0b41bc9721a7639d9df8dee444aa4f03d69c98805",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_303/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "f7f1f03f1ec41149bd67867cd6566ec2316d2a81ef7462835603bb3fc767b9c2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_303/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "2400f3c0044128d1691a9669c7b471195172fd536d73a201dc7f9334c0976e7f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_303/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "b5a2593eb3f3c24fbcf7c783671e77194e70761ec42174fe573989e7063f4fe0",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_303/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "596e3e4a66d9db222fab9933a8c4fe7e6f8b31288242bb6b740798939a7458b5",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_303/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "6c62f4ad0e008f056bb716babde056257dec9c15c89aaa5558929c699d785398",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_3407/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "852a3c9ea3cc1f1077c62ada6e82b736a3106f77176906acf2bdf3fa290289a4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_3407/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "4bb19cc9ebc61fc73e39632372b6006283d953ca256d1e1ca8e1754ba9ba0f04",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_3407/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "e0acbaf06f83ac23451628b0cb6fe47fb74c40ab8e6d918a2fc46cfb08f66f46",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_3407/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "2fa9d8eefd58ac8cb5f4a671fe49195b7191521a2ba458fdc5b3f83a3c64b354",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_3407/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "23065ccf601b59780da646c89dd36aee2389a785be0c6c93198c53a6e301f137",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_404/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "5bf069028202b0f75982dd07f44f7d33bdd719fe619cffa328556da47a05e7d8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_404/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "1f6406233cff38994b1ad40ba1d747f3e48dd4eea0c9678ac9caa78f19c70aef",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_404/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "2fb45b3a1eadf5fc63fe871c74485590f11c29e5e15a0a50e29a60ffc9165527",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_404/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "137dad99c8ebff371f1f0c593b734ff277a9b5e71ac2de57dec36624d03ee5f2",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_404/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "77a9d32c0be06a87e37ebf34c5bf0e12c11053cbd38e54636c032488150e91db",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_42/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "0a4185f2f651910fb426f0d191f7b445e65a01a229291e60e1f206b19222aaf9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_42/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "ba042b279f0b749f0592bb7637c7e853a731b3a90164f9171a69e004c7fafb9f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_42/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "c8a6f251d6e710469e968136d8003fc1aed5cdf5058b28c760ceaf0c2a71aaa8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_42/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "ee0d81803718fdaa022003f42bc176e7f4ca7641c8e68d7d2de4fab3dac5bb57",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_42/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "43e49d05d23ccd1a33639e5d0ba204c710d753a194127ad97d2a2865f7846f8a",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_505/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "aa5f89b94a8759e7976c75f653a68ffb5ba5d94ec91d5ee17988827e7657e685",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_505/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "6cb26fb6336cfb78e6179023abd91303abf5ab2c23fbba304464279b3af60e2e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_505/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "9974c4facfc30ce016f7722de28616d44d3292edd555441ea0cee220befc55a9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_505/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "90effeae0d0e823cf01dc1e440ed4698f306875d032f386f2ac4cb963369cea6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_505/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "c03b1d510fee030bd44adfe3d2a7d497c65d4129a7448a6c14fc1f9ef45d0806",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_606/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "be83c4e76bb755e7b7ae7462a485617684bc89a00d32e769e0179b4001d56870",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_606/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "ee0e9648f51594cc014aacd4f038a8b097237c7b9b8f893e5b2a574aa2564ee7",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_606/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "7f4b571c3654f0f5b9894002854b5f10af6df434b5704ba0d1b76ae732afd10d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_606/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "ce71dafd72518655ed389dd1be22da99702553ef7c997153ab6904098b465110",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_606/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "71815fafa32c8dc7c6a602c2c221a36a257c9a0a744ba0fc1407acda369a2b64",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_707/episode_metrics.csv",
+      "source_name": "episode_metrics.csv",
+      "sha256": "22d40bbd5ce317cabaa1661877c8ea5e58af671b8a8045f7c21dcb8b202364b9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_707/grounded_interaction.pt",
+      "source_name": "grounded_interaction.pt",
+      "sha256": "7dc92e379fc93c63b82a0dc9327593cbbde3ffee5f8a02994b708a2b0a330e49",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_707/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "sha256": "0dc6d4fb6d792a20c60b17b8f37f2228441b27f919a46552dd6c62a05c68534d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_707/run_audit.json",
+      "source_name": "run_audit.json",
+      "sha256": "4e081eee25d61b1bf7ebf446546641faf31fe2086f9bd38a994b1df78fe0b486",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/common_multisource/seed_707/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "ab72a5ae0600c88114c8dd0ef99ea577d836420f76e5e2d67186318a70703d7e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/macro_seed_metrics.csv",
+      "source_name": "macro_seed_metrics.csv",
+      "sha256": "03648147b105c41a3ef4453ff500a132d30f8f2c21789da34a8a1d4b1ef03ce8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/macro_summary.csv",
+      "source_name": "macro_summary.csv",
+      "sha256": "da6642bd60d8256e324a7352695349fcbd7955c45a3072488e090cfad977d9d6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/per_e3_summary.csv",
+      "source_name": "per_e3_summary.csv",
+      "sha256": "dfbf56a9941f05fc13c36fa4722fc5f23e1472ce06ab61da6768a2bb023f6d8e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/rare_e3/results/prometa2_multisource_loeo_v1/task_seed_metrics.csv",
+      "source_name": "task_seed_metrics.csv",
+      "sha256": "ea07f58cd0b41a61822615331f547063ad3ffb03fdbe0470b495cee59eef881f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_3407/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "e8e4b325c86491b0002aadc20b6f7d2f32fdc77e1ebcde900f37ee832cbec077",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_3407/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "3268131a884867d92560628518e6c6466e70aa6eff433cb63a83759536f3d237",
+      "sha256": "4bcabf22e80d2f0254ff33743d132aecc623dc49d42f38a2c880c372dd342e77",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_404/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "ee10f22e2777340ee5d65eba36a16059f9c1ed57e4745564abf2d50322dc0975",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_404/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "d606a4b97cb09e9b4add3da90faadcf2dc7771b122101e4dac335a3dfa7608d3",
+      "sha256": "dd486a8eebdea0f912e44ba8ab39af92ed548ecdae59989a7e68d783d414b358",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_2025/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "455437b623b739b9aedcaccfe2fd2b62ed610ddf01ecb4d4fa19a4144b595f56",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_2025/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "5361485471f80febbd9fe3d8765e765e96d3e8ae2159f40dba4b67ddba46a177",
+      "sha256": "a186897003c2f0060d5dae7d884bb14caad5b8ba4235b7c1a5341f3409e3ffd9",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_101/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "8127b4a976ffc46fd0bb53534442af9a17b2bed8ffd01d458d282d9694de638e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_101/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "74272b4ecca338e7a22b598fff5d88499648beb74ac5dcfdadcb6707712df845",
+      "sha256": "aec7c011ba931e02def71305e45e7c4657760f1fcc68d2797e5a50cb39ebb602",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_505/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "47d826944be0524d23dccea2d7b2e2562ea7c52019f2593ff1e6e413db42b6c8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_505/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "ce50b5c374dc1be1dcc2e5f621f5b865c31805e2fdf8bf7ffba9af9af33af711",
+      "sha256": "cd97a37e3be8b94ee009cc773cee55f3553db9ffed6f8000df1ba197e6aeae86",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_42/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "0787084139ae43cd7938d74b4a7e04fbb9fe7d50a703b17a47755bb8c033ba15",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_42/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "a49f6883b150939fc3b697982d1c2d9d137aa7275bb2c586c4efee0117b62441",
+      "sha256": "383b878e69a8eb58af3279325498451002a46e7ff2fe7bba64f8befe3e33b0bc",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_303/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "6fb18e0374f791322b63210f0cbb903c790647242e0877d50ac3f296435afb59",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_303/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "30585a4661807307bf1d035728df6b4fbd2fc727b5989896953fbe62bb65f05c",
+      "sha256": "3bdcf2adda48e84bb297c6a5163cf9e24cf1bff2b67550e2d125c172e5a6cb57",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_202/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "1a56d944ce29f653283c770935bf01c5ed5b910dcbb9e262f6276bcdb7249818",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_202/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "a5b0cfca83b74c88f8867f63307d23fadd59835435bc369deda46e14f30b01c7",
+      "sha256": "1cfa215ef84e3cbcd468a49957c78af1f9bdb19cdd134463b3c3f4a0acd2ca23",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_707/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "7eec4c5397470c353866129b6eb5053bdfeb5e73b13b4f7fc15aed5c4b2da568",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_707/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "9f425c575f60b68bf509e8e58d1744210077e18fc2303dd91fccfc0835a27a04",
+      "sha256": "4dbbb8b5fe12d1357f5b274c95ee6ce4381cdda754058320f9676c9ba7a4f89b",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_606/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "7a79a9f597b0cd7ee03e9cdeeddf0d8ef7a352fcecd449f751920062b6bb5b44",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/VHL_to_CRBN/seed_606/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "50d8b96a2670671e8e94b8f9e43e6733f2c9af0584a61a4d007e8e0f96627d1a",
+      "sha256": "169fc9f2ab118b4ca91713992e8662d89f759cff64cc635059e6834f1fcaa4b4",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 324
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_3407/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "32e3101e9b51e80cba7e2f2da2437eebc973fa00a9c15ebbdd6b815fe8bccd97",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_3407/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "0c8fa7517ef04b14a3ef92d75f02954a60e7d9a5a73edb44fb42f0a5f1d890a9",
+      "sha256": "49424f5979ff0e803f46466a990c7716cfa647bbb755ce6b55dd59e26dec887a",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_404/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "f8ec1adf6e5e347d9823899a80db6aefa206db1a3852dc08e8984dedf8b6e421",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_404/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "bfbaa730d0bdd31a810643e89e1c67837fe6947b5cbb49e62eb5e370c4e565f8",
+      "sha256": "7fc542010eff72058779350dbd7f9644ca4da6f67e27fd948bee553ef8724683",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_2025/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "7d210d0e556bff99002258561b9017cb26e6d02b73ea546dc0e047dd847781fe",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_2025/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "ccd1edee1ec58654e0248aa5b0864f55aa6f4dcfd36ff07b5527e1dbcf3c55bb",
+      "sha256": "cf5d01f3898b8975f55cd6f97a97d3044abdaa3a0ccf547c3fb55d16571b720a",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_101/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "237f754ca8fefcf0b620e2b04c7b6d018f3656bbeb1061e0a3ca95d37c7b3cb8",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_101/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "4f9d6f2979ec9358d01a67afd76fd82d3a8b8d78b739436e1e6c17272947a8b7",
+      "sha256": "4d5189595ee5956cee93ab4499fcae0541cff5eed9145377ed344827dd38fd63",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_505/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "bcad979df3e3abcd042f0c67763dee64ab7cceda41ae34350325bbef5dc0a4ca",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_505/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "9e8f94bb8e20221e4b0b4e60d0c67ef0ec806bf81c7ddb13ea3289037740c7f4",
+      "sha256": "87141842d21ebce713fe3f06502c89da2471c477965dfd5bc35ab0324d1c4e8a",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_42/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "6aa5b72b1627ac81536708282eddd51ce0cb5bc08be131667be45ab257914152",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_42/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "634a475b37da2ed88885c6da92bd7906c447221ef27ee2fe27a2d419ee4a7e55",
+      "sha256": "4c08e3178f10f6651356e47816f39bd0a139cb618a8e3b02628cb0ab421e6af6",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_303/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "4668c54a8fc448909419c4a857e32ea7f5d7abb502036dc6560f51879a474da4",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_303/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "5a783a93ea7071579e36bd4c72cd42c83c4d002a26bfc527505940f8730cd937",
+      "sha256": "17ecf0e6b3bdcf96fca19d0f05e71780f2af1a306cac5ac3877fc68f346434f3",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_202/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "433e383d20ef5b9861e50b5aab406cc441229e1e35784dde609cb7e790999f53",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_202/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "13403b7b319129590be20ed40aeba1a85b4418d7de00131176146bf8c136813d",
+      "sha256": "6e91ddb01a909ee95da0d77e17b6acfbf6e9db26bead0b144f146422eb8d1e37",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_707/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "e4c76087c79969471471224a0e4d106418896f0ed3188552cac4b91dea72ef0d",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_707/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "9fe7ede6b395e47979b18d01b6e9cfdef9f2b3623282c1c442a002dab916ef4b",
+      "sha256": "74d18bfc65fa94e57672102464e576ff78d33481e06b3ed3d5e1a655f021316b",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_606/episodes.json",
+      "source_name": "episodes.json",
+      "sha256": "f4ee4f433f9ec38226a0d37f794ab0a23387169e74d505fbda741c6b4017143c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/poi/CRBN_to_VHL/seed_606/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "334c303e0682b688ef4edc64eb67e329b1d385cc0bd53f54bc1b10ec815ffabc",
+      "sha256": "c5ba97a82c98d35fd711091cfea4aa9e3402ff70ef65f4f52f680ade0768fff9",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 144
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/query_scores_support_averaged.csv",
+      "source_name": "query_scores_support_averaged.csv",
+      "source_sha256": "edb12b5f27c844d27c828d42a14a0b368b15343470d0f27987ee9662fd453cf9",
+      "sha256": "d54df8abcc00eab09553f69b8fa4c3f1a8ff3601ee6d543098f7a1609c3d0ff4",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 2340
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/paired_task_gains.csv",
+      "source_name": "paired_task_gains.csv",
+      "source_sha256": "36bd00630e9b485e504ac3d93b9eee84c136a423eb6dcc4e43f73c29463291b2",
+      "sha256": "abcf134f95c7b20b2926f5a437c86b6b018783f38ea2ff1ac2e1203f69ae9975",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 130
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/per_task_seed_metrics.csv",
+      "source_name": "per_task_seed_metrics.csv",
+      "source_sha256": "224834acae53de2e12b2a48d34d7eaff3b0588cdd9b330947abf3f330d14c953",
+      "sha256": "7ea40ed97fdb50f15209bf5fcbf02afdf86054594817d83a87cb024cf05545b6",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 390
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/macro_summary.csv",
+      "source_name": "macro_summary.csv",
+      "source_sha256": "24a33e078c81f5bbde460895902db6e00e72c8cacf5521d930df5808e00be44f",
+      "sha256": "a1dcd318dacac360670338aa4f20e00bfd21fb3b52a718a35c51de8bbf9d5e22",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 6
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/paired_gain_summary.csv",
+      "source_name": "paired_gain_summary.csv",
+      "source_sha256": "0b2aa405c94a2377729c0e5a23651f998100e8d67e06318ac549de665b58ac60",
+      "sha256": "f6a4847e2736c5ef1f50db65a466ba6e5be5d1f85189d518b308c06427201a99",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 2
+      }
+    },
+    {
+      "destination": "artifacts/poi/summary/per_seed_task_macro.csv",
+      "source_name": "per_seed_task_macro.csv",
+      "source_sha256": "feb7c479a32cc2beb23284ab548120379134ef7f883bfe43201ff8ccc9a40a5a",
+      "sha256": "4b59e1a38eb3b0c2b4f12a24bc66498587a335a12e4ee94a8a4990c38a571119",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta+prototype"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 60
+      }
+    },
+    {
+      "destination": "artifacts/linker/cohort.csv",
+      "source_name": "eligible_series_pool.csv",
+      "sha256": "9fdd2bb8e0a259fe740a3b99e019d3361c72726a1c6f68529c4c85279f24772c",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/linker/query_predictions.csv",
+      "source_name": "matched_prometa_stan_ecfp_queries.csv",
+      "source_sha256": "bb6b0273fda0f2f2b09bcfa0250fc7074e53803ff59bc62afd2425c153fba34a",
+      "sha256": "99e44f235734bc601a4624257c07b582e5fe3ba6cff7db4caca4c94435876f41",
+      "modified": true,
+      "transformation": {
+        "methods": null,
+        "removed_columns": [
+          "stan_score",
+          "ecfp_score"
+        ],
+        "seeds": [
+          42,
+          2025,
+          3407
+        ],
+        "rows": 4878
+      }
+    },
+    {
+      "destination": "artifacts/linker/k0_k1_predictions.csv",
+      "source_name": "within_series_query_predictions.csv",
+      "source_sha256": "7024423e2b13c6d7f88124a17e4546930c236f332af045c29a46c686550f3bbb",
+      "sha256": "357278a4b31c29de68256298a3de235f1b005fd3a25041c29aa0df1eddaccf94",
+      "modified": true,
+      "transformation": {
+        "methods": null,
+        "removed_columns": [
+          "ecfp_score"
+        ],
+        "seeds": [
+          42,
+          2025,
+          3407
+        ],
+        "rows": 4878
+      }
+    },
+    {
+      "destination": "artifacts/linker/compound_display_mapping.csv",
+      "source_name": "linker_molecule_ranking_panel_d_label_grouped_display_order.csv",
+      "source_sha256": "65bc6e1ff946ebe54b1e8d1ad9393fd6573f17e159368d9cb39852a20debcac0",
+      "sha256": "814c090c140041ec2cfaf4c6a106b6c26cafdea359d443c8beaffe2af666513b",
+      "modified": true,
+      "transformation": {
+        "methods": null,
+        "removed_columns": [
+          "stan_score_rank",
+          "ecfp_score_rank"
+        ],
+        "seeds": null,
+        "rows": 11
+      }
+    },
+    {
+      "destination": "artifacts/families/cohort.csv",
+      "source_name": "cohort_with_components.csv",
+      "sha256": "5d33b236a199f8562b3d58f180b9d1a0a8da4f35dc8793334c54e9a613af17fc",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/families/query_predictions.csv",
+      "source_name": "query_predictions.csv",
+      "source_sha256": "08c91e056eb24fc6227d9eecfa30b87e9d276af7d3bb4bb068a69f4174f5a1fb",
+      "sha256": "cb2e069aba2cbe0ca665d8b33c6ddf81e6ff47dceb76ae1ad619a3b5ae49c2dd",
+      "modified": true,
+      "transformation": {
+        "methods": null,
+        "removed_columns": [
+          "ecfp_score"
+        ],
+        "seeds": null,
+        "rows": 11586
+      }
+    },
+    {
+      "destination": "artifacts/families/manifest.json",
+      "source_name": "manifest.json",
+      "sha256": "0e61749760a3f95342271b36e27dbafbb76a083fb50df66a6f6124fcc38f93d6",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/cdk6_crbn_members.csv",
+      "source_name": "cdk6_crbn_members.csv",
+      "sha256": "bda2a576a48eaad9372b07efc4134c94cf9fa8dd1cdcbf08fc3850ab1c38e042",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/cdk6_contexts.csv",
+      "source_name": "cdk6_contexts.csv",
+      "sha256": "364873a5e7032c5fd4ce9d0973e5c0cae6536f56126a05d4ea7053d39620caf7",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/cdk6_crbn_supports.csv",
+      "source_name": "cdk6_crbn_supports.csv",
+      "sha256": "412e5bd0a7c3072a42415d73f2faee86c13b925a1251e4f884af7484a7a18c5b",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/predictions/seed_3407.csv",
+      "source_name": "seed_3407.csv",
+      "sha256": "0bd8e45cd4532f4bbec624d792aa1f5fa327c3df7be3e9c353202a6026bf5f65",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/predictions/seed_42.csv",
+      "source_name": "seed_42.csv",
+      "sha256": "1a0a15fe4853e6ca26b560290d17cf217af12ae5b0d76102a0d86a2b45e8a318",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/cdk6/predictions/seed_2025.csv",
+      "source_name": "seed_2025.csv",
+      "sha256": "e702819bea241055d2bcceed19d000b6b1ca052e53fd0a5ad84af34f6573354e",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/input_manifest.json",
+      "source_name": "input_manifest.json",
+      "sha256": "60829e63c61b5203c5c5c1e56b7239f83fed8a231408ec0afc2b54c4773f9b73",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/common_cohort.csv",
+      "source_name": "common_cohort.csv",
+      "sha256": "fdd47a4d5608f1caea7721e97bc0c01e5a6c26490044d3708a2b77f9d84e95dc",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/prometa_inputs.pt",
+      "source_name": "prometa_inputs.pt",
+      "sha256": "721083959881b8b8b76dcab6498fa79d2342a38856738588836153b98a5f1940",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/all_raw_times.csv",
+      "source_name": "all_raw_times.csv",
+      "source_sha256": "739b0cb9b57e80e5e5a293ff1b89f59be82f1305cbf8abba822b57c787269ef8",
+      "sha256": "fdc4b0379b87ed3838eeb0fa47d899984056d79b912c9d3a882bfc79538880bc",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 1380
+      }
+    },
+    {
+      "destination": "artifacts/efficiency/per_seed_metrics.csv",
+      "source_name": "per_seed_metrics.csv",
+      "source_sha256": "2a9d53335f5b9de140cd9d4d52a45da48227c7034e1308ee3de5b2100cb5c803",
+      "sha256": "88ad515ebf075eb4f659cc8b1774a077b044696fbf6d6392abb659a9f6c9bbb5",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 18
+      }
+    },
+    {
+      "destination": "artifacts/efficiency/summary.csv",
+      "source_name": "summary.csv",
+      "source_sha256": "8726e774eeedcc0ea4e7d9265fe3d1fda9b0a90cc3099442f7a867fe342f0f66",
+      "sha256": "ca6bada938119da934ecc89e5d36c5ceca7bf2e2a125c597477f1f2e597c4da1",
+      "modified": true,
+      "transformation": {
+        "methods": [
+          "ProMeta"
+        ],
+        "removed_columns": [],
+        "seeds": null,
+        "rows": 6
+      }
+    },
+    {
+      "destination": "artifacts/efficiency/prometa_seed3407_manifest.json",
+      "source_name": "prometa_seed3407_manifest.json",
+      "sha256": "d861f1035779ec5d3debffd08b60dcdb2964a3942ee362de944a882a0522165f",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/prometa_seed42_manifest.json",
+      "source_name": "prometa_seed42_manifest.json",
+      "sha256": "21820ee0721bb5d021fa1b32b6b65e5f899e37b8679f396cfc105cc513cc6dd9",
+      "modified": false
+    },
+    {
+      "destination": "artifacts/efficiency/prometa_seed2025_manifest.json",
+      "source_name": "prometa_seed2025_manifest.json",
+      "sha256": "f049dc45e03e4759cf5c966d85cc1190c228344a0e54918c2984549445f910a5",
+      "modified": false
+    },
+    {
+      "destination": "results/transfer_paper_reference.csv",
+      "source_name": "paper_S2_prometa_only.csv",
+      "sha256": "b1f9e03f38631492bc19db0769671a539edcbee324bef0cbc6c069226624b032",
+      "modified": false
+    },
+    {
+      "destination": "results/efficiency_paper_reference.csv",
+      "source_name": "efficiency_prometa_only.csv",
+      "sha256": "ca6bada938119da934ecc89e5d36c5ceca7bf2e2a125c597477f1f2e597c4da1",
+      "modified": false
+    },
+    {
+      "destination": "results/legacy_rdkit3d_recomputed.csv",
+      "source_name": "legacy_rdkit3d_recomputed.csv",
+      "sha256": "13ba7bdd9efff891353a021b670b417959fe93964c05bd3ba38dab2e45a0a4b3",
+      "modified": false
+    },
+    {
+      "destination": "results/legacy_intersection_recomputed.csv",
+      "source_name": "legacy_intersection_recomputed.csv",
+      "sha256": "a9f44687cc85df738bfadde6c7e67e3cfd3548514cf43cba31b3448fd452623c",
+      "modified": false
+    }
+  ],
+  "code_versions": "Main, ablation and rare-E3 modules preserved separately; no cross-version numerical substitution.",
+  "excluded": "Baseline implementations/checkpoints, MD, abandoned cases, virtual environments, temporary figures, private machine configuration."
+}

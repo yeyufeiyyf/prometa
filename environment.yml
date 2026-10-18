@@ -1,16 +1,8 @@
 name: prometa
 channels:
-  - pytorch
-  - nvidia
   - conda-forge
 dependencies:
   - python=3.10
-  - numpy=1.26.4
-  - pandas=2.3.3
-  - scikit-learn=1.7.2
-  - rdkit=2026.03.3
-  - pytorch=2.5.1
-  - pytorch-cuda=12.1
   - pip
   - pip:
-      - torch-geometric==2.8.0
+      - -r requirements.txt

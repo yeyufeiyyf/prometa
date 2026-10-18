@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prometa-protac"
+version = "2.0.0"
+description = "Prototype-based GNN for few-shot cross-E3 PROTAC activity prediction"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+dependencies = [
+  "numpy==1.26.4", "pandas==2.3.3", "scipy==1.15.3",
+  "scikit-learn==1.7.2", "torch==2.5.1", "torch-geometric==2.8.0",
+  "rdkit==2026.3.3", "matplotlib==3.10.9"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["prometa*", "experiments*"]

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "study": "transfer",
+      "paper_values": 90,
+      "passed": true
+    },
+    {
+      "study": "kcurve",
+      "paper_auroc_values": 12,
+      "passed": true
+    },
+    {
+      "study": "rare",
+      "passed": true
+    },
+    {
+      "study": "linker",
+      "passed": true
+    },
+    {
+      "study": "poi",
+      "passed": true
+    },
+    {
+      "study": "families",
+      "passed": true
+    }
+  ]
+}

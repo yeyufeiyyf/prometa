@@ -1,0 +1,1 @@
+The example uses one saved VHL-to-CRBN seed-42 K2Q3 CDK6 task. Four supports have binary labels; six queries exclude labels from the input. These are the fixed-task queries, distinct from the separate 14-compound CDK6 family case. Recruiter annotations follow the original feature table.

@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "levels": {
+    "transfer": "regenerated_checkpoint_predictions",
+    "kcurve": "regenerated_checkpoint_predictions",
+    "rare": "regenerated_checkpoint_predictions",
+    "poi": "regenerated_checkpoint_predictions",
+    "linker": "regenerated_checkpoint_predictions",
+    "families": "regenerated_checkpoint_predictions",
+    "cdk6": "recomputed_from_archived_predictions",
+    "efficiency": "recomputed_from_archived_timing_samples"
+  },
+  "elapsed_seconds": 300.10740184783936,
+  "note": "Read comparison.json for numerical identities, score differences and paper-precision agreement. CDK6 scores are archived; GPU timing was not remeasured."
+}

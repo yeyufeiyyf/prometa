@@ -1,0 +1,16 @@
+direction,K,Q,method,query_rows_per_seed,evaluation_batch,AUROC_mean,AUROC_sd,AUPRC_mean,AUPRC_sd,BALACC_mean,BALACC_sd,q
+CRBN->VHL,1,all,ProMeta,210,setting_fresh_20261015,0.714,0.017,0.729,0.023,0.649,0.018,0
+CRBN->VHL,1,1,ProMeta,48,setting_fresh_20261015,0.659,0.087,0.647,0.092,0.66,0.073,1
+CRBN->VHL,2,all,ProMeta,87,setting_fresh_20261015,0.814,0.044,0.799,0.061,0.696,0.025,0
+CRBN->VHL,2,3,ProMeta,24,setting_fresh_20261015,0.836,0.122,0.86,0.11,0.722,0.12,3
+CRBN->VHL,2,5,ProMeta,20,setting_fresh_20261015,0.867,0.119,0.86,0.145,0.817,0.058,5
+CRBN->VHL,5,all,ProMeta,33,setting_fresh_20261015,0.976,0.014,0.967,0.021,0.872,0.089,0
+VHL->CRBN,1,all,ProMeta,348,setting_fresh_20261015,0.697,0.011,0.712,0.017,0.654,0.008,0
+VHL->CRBN,1,1,ProMeta,52,setting_fresh_20261015,0.684,0.045,0.666,0.029,0.686,0.029,1
+VHL->CRBN,1,10,ProMeta,80,setting_fresh_20261015,0.71,0.089,0.702,0.047,0.679,0.101,10
+VHL->CRBN,2,all,ProMeta,279,setting_fresh_20261015,0.714,0.044,0.776,0.061,0.678,0.033,0
+VHL->CRBN,2,3,ProMeta,54,setting_fresh_20261015,0.768,0.068,0.763,0.08,0.71,0.028,3
+VHL->CRBN,2,5,ProMeta,60,setting_fresh_20261015,0.687,0.084,0.688,0.123,0.661,0.035,5
+VHL->CRBN,2,10,ProMeta,60,setting_fresh_20261015,0.844,0.034,0.863,0.036,0.756,0.035,10
+VHL->CRBN,5,all,ProMeta,170,setting_fresh_20261015,0.757,0.013,0.889,0.01,0.665,0.029,0
+VHL->CRBN,5,10,ProMeta,40,setting_fresh_20261015,0.754,0.051,0.752,0.055,0.683,0.038,10
