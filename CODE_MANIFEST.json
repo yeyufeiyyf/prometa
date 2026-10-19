@@ -2,8 +2,8 @@
   "files": [
     {
       "path": ".github/workflows/sync-zenodo-files.yml",
-      "bytes": 6609,
-      "sha256": "4b3847621640e80f40879c4593e48689f45352afc81c58f0f377698b3ae9bd47"
+      "bytes": 7736,
+      "sha256": "a39e5d1e76fac6ccf60fcb281232d7e838494028fb72314ab804d8820baaa582"
     },
     {
       "path": ".gitignore",
@@ -314,6 +314,11 @@
       "path": "requirements.txt",
       "bytes": 133,
       "sha256": "051aa8a4b941dd2f2f6615f7aadf2889518b11558e24667ff617a8245b7326bc"
+    },
+    {
+      "path": "restore_zenodo_artifacts.py",
+      "bytes": 10511,
+      "sha256": "ddbf4123a7c74a5e5cab5e19419f5e50062b2a749a482d56ac3c3bc25c7fbf14"
     },
     {
       "path": "results/efficiency_paper_reference.csv",
