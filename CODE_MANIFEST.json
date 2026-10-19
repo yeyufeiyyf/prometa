@@ -1,11 +1,6 @@
 {
   "files": [
     {
-      "path": ".github/workflows/sync-zenodo-files.yml",
-      "bytes": 7736,
-      "sha256": "a39e5d1e76fac6ccf60fcb281232d7e838494028fb72314ab804d8820baaa582"
-    },
-    {
       "path": ".gitignore",
       "bytes": 135,
       "sha256": "626b875eec83f8e7dfe58765a387e1d514e42017c78e08e9ff1ba4f9b5067a11"
@@ -22,8 +17,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10771,
-      "sha256": "6f0f64c92e4b81ed67720e09b5d7576ec5d46d47afd67c1036165806ec00d61c"
+      "bytes": 11322,
+      "sha256": "c20d5489e218db4fb50737eb05018750a8c9c8e1b5193f86b12c4c6c67de2a2e"
     },
     {
       "path": "configs/ablation_training_head.json",

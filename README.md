@@ -30,6 +30,10 @@ python verify_release.py
 
 Download the [complete checkpoint, split and input bundle](https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/prometa_artifacts_20261019_cdk6.zip) from the [v2.0.0 publication release](https://github.com/yeyufeiyyf/prometa/releases/tag/v2.0.0). The release also supplies the code ZIP and a SHA-256 download manifest. See [checkpoint API documentation](docs/CHECKPOINT_API.md) for individual experiments, including CDK6.
 
+Permanent archive: [Zenodo v2.0.0](https://doi.org/10.5281/zenodo.23474832). The archive contains the same code snapshot, checkpoints, fixed splits and frozen inputs as this publication release. The series DOI is [10.5281/zenodo.21371598](https://doi.org/10.5281/zenodo.21371598).
+
+The Zenodo copy stores the artifact ZIP in 30 volumes. Run `python restore_zenodo_artifacts.py --download` to download, verify and restore the original ZIP, then extract it inside this repository. The restored file is byte-identical to the single GitHub artifact ZIP.
+
 For direct loading, the artifact bundle includes `study_checkpoints/<study>/<condition>/seed_<seed>/model.pt` for K curve, POI, linker, families, CDK6, efficiency and rare E3. Use the direction as `condition` for K curve/POI/linker, the assay name for families, `CDK6` for the CDK6 case, `FLT3` for efficiency and `common_multisource` for rare E3. These files are copies of the original trained weights; `study_checkpoints/checkpoint_mapping.json` records the exact source and SHA-256 of each copy. To regenerate them from the original weights, run `python -m experiments.materialize_study_checkpoints --artifacts artifacts`.
 
 ## Reproduce the paper studies
