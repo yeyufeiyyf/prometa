@@ -1,6 +1,11 @@
 {
   "files": [
     {
+      "path": ".github/workflows/sync-zenodo-files.yml",
+      "bytes": 6609,
+      "sha256": "4b3847621640e80f40879c4593e48689f45352afc81c58f0f377698b3ae9bd47"
+    },
+    {
       "path": ".gitignore",
       "bytes": 135,
       "sha256": "626b875eec83f8e7dfe58765a387e1d514e42017c78e08e9ff1ba4f9b5067a11"

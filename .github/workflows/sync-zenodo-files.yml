@@ -1,0 +1,120 @@
+name: Sync publication files to Zenodo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zenodo-publication-file-sync
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ZENODO_TOKEN: ${{ secrets.ZENODO_UPLOAD_TOKEN }}
+    steps:
+      - name: Upload and verify the frozen v2.0.0 publication files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, tempfile, urllib.error, urllib.request
+          from urllib.parse import urlsplit
+
+          # This workflow only fills the existing draft. Publication is a separate step.
+          endpoint = 'https://zenodo.org/api/records/23474832/draft/files'
+          source = 'https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/'
+          token = os.environ['ZENODO_TOKEN'].strip()
+          assert token, 'ZENODO_UPLOAD_TOKEN is missing'
+          files = [
+              ('download_manifest.json', 929,
+               'c4027698b8eddada7fa3cb946b881f685dfd9824aa7a316059d522d5aef91e6d',
+               '0c4f62944f48f94c7d50baa3d0a2f483'),
+              ('prometa_code_20261019_cdk6.zip', 248234,
+               '5b45ecfe92ab7fcfcdb574b92396058304f2a692ecbe5a86181160467f322535',
+               'bb4facbb23404c1b922982143ab617eb'),
+              ('prometa_artifacts_20261019_cdk6.zip', 987338969,
+               'a42dbf02943b96394d9da8fff4b790f9995f9793f04b40d696757e0cf9d3f4fd',
+               'db0c73ba8503385af897d011874328bb'),
+          ]
+
+          class SameOriginRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  assert urlsplit(newurl).scheme == 'https' and urlsplit(newurl).netloc == 'zenodo.org'
+                  return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+          def api(method, url, body=None):
+              assert urlsplit(url).scheme == 'https' and urlsplit(url).netloc == 'zenodo.org'
+              headers = {'Authorization': 'Bearer ' + token, 'Accept': 'application/json'}
+              if body is not None:
+                  headers['Content-Type'] = 'application/json'
+              req = urllib.request.Request(url, data=json.dumps(body).encode() if body is not None else None,
+                                           headers=headers, method=method)
+              try:
+                  with urllib.request.build_opener(SameOriginRedirect).open(req, timeout=180) as response:
+                      data = response.read()
+                      return json.loads(data) if data else None
+              except urllib.error.HTTPError as exc:
+                  raise RuntimeError('Zenodo HTTP ' + str(exc.code) + ': ' + exc.read().decode()[:1000]) from None
+
+          def valid(entry, size, md5):
+              return (entry and entry.get('status') == 'completed' and entry.get('size') == size
+                      and str(entry.get('checksum', '')).removeprefix('md5:') == md5)
+
+          expected = {row[0] for row in files}
+          current = api('GET', endpoint)
+          assert {entry['key'] for entry in current['entries']} <= expected
+          with tempfile.TemporaryDirectory() as directory:
+              for name, size, sha, md5 in files:
+                  current = api('GET', endpoint)
+                  entry = next((entry for entry in current['entries'] if entry['key'] == name), None)
+                  if valid(entry, size, md5):
+                      print('Already verified:', name, flush=True)
+                      continue
+                  path = pathlib.Path(directory) / name
+                  print('Downloading public GitHub release file:', name, flush=True)
+                  digest = hashlib.sha256()
+                  digest_md5 = hashlib.md5()
+                  with urllib.request.urlopen(source + name, timeout=180) as response, path.open('wb') as handle:
+                      while True:
+                          block = response.read(1024 * 1024)
+                          if not block:
+                              break
+                          handle.write(block)
+                          digest.update(block)
+                          digest_md5.update(block)
+                  assert path.stat().st_size == size and digest.hexdigest() == sha and digest_md5.hexdigest() == md5
+                  print('GitHub file size, SHA-256 and MD5 verified:', name, flush=True)
+                  if entry:
+                      api('DELETE', entry['links']['self'])
+                  initialized = api('POST', endpoint, [{'key': name}])
+                  entry = next(entry for entry in initialized['entries'] if entry['key'] == name)
+                  content_url = entry['links']['content']
+                  assert urlsplit(content_url).scheme == 'https' and urlsplit(content_url).netloc == 'zenodo.org'
+                  response_path = pathlib.Path(directory) / 'response.json'
+                  escaped = token.replace('\\', '\\\\').replace('"', '\\"')
+                  config = 'header = "Authorization: Bearer ' + escaped + '"\n'
+                  command = ['curl', '--config', '-', '--fail-with-body', '--show-error', '--silent',
+                             '--connect-timeout', '45', '--max-time', '2700',
+                             '--header', 'Content-Type: application/octet-stream',
+                             '--upload-file', str(path), '--output', str(response_path),
+                             '--write-out', '%{http_code}', content_url]
+                  print('Uploading to Zenodo:', name, flush=True)
+                  result = subprocess.run(command, input=config, text=True, capture_output=True)
+                  if result.returncode:
+                      raise RuntimeError('Upload failed: curl ' + str(result.returncode) + ', HTTP '
+                                         + result.stdout + ': ' + result.stderr[:500])
+                  committed = api('POST', entry['links']['commit'], {})
+                  assert valid(committed, size, md5)
+                  print('Zenodo committed and verified:', name, size, md5, flush=True)
+                  path.unlink()
+          current = api('GET', endpoint)
+          assert {entry['key'] for entry in current['entries']} == expected
+          for name, size, sha, md5 in files:
+              entry = next(entry for entry in current['entries'] if entry['key'] == name)
+              assert valid(entry, size, md5)
+          print('PASS: all three files match the frozen GitHub release. Draft not yet published.', flush=True)
+          PY
