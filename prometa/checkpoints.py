@@ -38,7 +38,7 @@ def checkpoint_catalog(artifacts: str | Path = "artifacts") -> list[Checkpoint]:
     if not (fresh / "jobs.json").is_file() or not mapping.is_file():
         raise FileNotFoundError(
             f"Checkpoint metadata missing under {root.resolve()}. "
-            "Extract the matching prometa_artifacts_20261019_cdk6.zip in the repository root.")
+            "Extract the matching prometa_artifacts_processed_v2.1.0.zip in the repository root.")
     entries = []
     for job in json.loads((fresh / "jobs.json").read_text()):
         manifest = json.loads((fresh / "runs" / job["id"] / "run_manifest.json").read_text())

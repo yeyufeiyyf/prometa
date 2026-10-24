@@ -1,0 +1,223 @@
+{
+  "format": "byte-concatenation",
+  "zenodo_record_id": 23618575,
+  "original": {
+    "name": "prometa_artifacts_processed_v2.1.0.zip",
+    "path": "prometa_artifacts_processed_v2.1.0.zip",
+    "bytes": 981937839,
+    "sha256": "98db503094a04af616745fa56b715e309d67f8e601682885c1cb07ab03fa0aa6",
+    "md5": "2aca99f2f124d558cc11c6ead4ae4b28"
+  },
+  "parts": [
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part001",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part001",
+      "bytes": 33554432,
+      "sha256": "da6a3820c37b51c2d21b97c210efddb013c1e21c0401db9ebe9f7c8abb90390c",
+      "md5": "0003ec41c3f53adb300c2f36aac04462"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part002",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part002",
+      "bytes": 33554432,
+      "sha256": "3d6ad6da4d3115048ad3905ed053ba065347a3b18f807153f6990787d9223dbb",
+      "md5": "abaec576e355eb6d3597e15149c61aee"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part003",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part003",
+      "bytes": 33554432,
+      "sha256": "fbd837fcb700ffdc5308ac39d2c28012ddec4884cb35108ef3d8748dec065636",
+      "md5": "f17a3792ac112232dbc794a24d036a3b"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part004",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part004",
+      "bytes": 33554432,
+      "sha256": "d5f3ca4c45a5e66646938d66d1d86f183701601b80ff07bf757260e1f90247a8",
+      "md5": "3c1e90addd6b11939d135f73482ee1d1"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part005",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part005",
+      "bytes": 33554432,
+      "sha256": "1cd0dd19724dd0b2fe91773d69ea877d7d9d5c88351e3888d306827175521427",
+      "md5": "adff2cf5291c982fbe43ccf66fb4bf32"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part006",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part006",
+      "bytes": 33554432,
+      "sha256": "d9cbd5ba58dd027e566493582f0dd4cca7ddb63c2b40ffb78440112cac9dc4f3",
+      "md5": "2ab3a2e2045b9d7473713f25562685f4"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part007",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part007",
+      "bytes": 33554432,
+      "sha256": "42b058739debba55f9f5e02d309a74cc9ca3684f10d7e75a6a535d55103b2d03",
+      "md5": "620f17d9b1052c5d7fc01e15aaa51e2a"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part008",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part008",
+      "bytes": 33554432,
+      "sha256": "d66a904df89e42c44d8f858014cdd41c1472b5d45696b79e0b398c927c3f5cca",
+      "md5": "b3ed10071db9bf3f52536921ba19e841"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part009",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part009",
+      "bytes": 33554432,
+      "sha256": "dcf18de5d94b95b4d6fdc80cb8f89127078d8cc3c80e8aaadb66325d8f19df4c",
+      "md5": "c6458329aae8bd198a29e30c65b9541c"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part010",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part010",
+      "bytes": 33554432,
+      "sha256": "331db9cec02caf0980a3a6c533646e76a8d4cfa14a06decaf10cd1565fcbf043",
+      "md5": "61304eb8b9f08161344076db278bf33f"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part011",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part011",
+      "bytes": 33554432,
+      "sha256": "5655ebe5252461c23f4b7cda766d167a4691565ba64c45a33f7e6982b5bbc13b",
+      "md5": "d71e96879c9a31699ea3a66346c200c0"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part012",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part012",
+      "bytes": 33554432,
+      "sha256": "40178c5b9698ab8a7ca7bcfa89543929f63235450cedc355ad89d386ab7c3cf1",
+      "md5": "76e51fc256864efd49d4372912286b8d"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part013",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part013",
+      "bytes": 33554432,
+      "sha256": "44efff51c23e598db9e6f15b4a2bb97bc617b629d99e17fdcbc142df2da493f0",
+      "md5": "2ec8b5285bfa1091201fc5f225acf5aa"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part014",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part014",
+      "bytes": 33554432,
+      "sha256": "ddd32242deac189a529516393bc6eec04825f831d3d53e992df1b63fae2ad686",
+      "md5": "c21856066948b3def902e03c75bae2a9"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part015",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part015",
+      "bytes": 33554432,
+      "sha256": "ae5619f5ae512e28c0503ed355245b893515043fdb952e75eeffeaf6b728742a",
+      "md5": "b664aba747db46acea67c80bd091b35b"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part016",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part016",
+      "bytes": 33554432,
+      "sha256": "7f315b4749b8fef60591d6bcaf84e185b5bf5a285f80e7951fcc43edee7a1745",
+      "md5": "616cef6471cc9b8e1a2fcceaadf2fa42"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part017",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part017",
+      "bytes": 33554432,
+      "sha256": "35b65031f3e6ec676c64c0df656ce4ef6619e9db672a9be0ac9b53ade3cbcbcb",
+      "md5": "bea482780bd5a32ae8b1c19307bfd962"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part018",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part018",
+      "bytes": 33554432,
+      "sha256": "df236630a0be45de48a007fa73363a2a4265a007058311f894cce84db6620d78",
+      "md5": "12061db602dcc960e5059fa69b0a7b68"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part019",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part019",
+      "bytes": 33554432,
+      "sha256": "c36545da6bf5e007805ec0f09c922128b24b66e7c2d2593a73af650d60d6fb64",
+      "md5": "4c6872544efdc7889ae2d5d3d5059856"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part020",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part020",
+      "bytes": 33554432,
+      "sha256": "094d51b47ed5163a4efd98e856d10697f618b8776fff258ddc40139c9ca173eb",
+      "md5": "59e5650e32395de249f1d073e8990808"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part021",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part021",
+      "bytes": 33554432,
+      "sha256": "85c4a5d5d2da3c85ccdafa3493fa58278fc3ca0806c4694c990357e299542c99",
+      "md5": "7860fe8ed1c9078bd09397abd0f21e6b"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part022",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part022",
+      "bytes": 33554432,
+      "sha256": "39e6f7004a5421e3a1a7a4fceebfff4279f2bdf825865ad3acc674f8372758ee",
+      "md5": "8d4f4afee077af50b4bac289a570f291"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part023",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part023",
+      "bytes": 33554432,
+      "sha256": "0a4ff201b5051689acf5e41c47a8903d84a25bc905e9678fadbd9ed090dd0f43",
+      "md5": "e9c12c422dc128c5c4af994fed2c4303"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part024",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part024",
+      "bytes": 33554432,
+      "sha256": "c8b66c0c981ce71dd0fa9a78e4c68edbfe7b72ab25f4d98455184204c5c6e05a",
+      "md5": "dd473df77563988a471511cdb42fae5e"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part025",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part025",
+      "bytes": 33554432,
+      "sha256": "7fa3c3107cd9a29eac05b6349599ac19539c183f96a977440518174180c1fa55",
+      "md5": "14a91d925b6c0c5efa87310746d6c383"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part026",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part026",
+      "bytes": 33554432,
+      "sha256": "51ccccb5499555e0905d6042bd855bc8e434bcd798c6250ff382f60700bc7ac9",
+      "md5": "cd026d7ed3a4aeed0d0e1a5e968f8b2f"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part027",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part027",
+      "bytes": 33554432,
+      "sha256": "9579cc9e4e45df4157fb7e54734198a19990c85512da3b76cb8fb061ee0e2197",
+      "md5": "0f18820cb2d92b38387b26e62b30d753"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part028",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part028",
+      "bytes": 33554432,
+      "sha256": "7d57c60659a825bed8d1ee5b10132625be9d2266b1494a22bde2a44761a83ebc",
+      "md5": "95c0a49916587ad5f84f54a5e0ab1c4b"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part029",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part029",
+      "bytes": 33554432,
+      "sha256": "0ffdbde71745e53e74567720322f5377aa0dc203d57014eab26def4a2a54c4c2",
+      "md5": "52d3e13926cb7e45a74719a88c222f04"
+    },
+    {
+      "name": "prometa_artifacts_processed_v2.1.0.zip.part030",
+      "path": "volumes/prometa_artifacts_processed_v2.1.0.zip.part030",
+      "bytes": 8859311,
+      "sha256": "2117eb4099159d939d22880c80e2bc7778674a492bd1dc90956e60b467556189",
+      "md5": "03ecc2cfb386542606cb96e69afb2df3"
+    }
+  ]
+}

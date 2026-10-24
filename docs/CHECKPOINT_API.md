@@ -1,6 +1,6 @@
 # Checkpoint selection and prediction
 
-Extract `prometa_artifacts_20261019_cdk6.zip` inside the repository root. This update
+Extract `prometa_artifacts_processed_v2.1.0.zip` inside the repository root. This update
 adds the three supplied CDK6 checkpoints and their fixed split; other weights are unchanged. The code and artifact
 ZIPs must both be supplied when publishing this release.
 

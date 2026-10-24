@@ -19,20 +19,26 @@ Use a PyTorch build compatible with the available GPU for GPU training/profiling
 
 ## Download the ProMeta artifacts
 
-The code archive and the frozen artifact archive are separate. Extract `prometa_artifacts_20261019_cdk6.zip` **inside the repository root**; it creates `artifacts/`. The current bidirectional comparison has 45 independently trained direction–setting–seed checkpoints, its 45 fixed splits, and individual query predictions under `artifacts/transfer_setting_fresh_20261015/`. The bundle also retains the earlier shared-checkpoint transfer run for the separate K-curve analysis, plus frozen contexts/components/protein features, other study checkpoints, and measured timings. The artifact bundle is ignored by git and belongs in a GitHub Release asset or the linked data deposit.
+Version **2.1.0** distributes processed labels and model inputs. The raw PROTAC-DB export and raw DC50/Dmax/assay columns are omitted. Existing labels, molecular structures, protein features, splits, predictions and checkpoints are preserved; this update does not regenerate labels or retrain models.
+
+- [GitHub v2.1.0 release](https://github.com/yeyufeiyyf/prometa/releases/tag/v2.1.0): processed label tables and download tools.
+- [CRBN/VHL labels: 1,325 contexts](https://github.com/yeyufeiyyf/prometa/releases/download/v2.1.0/prometa_crbn_vhl_processed_labels.csv).
+- [Rare-E3 labels: 40 contexts](https://github.com/yeyufeiyyf/prometa/releases/download/v2.1.0/prometa_rare_e3_processed_labels.csv).
+- [Zenodo v2.1.0](https://doi.org/10.5281/zenodo.23618575): complete processed inputs, frozen features, checkpoints, splits and predictions, stored as 30 verified ZIP volumes.
+
+From the repository root, download and restore the processed artifact archive, then extract it to create `artifacts/`:
 
 ```bash
-curl -fL -o prometa_artifacts_20261019_cdk6.zip \
-  https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/prometa_artifacts_20261019_cdk6.zip
-unzip prometa_artifacts_20261019_cdk6.zip
+python restore_processed_artifacts.py
+unzip prometa_artifacts_processed_v2.1.0.zip
 python verify_release.py
 ```
 
-Download the [complete checkpoint, split and input bundle](https://github.com/yeyufeiyyf/prometa/releases/download/v2.0.0/prometa_artifacts_20261019_cdk6.zip) from the [v2.0.0 publication release](https://github.com/yeyufeiyyf/prometa/releases/tag/v2.0.0). The release also supplies the code ZIP and a SHA-256 download manifest. See [checkpoint API documentation](docs/CHECKPOINT_API.md) for individual experiments, including CDK6.
+The restoration tool checks each volume and the complete ZIP against SHA-256 hashes. For already downloaded volumes, use `python restore_processed_artifacts.py --directory PATH --offline`. The old `restore_zenodo_artifacts.py --download` command is retained as an alias for this processed release.
 
-Permanent archive: [Zenodo v2.0.0](https://doi.org/10.5281/zenodo.23474832). The archive contains the same code snapshot, checkpoints, fixed splits and frozen inputs as this publication release. The series DOI is [10.5281/zenodo.21371598](https://doi.org/10.5281/zenodo.21371598).
+The bundle contains 45 independently trained direction–setting–seed checkpoints, their fixed splits and individual query predictions under `artifacts/transfer_setting_fresh_20261015/`, plus the earlier shared-checkpoint K-curve run and the other study artifacts. See the [checkpoint API](docs/CHECKPOINT_API.md) and [processed-data scope and labeling limitations](docs/PROCESSED_DATA_README.md). Negative labels include records without quantitative evidence; these are the historical publication labels, not a newly DegradeMaster-relabeled dataset. The release supports reproduction from processed inputs, not a complete reconstruction of the early raw-data filtering stages.
 
-The Zenodo copy stores the artifact ZIP in 30 volumes. Run `python restore_zenodo_artifacts.py --download` to download, verify and restore the original ZIP, then extract it inside this repository. The restored file is byte-identical to the single GitHub artifact ZIP.
+The series DOI is [10.5281/zenodo.21371598](https://doi.org/10.5281/zenodo.21371598). Earlier Zenodo versions remain separately versioned; the downloads above identify the processed-only release explicitly.
 
 For direct loading, the artifact bundle includes `study_checkpoints/<study>/<condition>/seed_<seed>/model.pt` for K curve, POI, linker, families, CDK6, efficiency and rare E3. Use the direction as `condition` for K curve/POI/linker, the assay name for families, `CDK6` for the CDK6 case, `FLT3` for efficiency and `common_multisource` for rare E3. These files are copies of the original trained weights; `study_checkpoints/checkpoint_mapping.json` records the exact source and SHA-256 of each copy. To regenerate them from the original weights, run `python -m experiments.materialize_study_checkpoints --artifacts artifacts`.
 

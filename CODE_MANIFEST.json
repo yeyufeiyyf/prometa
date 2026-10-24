@@ -8,7 +8,7 @@
     {
       "path": "CITATION.cff",
       "bytes": 607,
-      "sha256": "c136df844df1ce8448d9bc801b3eb350cbb85308be80cd0cc7205fa29b416ad9"
+      "sha256": "bb1e64e01dc3014e5d378dc9a0328cd9ce0c9374bdc3c323591c42df37f8827f"
     },
     {
       "path": "LICENSE",
@@ -17,8 +17,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11322,
-      "sha256": "c20d5489e218db4fb50737eb05018750a8c9c8e1b5193f86b12c4c6c67de2a2e"
+      "bytes": 11735,
+      "sha256": "3af0021f3fd479ee6459b7ff73c453dbd6490baaa77708bfc5fa801464ce93db"
     },
     {
       "path": "configs/ablation_training_head.json",
@@ -42,13 +42,18 @@
     },
     {
       "path": "docs/CHECKPOINT_API.md",
-      "bytes": 6087,
-      "sha256": "800fa4732d2aa174ac1520a4fbbb371cb32c4bfa0d46ac7f89bd0b448a322448"
+      "bytes": 6090,
+      "sha256": "71211b2b486860e9559aa9339d76890643ce74586011b0cb3b259ed1cf948294"
     },
     {
       "path": "docs/DATA_AND_LEGACY.md",
-      "bytes": 2649,
-      "sha256": "70df1425054ce6e7a8e7d59025a318879b555fec0d4993ad10b60ea6ede024f1"
+      "bytes": 3348,
+      "sha256": "248e793d0d9735a2dc95ab65f4ca7baa457b7cea091b1387dcc250f047147f2f"
+    },
+    {
+      "path": "docs/PROCESSED_DATA_README.md",
+      "bytes": 3005,
+      "sha256": "25cb0b59d78b73d4eb0009cd9d6394bdb69f03335e4ca52a9577b1bdc76cc383"
     },
     {
       "path": "docs/PROTOCOLS.md",
@@ -57,8 +62,8 @@
     },
     {
       "path": "docs/PUBLISHING.md",
-      "bytes": 1253,
-      "sha256": "253b2c9c0aefaf6ccd38d4b371050063c985b3761e0e3a2789b7ee258a96f922"
+      "bytes": 1461,
+      "sha256": "c0234b60197970a4c93049b5cad72f65fb5c3efe498de6e39145b2cb325a76fb"
     },
     {
       "path": "docs/VALIDATION.md",
@@ -252,8 +257,8 @@
     },
     {
       "path": "prometa/checkpoints.py",
-      "bytes": 6348,
-      "sha256": "ba6f4e4956be0e565bfd590b514f5669fe8d3d4574e221c4bf5e11ff13902a00"
+      "bytes": 6351,
+      "sha256": "25d6cd68d6ef7a0746e7e5bb52b7af8d9ec60c33f468d2dfb65ea1e0696bb314"
     },
     {
       "path": "prometa/data.py",
@@ -298,7 +303,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 578,
-      "sha256": "57adecd7b8c8a396716a7c4dfeeeb20a0230e6c5595e43590806fb6078f7d080"
+      "sha256": "8af8343d5c34b33088a97b447d1d8314bbc58e358581670ca74685488ac08cc7"
     },
     {
       "path": "reproduce.py",
@@ -311,9 +316,14 @@
       "sha256": "051aa8a4b941dd2f2f6615f7aadf2889518b11558e24667ff617a8245b7326bc"
     },
     {
+      "path": "restore_processed_artifacts.py",
+      "bytes": 1681,
+      "sha256": "25f91ad77c986270dd610b95decb7dad4ee823143e21074951033ecf62c7c883"
+    },
+    {
       "path": "restore_zenodo_artifacts.py",
-      "bytes": 10511,
-      "sha256": "ddbf4123a7c74a5e5cab5e19419f5e50062b2a749a482d56ac3c3bc25c7fbf14"
+      "bytes": 367,
+      "sha256": "02c89b08b3d8ad90a30ece61f197dd3ca85ef76cbedab4654875de6a18881e94"
     },
     {
       "path": "results/efficiency_paper_reference.csv",
@@ -344,6 +354,11 @@
       "path": "verify_release.py",
       "bytes": 4043,
       "sha256": "568479c7dbe2480c13a191e86d0320b593cced3dfaa8499fa5397e4a8ae8435f"
+    },
+    {
+      "path": "zenodo_volume_manifest.json",
+      "bytes": 9546,
+      "sha256": "2385a1a739cc5a5e8a0fc9c8f3d8dcb3211f3bcebe792165acba369d5632be1c"
     }
   ]
 }
